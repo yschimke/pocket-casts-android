@@ -13,8 +13,10 @@ plugins {
 
 // Renders every `@Preview` in this module to PNG outside Android Studio, which is what
 // feeds the `pocketcasts-wear` design catalog (see catalog.wear.spec.json at the repo root).
-// sdkVersion is pinned rather than taken from compileSdk: the project compiles against
-// SDK 37, which is outside Robolectric's render range.
+//
+// sdkVersion is pinned for the benefit of JDK 17, not because of compileSdk — see the same
+// note in modules/services/compose/build.gradle.kts. Wear's minSdk is 26, still under 35,
+// so pinning here does not trip Robolectric's PackageParser floor either.
 composePreview {
     variant.set("debug")
     sdkVersion.set(35)

@@ -8,8 +8,14 @@ plugins {
 
 // Renders every `@Preview` in this module to PNG outside Android Studio, which is
 // what feeds the `pocketcasts` design catalog (see catalog.spec.json at the repo root).
-// sdkVersion is pinned rather than taken from compileSdk: the project compiles against
-// SDK 37, which is outside Robolectric's render range.
+//
+// sdkVersion is pinned for the benefit of JDK 17, not because of compileSdk. Left to
+// auto-detect, the plugin maps compileSdk 37 down to Robolectric's ceiling of sdk=36 —
+// that clamp is fine in itself, but Robolectric refuses to bootstrap an SDK 36 sandbox
+// on anything below JDK 21, so the render fails before a preview body runs. This project
+// builds on JDK 17 and pins no daemon JVM, so pinning 35 is what keeps a local
+// `composePreviewRenderAll` working. The CI publisher runs JDK 21 and would not need it.
+// minSdk is 24, comfortably under 35, so the PackageParser floor is not in play.
 composePreview {
     variant.set("debug")
     sdkVersion.set(35)
