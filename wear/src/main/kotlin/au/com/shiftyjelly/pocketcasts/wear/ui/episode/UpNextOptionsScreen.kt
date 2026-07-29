@@ -74,7 +74,7 @@ private fun Content(
 
 @Preview
 @Composable
-private fun Preview() {
+private fun UpNextOptionsScreenPreview() {
     WearAppTheme {
         Content(
             columnState = ScalingLazyColumnState(),

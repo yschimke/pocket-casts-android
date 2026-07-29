@@ -1,0 +1,218 @@
+{
+  "$schema": "https://raw.githubusercontent.com/yschimke/compose-ai-tools/main/scripts/design-artifacts/catalog.spec.schema.json",
+  "$comment": "Pocket Casts Wear OS sticker sheet, rendered from :wear. This is a separate system from the phone catalog rather than the same one at a smaller size. The phone app resolves one of nine user-selectable Theme.ThemeType palettes into ~100 semantic roles behind LocalColors; WearAppTheme instead builds a single Wear Compose `Colors` from the fixed WearColors constants over a black background, with no user choice and no LocalColors at all — so there is exactly one mode here, and it is dark. The components are Wear's too (Chip, ScalingLazyColumn, curved TimeText), with no mobile counterpart. Because the surface is black, the spec declares `display.surface: \"dark\"`; drop that and the preview server stages these on its default white background, where the light-on-black content disappears. One clean-up was needed before this spec could exist: seven of the module's previews were all named `Preview()` and an eighth in ErrorScreen.kt was a copy-paste of `NotificationScreenPreview`, so they collided both in the render filenames and in any spec that tried to name them. They are renamed after the surface each one actually renders. Everything here is deterministic — fixed strings and fixed state, no ViewModel and no network image loading.",
+  "system": "pocketcasts-wear",
+  "title": "Pocket Casts for Wear OS",
+  "library": [
+    "Wear Compose Material"
+  ],
+  "module": ":wear",
+  "modes": [
+    "dark"
+  ],
+  "display": {
+    "surface": "dark",
+    "hero": "Screens/Watch list"
+  },
+  "groupOrder": [
+    "Screens",
+    "Episodes",
+    "Playback",
+    "Sign-in",
+    "Chrome",
+    "States"
+  ],
+  "groups": [
+    {
+      "name": "Screens",
+      "section": "Screens",
+      "components": [
+        {
+          "componentId": "Screens/Watch list",
+          "preview": "WatchListPreview",
+          "caption": "The watch app's home: the scrolling chip list that fronts Up Next, downloads, filters and settings."
+        },
+        {
+          "componentId": "Screens/Episode list",
+          "preview": "EpisodeListScreenPreview",
+          "caption": "A ScalingLazyColumn of episode chips — the scaling curve at the top and bottom of the list is the thing worth seeing rendered."
+        },
+        {
+          "componentId": "Screens/Settings",
+          "preview": "SettingsScreenPreview_unchecked",
+          "caption": "The watch settings list with its toggles off.",
+          "variants": [
+            {
+              "preview": "SettingsScreenPreview_checked",
+              "caption": "With the toggles on — the checked chip treatment against the black background.",
+              "state": "checked"
+            }
+          ]
+        },
+        {
+          "componentId": "Screens/Privacy settings",
+          "preview": "PrivacySettingsScreenPreview",
+          "caption": "The analytics opt-out screen, with its longer explanatory body text."
+        },
+        {
+          "componentId": "Screens/Up Next options",
+          "preview": "UpNextOptionsScreenPreview",
+          "caption": "The play-next / play-last chooser shown when queueing an episode."
+        },
+        {
+          "componentId": "Screens/Playback effects",
+          "preview": "EffectsScreenDarkPreview",
+          "caption": "Speed, trim silence and volume boost — the densest control screen in the watch app."
+        },
+        {
+          "componentId": "Screens/App entry",
+          "preview": "DefaultPreview",
+          "caption": "The activity's root composable, the first thing drawn on launch."
+        }
+      ]
+    },
+    {
+      "name": "Episodes",
+      "section": "Components",
+      "components": [
+        {
+          "componentId": "Episodes/Episode chip",
+          "preview": "EpisodeChipPreview",
+          "caption": "The list row for an episode: artwork, title and metadata inside a Wear Chip."
+        },
+        {
+          "componentId": "Episodes/Date and time text",
+          "preview": "EpisodeDateTimeTextPreview",
+          "caption": "The published-date and duration line, the smallest type in the watch app."
+        }
+      ]
+    },
+    {
+      "name": "Playback",
+      "section": "Components",
+      "components": [
+        {
+          "componentId": "Playback/Now playing chip",
+          "preview": "NowPlayingChipPreview",
+          "caption": "The persistent now-playing entry point at the head of the watch list."
+        },
+        {
+          "componentId": "Playback/Play button",
+          "preview": "PlayButtonPreview",
+          "caption": "The round play affordance on an episode screen."
+        },
+        {
+          "componentId": "Playback/Queue button",
+          "preview": "QueueButtonPreview",
+          "caption": "The add-to-Up-Next affordance."
+        },
+        {
+          "componentId": "Playback/Download button",
+          "preview": "DownloadButtonStatesPreview",
+          "caption": "All five download states stacked — not downloaded, queued, downloading, downloaded and errored.",
+          "variants": [
+            {
+              "preview": "DownloadButtonProgressPreview",
+              "caption": "The progress ring swept 0 → 100%: it has to stay visible at 0% against the half-alpha track and close cleanly at 100% rather than overlapping itself.",
+              "props": {
+                "progressPercent": "0, 25, 50, 75, 100"
+              }
+            }
+          ]
+        },
+        {
+          "componentId": "Playback/Marquee media display",
+          "preview": "MarqueeTextMediaDisplayPreview",
+          "caption": "The scrolling title/subtitle pair used where a track name overflows the watch's width."
+        }
+      ]
+    },
+    {
+      "name": "Sign-in",
+      "section": "Components",
+      "components": [
+        {
+          "componentId": "Sign-in/Phone instructions",
+          "preview": "LoginWithPhoneInstructionsPreview",
+          "caption": "The 'continue on your phone' instructions — the entry point to pairing.",
+          "variants": [
+            {
+              "preview": "SyncingContentPreview",
+              "caption": "Syncing, once the phone has accepted.",
+              "state": "syncing"
+            },
+            {
+              "preview": "SuccessContentPreview",
+              "caption": "Signed in successfully.",
+              "state": "success"
+            },
+            {
+              "preview": "ErrorContentNoConnectionPreview",
+              "caption": "No connection to the phone.",
+              "state": "no-connection"
+            },
+            {
+              "preview": "ErrorContentLoginFailedPreview",
+              "caption": "The phone rejected the sign-in.",
+              "state": "login-failed"
+            }
+          ]
+        },
+        {
+          "componentId": "Sign-in/Logging in",
+          "preview": "LoggingInScreenPreview",
+          "caption": "The blocking progress screen shown while credentials are exchanged."
+        },
+        {
+          "componentId": "Sign-in/Confirmation",
+          "preview": "ObtainConfirmationScreenPreview",
+          "caption": "The generic confirm/cancel screen used for destructive watch actions."
+        }
+      ]
+    },
+    {
+      "name": "Chrome",
+      "section": "Components",
+      "components": [
+        {
+          "componentId": "Chrome/Time text",
+          "preview": "TimeTextWithConnectivityConnectedPreview",
+          "caption": "The curved time text at the top of the bezel while the watch is connected.",
+          "variants": [
+            {
+              "preview": "TimeTextWithConnectivityDisconnectedPreview",
+              "caption": "Disconnected — the curved layout gains an offline glyph beside the clock, which is where the arc maths is most likely to crowd.",
+              "state": "disconnected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "States",
+      "section": "Components",
+      "components": [
+        {
+          "componentId": "States/Loading",
+          "preview": "LoadingScreenPreview",
+          "caption": "The full-screen loading indicator."
+        },
+        {
+          "componentId": "States/No content",
+          "preview": "NoContentScreenPreview",
+          "caption": "The empty state: icon, title and explanatory copy sized for the watch."
+        },
+        {
+          "componentId": "States/Error",
+          "preview": "ErrorScreenPreview",
+          "caption": "The error state. Until this branch its preview was a copy of NotificationScreen's and rendered under that name."
+        },
+        {
+          "componentId": "States/Notification",
+          "preview": "NotificationScreenPreview",
+          "caption": "The transient notification screen the watch app uses to acknowledge an action."
+        }
+      ]
+    }
+  ]
+}

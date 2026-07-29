@@ -50,7 +50,7 @@ fun PlayButton(
 
 @Preview
 @Composable
-private fun Preview() {
+private fun PlayButtonPreview() {
     WearAppTheme {
         Column {
             PlayButton(

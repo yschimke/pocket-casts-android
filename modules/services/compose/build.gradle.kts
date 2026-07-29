@@ -3,6 +3,16 @@ plugins {
     alias(libs.plugins.kotlin.parcelize)
     alias(libs.plugins.ksp)
     alias(libs.plugins.compose.compiler)
+    alias(libs.plugins.compose.ai.preview)
+}
+
+// Renders every `@Preview` in this module to PNG outside Android Studio, which is
+// what feeds the `pocketcasts` design catalog (see catalog.spec.json at the repo root).
+// sdkVersion is pinned rather than taken from compileSdk: the project compiles against
+// SDK 37, which is outside Robolectric's render range.
+composePreview {
+    variant.set("debug")
+    sdkVersion.set(35)
 }
 
 android {
@@ -36,6 +46,8 @@ dependencies {
     implementation(libs.compose.ui.tooling.preview)
     debugImplementation(libs.compose.ui.tooling)
     debugProdImplementation(libs.compose.ui.tooling)
+    // `@ThemeCatalog` lives in the debug catalog source set only — it never reaches a release build.
+    debugImplementation(libs.compose.ai.preview.annotations)
     implementation(libs.compose.ui.util)
     implementation(libs.fragment.compose)
     implementation(libs.lottie)

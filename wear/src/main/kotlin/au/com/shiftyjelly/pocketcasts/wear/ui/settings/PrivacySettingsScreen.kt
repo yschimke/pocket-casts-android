@@ -119,7 +119,7 @@ private fun DescriptionText(@StringRes text: Int) {
 
 @Composable
 @Preview(device = WearDevices.SMALL_ROUND, showSystemUi = true)
-private fun Preview() {
+private fun PrivacySettingsScreenPreview() {
     WearAppTheme {
         Content(
             scrollState = ScalingLazyColumnState(),

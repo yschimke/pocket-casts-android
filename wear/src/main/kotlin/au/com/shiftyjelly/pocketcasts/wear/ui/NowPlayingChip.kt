@@ -167,7 +167,7 @@ private fun PlayIcon() {
     uiMode = Configuration.UI_MODE_TYPE_WATCH,
 )
 @Composable
-private fun Preview() {
+private fun NowPlayingChipPreview() {
     WearAppTheme {
         Content(
             podcast = Podcast(

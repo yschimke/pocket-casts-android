@@ -8,6 +8,16 @@ plugins {
     alias(libs.plugins.sentry)
     alias(libs.plugins.google.services)
     alias(libs.plugins.compose.compiler)
+    alias(libs.plugins.compose.ai.preview)
+}
+
+// Renders every `@Preview` in this module to PNG outside Android Studio, which is what
+// feeds the `pocketcasts-wear` design catalog (see catalog.wear.spec.json at the repo root).
+// sdkVersion is pinned rather than taken from compileSdk: the project compiles against
+// SDK 37, which is outside Robolectric's render range.
+composePreview {
+    variant.set("debug")
+    sdkVersion.set(35)
 }
 
 sentry {
@@ -162,6 +172,8 @@ dependencies {
     implementation(projects.modules.services.views)
 
     debugImplementation(libs.compose.ui.tooling)
+    // `@ThemeCatalog` lives in the debug catalog source set only — it never reaches a release build.
+    debugImplementation(libs.compose.ai.preview.annotations)
 
     debugProdImplementation(libs.compose.ui.tooling)
 

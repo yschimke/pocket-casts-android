@@ -100,7 +100,7 @@ fun ObtainConfirmationScreen(
 
 @Preview
 @Composable
-private fun Preview() {
+private fun ObtainConfirmationScreenPreview() {
     ObtainConfirmationScreen(
         text = "Are you sure?",
         onConfirm = {},

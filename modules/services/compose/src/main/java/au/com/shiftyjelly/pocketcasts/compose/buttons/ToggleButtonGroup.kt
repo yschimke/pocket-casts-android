@@ -3,6 +3,7 @@ package au.com.shiftyjelly.pocketcasts.compose.buttons
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.interaction.MutableInteractionSource
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -31,8 +32,15 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.Role
+import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.tooling.preview.PreviewParameter
 import androidx.compose.ui.unit.dp
+import au.com.shiftyjelly.pocketcasts.compose.AppThemeWithBackground
+import au.com.shiftyjelly.pocketcasts.compose.preview.ThemePreviewParameterProvider
 import au.com.shiftyjelly.pocketcasts.compose.theme
+import au.com.shiftyjelly.pocketcasts.ui.theme.Theme
+import au.com.shiftyjelly.pocketcasts.images.R as IR
+import au.com.shiftyjelly.pocketcasts.localization.R as LR
 
 data class ToggleButtonOption(
     val imageId: Int,
@@ -97,6 +105,63 @@ fun ToggleButtonGroup(
             }
         }
     }
+}
+
+@Preview
+@Composable
+private fun ToggleButtonGroupThemePreview(
+    @PreviewParameter(ThemePreviewParameterProvider::class) themeType: Theme.ThemeType,
+) {
+    AppThemeWithBackground(themeType) {
+        ToggleButtonGroup(
+            options = previewToggleOptions(selected = IR.drawable.ic_filters_star),
+            modifier = Modifier.padding(vertical = 16.dp),
+        )
+    }
+}
+
+// The group tints the selected cell with primaryInteractive01 and everything else with the
+// transparent-on-border treatment, so which cell is selected changes the whole row's read. These
+// cover the leading, middle and trailing selections — the three the divider logic has to get right.
+@Preview(name = "Selection")
+@Composable
+private fun ToggleButtonGroupSelectionPreview() {
+    AppThemeWithBackground(Theme.ThemeType.LIGHT) {
+        Column(
+            verticalArrangement = Arrangement.spacedBy(16.dp),
+            modifier = Modifier.padding(vertical = 16.dp),
+        ) {
+            ToggleButtonGroup(options = previewToggleOptions(selected = IR.drawable.ic_filters_download))
+            ToggleButtonGroup(options = previewToggleOptions(selected = IR.drawable.ic_filters_star))
+            ToggleButtonGroup(options = previewToggleOptions(selected = IR.drawable.ic_filters_video))
+        }
+    }
+}
+
+// A two-cell group — the narrowest the component is used at, and the case where the trailing
+// divider is most obviously either right or wrong.
+@Preview(name = "Two options")
+@Composable
+private fun ToggleButtonGroupTwoOptionPreview() {
+    AppThemeWithBackground(Theme.ThemeType.LIGHT) {
+        ToggleButtonGroup(
+            options = previewToggleOptions(selected = IR.drawable.ic_filters_download).take(2),
+            modifier = Modifier.padding(vertical = 16.dp),
+        )
+    }
+}
+
+private fun previewToggleOptions(selected: Int) = listOf(
+    IR.drawable.ic_filters_download to LR.string.filters_chip_download_status,
+    IR.drawable.ic_filters_star to LR.string.filters_chip_starred,
+    IR.drawable.ic_filters_video to LR.string.filters_chip_media_type,
+).map { (imageId, descriptionId) ->
+    ToggleButtonOption(
+        imageId = imageId,
+        descriptionId = descriptionId,
+        click = {},
+        isOn = { imageId == selected },
+    )
 }
 
 private val RippleRadius = 48.dp

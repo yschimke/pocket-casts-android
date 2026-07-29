@@ -71,9 +71,11 @@ fun DownloadButton(
     }
 }
 
+// Named for the states it renders rather than for `Downloading` alone: it has always drawn all
+// five, and the old name both understated it and collided with nothing useful in the catalog.
 @Preview
 @Composable
-private fun DownloadingPreview() {
+private fun DownloadButtonStatesPreview() {
     WearAppTheme {
         Column {
             listOf(
@@ -87,6 +89,26 @@ private fun DownloadingPreview() {
                     tint = Color.White,
                     onClick = {},
                     downloadButtonState = state,
+                    modifier = Modifier.size(24.dp),
+                )
+            }
+        }
+    }
+}
+
+// Only `Downloading` draws the progress ring, and the states preview above pins it at a single
+// 40%. The sweep is what actually breaks: the arc has to start at twelve o'clock, stay visible at
+// 0% against the half-alpha track, and close cleanly at 100% rather than overlapping itself.
+@Preview
+@Composable
+private fun DownloadButtonProgressPreview() {
+    WearAppTheme {
+        Column {
+            listOf(0f, 0.25f, 0.5f, 0.75f, 1f).forEach { progress ->
+                DownloadButton(
+                    tint = Color.White,
+                    onClick = {},
+                    downloadButtonState = DownloadButtonState.Downloading(progress),
                     modifier = Modifier.size(24.dp),
                 )
             }

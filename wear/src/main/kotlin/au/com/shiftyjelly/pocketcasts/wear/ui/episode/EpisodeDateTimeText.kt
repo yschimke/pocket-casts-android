@@ -62,7 +62,7 @@ private fun LayoutContent(
 
 @Preview
 @Composable
-private fun Preview() {
+private fun EpisodeDateTimeTextPreview() {
     WearAppTheme {
         LayoutContent(
             shortDate = "06 Dec",

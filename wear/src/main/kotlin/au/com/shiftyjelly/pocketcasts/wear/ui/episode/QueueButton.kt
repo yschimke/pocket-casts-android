@@ -39,7 +39,7 @@ fun QueueButton(
 
 @Preview
 @Composable
-private fun Preview() {
+private fun QueueButtonPreview() {
     WearAppTheme {
         Column {
             QueueButton(

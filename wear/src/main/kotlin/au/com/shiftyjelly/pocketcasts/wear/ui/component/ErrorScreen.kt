@@ -60,7 +60,7 @@ fun ErrorScreen(
 
 @Preview
 @Composable
-private fun NotificationScreenPreview() {
+private fun ErrorScreenPreview() {
     WearAppTheme {
         ErrorScreen("There was a problem")
     }
