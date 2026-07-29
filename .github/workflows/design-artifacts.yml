@@ -21,6 +21,20 @@ name: Design Artifacts
 # root, so there is no per-sample working-directory.
 
 on:
+  # The delivery branches are force-pushed snapshots, and the renderer moves underneath
+  # them even when nothing here changes — a compose-ai-tools release alters the rendered
+  # output without any commit to this repo. The cron is what catches that drift.
+  #
+  # KNOWN LIMITATION, do not assume this is firing: GitHub only raises `schedule` (and
+  # only offers `workflow_dispatch`) for workflows on the DEFAULT branch. This catalog
+  # lives on `previews`, so today only the `push` trigger below actually runs. Moving
+  # this file to `main` does not by itself fix it either: a scheduled run checks out the
+  # default branch, and `design-artifacts-reusable.yml` has no `ref` input, so it would
+  # render a `main` that carries no catalog.spec.json. Making the cron real needs either
+  # a `ref` input upstream or the catalog itself on `main`. Kept here so it works the day
+  # one of those lands, and so the intent is on the record.
+  schedule:
+    - cron: '0 6 * * 1' # Mondays, 06:00 UTC
   workflow_dispatch:
     inputs:
       allow_incomplete:
@@ -44,6 +58,12 @@ on:
       # published catalogs go stale on a version change just as surely as on a spec edit.
       # Without this the bump lands and the delivery branches keep serving the previous
       # renderer's output until someone dispatches by hand.
+      #
+      # Note what this does and does not cover: it fires when *this repo's pin* moves —
+      # i.e. when the `compose-ai-preview` version here is bumped — which is the change
+      # that actually alters the rendered output. It does not fire when compose-ai-tools
+      # cuts a release this repo hasn't pinned yet; the Monday cron covers that gap.
+      # Closing it properly would need a repository_dispatch from compose-ai-tools.
       - 'gradle/libs.versions.toml'
 
 permissions:
@@ -85,6 +105,12 @@ jobs:
       system: ${{ matrix.system }}
       spec: ${{ matrix.spec }}
       module: ${{ matrix.module }}
+      # Track the CLI to the Gradle plugin version pinned in this repo's version catalog
+      # rather than taking whatever 'latest' resolves to on the day. Version skew between
+      # the two was a contributing factor in compose-ai-tools#2857 (workflow CLI on 0.19.1
+      # against plugin 0.18.6), and it is silent — the render just behaves differently.
+      cli-version: catalog
+      catalog-key: compose-ai-preview
       # Carry the executable render bundle onto the delivery branch and split it per
       # preview, so preview.coo.ee re-renders these live instead of replaying baked
       # PNGs — that's what makes the device / theme / knob controls do anything. These
