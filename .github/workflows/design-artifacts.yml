@@ -69,6 +69,14 @@ jobs:
           - system: pocketcasts
             spec: catalog.spec.json
             module: ':modules:services:compose'
+            # This catalog's ~140 entries fan out across nine themes, which pushes the
+            # render past the renderer's separate, fixed 180-second metadata subscriber
+            # deadline (compose-ai-tools#2857) — the same wall compose-samples hits on
+            # Jetsnack. PNG rendering completes; it is the trailing semantics capture that
+            # goes partial, so ~20 components publish without an a11y tree. Publish while
+            # that is partial until the upstream deadline follows --timeout. The Wear
+            # catalog is a tenth the size and does not need this.
+            allowIncomplete: true
           - system: pocketcasts-wear
             spec: catalog.wear.spec.json
             module: ':wear'
@@ -86,7 +94,7 @@ jobs:
       publish-live-bundle: true
       split-per-preview: true
       split-mode: full
-      allow-incomplete: ${{ inputs.allow_incomplete || false }}
+      allow-incomplete: ${{ matrix.allowIncomplete || inputs.allow_incomplete || false }}
       commit-user-name: Yuri Schimke
       commit-user-email: yuri@schimke.ee
       timeout-minutes: 90

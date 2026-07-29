@@ -355,18 +355,6 @@
           ]
         },
         {
-          "componentId": "Content/HTML text",
-          "preview": "HtmlTextLightPreview",
-          "caption": "Show-notes HTML rendered into Compose text, with links styled from the theme.",
-          "variants": [
-            {
-              "preview": "HtmlTextDarkPreview",
-              "caption": "On the dark palette.",
-              "theme": "dark"
-            }
-          ]
-        },
-        {
           "componentId": "Content/Expandable text",
           "preview": "ExpandedTextPreviewRegular",
           "caption": "Clamped description text with its show-more affordance.",
@@ -930,23 +918,6 @@
               "props": {
                 "locale": "non-en"
               }
-            }
-          ]
-        },
-        {
-          "componentId": "Insights/Summary content",
-          "preview": "SummaryContentPreview",
-          "caption": "The listening-summary card, across all nine palettes."
-        },
-        {
-          "componentId": "Insights/Summary paywall",
-          "preview": "SummaryPaywallPreview",
-          "caption": "The summary paywall, across all nine palettes.",
-          "variants": [
-            {
-              "preview": "SummaryPaywallFreeTrialPreview",
-              "caption": "The free-trial wording, which is longer and pushes the layout hardest.",
-              "state": "free-trial"
             }
           ]
         },
