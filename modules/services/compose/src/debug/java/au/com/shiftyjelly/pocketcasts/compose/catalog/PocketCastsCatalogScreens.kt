@@ -49,7 +49,7 @@ import au.com.shiftyjelly.pocketcasts.images.R as IR
 
 @Preview(name = "Settings", widthDp = 412, heightDp = 892)
 @Composable
-fun PocketCastsSettingsScreenPreview() {
+private fun PocketCastsSettingsScreenPreview() {
     SettingsScreen(Theme.ThemeType.LIGHT)
 }
 
@@ -58,7 +58,7 @@ fun PocketCastsSettingsScreenPreview() {
 // reviewable against the everyday ones instead of one build-and-switch at a time.
 @Preview(widthDp = 412, heightDp = 892)
 @Composable
-fun PocketCastsSettingsScreenThemePreview(
+private fun PocketCastsSettingsScreenThemePreview(
     @PreviewParameter(ThemePreviewParameterProvider::class) themeType: Theme.ThemeType,
 ) {
     SettingsScreen(themeType)
@@ -68,13 +68,13 @@ fun PocketCastsSettingsScreenThemePreview(
 // column, so the extra width lands entirely in the gap between label and toggle — worth seeing.
 @Preview(name = "Settings — medium width", widthDp = 700, heightDp = 892)
 @Composable
-fun PocketCastsSettingsScreenMediumPreview() {
+private fun PocketCastsSettingsScreenMediumPreview() {
     SettingsScreen(Theme.ThemeType.LIGHT)
 }
 
 @Preview(name = "Account", widthDp = 412, heightDp = 892)
 @Composable
-fun PocketCastsAccountScreenPreview() {
+private fun PocketCastsAccountScreenPreview() {
     AccountScreen(Theme.ThemeType.LIGHT)
 }
 
@@ -82,7 +82,7 @@ fun PocketCastsAccountScreenPreview() {
 // the least contrast to work with.
 @Preview(name = "Account — dark", widthDp = 412, heightDp = 892)
 @Composable
-fun PocketCastsAccountScreenDarkPreview() {
+private fun PocketCastsAccountScreenDarkPreview() {
     AccountScreen(Theme.ThemeType.DARK)
 }
 
