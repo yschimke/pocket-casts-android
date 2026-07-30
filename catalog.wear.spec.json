@@ -12,7 +12,7 @@
   ],
   "display": {
     "surface": "dark",
-    "hero": "Screens/Settings"
+    "hero": "Screens/Watch list"
   },
   "groupOrder": [
     "Screens",
@@ -27,6 +27,18 @@
       "name": "Screens",
       "section": "Screens",
       "components": [
+        {
+          "componentId": "Screens/Watch list",
+          "preview": "WatchListPreview",
+          "caption": "The watch app's home: the scrolling chip list that fronts Up Next, downloads, filters and settings.",
+          "capture": "none"
+        },
+        {
+          "componentId": "Screens/Episode list",
+          "preview": "EpisodeListScreenPreview",
+          "caption": "A ScalingLazyColumn of episode chips — the scaling curve at the top and bottom of the list is the thing worth seeing rendered.",
+          "capture": "none"
+        },
         {
           "componentId": "Screens/Settings",
           "preview": "SettingsScreenPreview_unchecked",
@@ -53,6 +65,12 @@
           "componentId": "Screens/Playback effects",
           "preview": "EffectsScreenDarkPreview",
           "caption": "Speed, trim silence and volume boost — the densest control screen in the watch app."
+        },
+        {
+          "componentId": "Screens/App entry",
+          "preview": "DefaultPreview",
+          "caption": "The activity's root composable, the first thing drawn on launch.",
+          "capture": "none"
         }
       ]
     },
@@ -142,6 +160,12 @@
               "state": "login-failed"
             }
           ]
+        },
+        {
+          "componentId": "Sign-in/Logging in",
+          "preview": "LoggingInScreenPreview",
+          "caption": "The blocking progress screen shown while credentials are exchanged.",
+          "capture": "none"
         },
         {
           "componentId": "Sign-in/Confirmation",
