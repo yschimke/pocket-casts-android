@@ -89,21 +89,19 @@ jobs:
           - system: pocketcasts
             spec: catalog.spec.json
             module: ':modules:services:compose'
-            # This catalog's ~140 entries fan out across nine themes, which pushed the
-            # render past the renderer's separate, fixed 180-second metadata subscriber
-            # deadline (compose-ai-tools#2857) — the same wall compose-samples hits on
-            # Jetsnack. PNG rendering completes; it is the trailing semantics capture that
-            # goes partial, so ~20 components publish without an a11y tree.
+            # This catalog runs STRICT — no allowIncomplete. Its ~140 entries fan out across
+            # nine themes, which used to push the render past the renderer's separate, fixed
+            # 180-second metadata subscriber deadline (compose-ai-tools#2857): PNGs completed
+            # but the trailing semantics capture went partial, so ~20 components published
+            # without an a11y tree, and only allowIncomplete let it publish at all.
             #
-            # The upstream deadline is FIXED (compose-ai-tools#2948, merged in #3020): the
-            # semantics collector now uses an inactivity budget governed by --timeout instead
-            # of the fixed 180s wall, so a wide catalog captures every tree as long as renders
-            # keep landing. Drop this flag once a compose-ai-tools release carrying #3020 ships
-            # AND `compose-ai-preview` in gradle/libs.versions.toml is bumped to it (the render
-            # CLI is pinned via `cli-version: catalog`, so main having the fix is not enough).
-            # Until then the pinned CLI still hits 180s and a strict run would refuse to publish.
-            # The Wear catalog is a tenth the size and does not need this. Tracked in #2963.
-            allowIncomplete: true
+            # That deadline is fixed upstream (compose-ai-tools#2948, merged in #3020, shipped
+            # in v0.19.10): the semantics collector now uses an inactivity budget governed by
+            # --timeout instead of the fixed 180s wall, so a wide catalog captures every tree
+            # as long as renders keep landing. The `compose-ai-preview` pin above is on 0.19.10
+            # and the render CLI tracks it via `cli-version: catalog`, so the strict run gets
+            # the fix. If a future wide-catalog render regresses on semantics, prefer raising
+            # --timeout over reinstating allowIncomplete. Tracked in #2963.
           - system: pocketcasts-wear
             spec: catalog.wear.spec.json
             module: ':wear'
