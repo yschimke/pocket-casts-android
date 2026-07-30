@@ -24,6 +24,7 @@ import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.platform.LocalInspectionMode
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.PlatformTextStyle
@@ -59,8 +60,29 @@ fun EpisodeChip(
     modifier: Modifier = Modifier,
     useUpNextIcon: Boolean = true,
     showImage: Boolean = true,
-    viewModel: EpisodeChipViewModel = hiltViewModel(),
 ) {
+    // A preview host has no Hilt component holder, so `hiltViewModel()` would throw and take the
+    // whole preview down with it — including previews of screens that only embed this chip. The
+    // view model exists to keep the episode fresh and to know whether it is queued; a preview has
+    // neither a database nor a queue, so render the episode it was handed as if nothing is queued.
+    // Same substitution the preview at the bottom of this file makes by calling Content directly.
+    if (LocalInspectionMode.current) {
+        Content(
+            episode = episode,
+            queueState = UpNextQueue.State.Empty,
+            useEpisodeArtwork = useEpisodeArtwork,
+            onClick = onClick,
+            modifier = modifier,
+            useUpNextIcon = useUpNextIcon,
+            showImage = showImage,
+        )
+        return
+    }
+
+    // Resolved here rather than as a default argument: a default argument is evaluated before the
+    // body runs, so the inspection-mode branch above would never be reached.
+    val viewModel: EpisodeChipViewModel = hiltViewModel()
+
     // Make sure the episode is always up-to-date
     val observedEpisode by viewModel
         .observeByUuid(episode)

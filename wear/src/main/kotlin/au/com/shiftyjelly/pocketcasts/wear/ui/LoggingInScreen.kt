@@ -180,8 +180,16 @@ private fun Modifier.fadeOutOverflow(
 @Composable
 private fun LoggingInScreenPreview() {
     WearAppTheme {
-        LoggingInScreen(
-            onClose = {},
-        )
+        ScreenScaffold {
+            // Content rather than LoggingInScreen: the screen itself resolves its view model
+            // through Hilt, which a preview host cannot provide. The email is the only thing the
+            // view model contributes to what is drawn.
+            Content(
+                email = "user@example.com",
+                avatarUrl = null,
+                name = null,
+                onClose = {},
+            )
+        }
     }
 }

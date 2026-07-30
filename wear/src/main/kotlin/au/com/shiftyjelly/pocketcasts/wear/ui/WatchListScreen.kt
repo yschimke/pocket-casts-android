@@ -11,6 +11,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.wear.tooling.preview.devices.WearDevices
 import au.com.shiftyjelly.pocketcasts.compose.CallOnce
+import au.com.shiftyjelly.pocketcasts.models.to.RefreshState
 import au.com.shiftyjelly.pocketcasts.repositories.playback.UpNextQueue
 import au.com.shiftyjelly.pocketcasts.wear.theme.WearAppTheme
 import au.com.shiftyjelly.pocketcasts.wear.ui.component.PullToRefresh
@@ -38,15 +39,66 @@ fun WatchListScreen(
     viewModel: WatchListScreenViewModel = hiltViewModel(),
 ) {
     val state by viewModel.state.collectAsState()
-    val upNextState = state.upNextQueue
 
     CallOnce {
         viewModel.onShown()
     }
 
-    PullToRefresh(
-        state = state.refreshState,
+    Content(
+        columnState = columnState,
+        upNextState = state.upNextQueue,
+        refreshState = state.refreshState,
         onRefresh = { viewModel.refreshPodcasts() },
+        onNowPlayingClick = {
+            viewModel.onNowPlayingClicked()
+            toNowPlaying()
+        },
+        onPodcastsClick = {
+            viewModel.onPodcastsClicked()
+            navigateToRoute(PodcastsScreen.ROUTE_HOME_FOLDER)
+        },
+        onDownloadsClick = {
+            viewModel.onDownloadsClicked()
+            navigateToRoute(DownloadsScreen.ROUTE)
+        },
+        onPlaylistsClick = {
+            viewModel.onPlaylistsClicked()
+            navigateToRoute(PlaylistsScreen.ROUTE)
+        },
+        onFilesClick = {
+            viewModel.onFilesClicked()
+            navigateToRoute(FilesScreen.ROUTE)
+        },
+        onStarredClick = {
+            viewModel.onStarredClicked()
+            navigateToRoute(StarredScreen.ROUTE)
+        },
+        onSettingsClick = {
+            viewModel.onSettingsClicked()
+            navigateToRoute(SettingsScreen.ROUTE)
+        },
+        modifier = modifier,
+    )
+}
+
+@Composable
+private fun Content(
+    columnState: ScalingLazyColumnState,
+    upNextState: UpNextQueue.State?,
+    refreshState: RefreshState,
+    onRefresh: () -> Unit,
+    onNowPlayingClick: () -> Unit,
+    onPodcastsClick: () -> Unit,
+    onDownloadsClick: () -> Unit,
+    onPlaylistsClick: () -> Unit,
+    onFilesClick: () -> Unit,
+    onStarredClick: () -> Unit,
+    onSettingsClick: () -> Unit,
+    modifier: Modifier = Modifier,
+) {
+    PullToRefresh(
+        state = refreshState,
+        onRefresh = onRefresh,
         modifier = modifier,
     ) {
         ScalingLazyColumn(
@@ -60,10 +112,7 @@ fun WatchListScreen(
 
             if (upNextState is UpNextQueue.State.Loaded) {
                 item {
-                    NowPlayingChip(onClick = {
-                        viewModel.onNowPlayingClicked()
-                        toNowPlaying()
-                    })
+                    NowPlayingChip(onClick = onNowPlayingClick)
                 }
             }
 
@@ -71,10 +120,7 @@ fun WatchListScreen(
                 WatchListChip(
                     title = stringResource(LR.string.podcasts),
                     iconRes = IR.drawable.ic_podcasts,
-                    onClick = {
-                        viewModel.onPodcastsClicked()
-                        navigateToRoute(PodcastsScreen.ROUTE_HOME_FOLDER)
-                    },
+                    onClick = onPodcastsClick,
                 )
             }
 
@@ -82,10 +128,7 @@ fun WatchListScreen(
                 WatchListChip(
                     title = stringResource(LR.string.downloads),
                     iconRes = IR.drawable.ic_download,
-                    onClick = {
-                        viewModel.onDownloadsClicked()
-                        navigateToRoute(DownloadsScreen.ROUTE)
-                    },
+                    onClick = onDownloadsClick,
                 )
             }
 
@@ -93,10 +136,7 @@ fun WatchListScreen(
                 WatchListChip(
                     title = stringResource(LR.string.playlists),
                     iconRes = IR.drawable.ic_playlists,
-                    onClick = {
-                        viewModel.onPlaylistsClicked()
-                        navigateToRoute(PlaylistsScreen.ROUTE)
-                    },
+                    onClick = onPlaylistsClick,
                 )
             }
 
@@ -104,10 +144,7 @@ fun WatchListScreen(
                 WatchListChip(
                     title = stringResource(LR.string.profile_navigation_files),
                     iconRes = IR.drawable.ic_file,
-                    onClick = {
-                        viewModel.onFilesClicked()
-                        navigateToRoute(FilesScreen.ROUTE)
-                    },
+                    onClick = onFilesClick,
                 )
             }
 
@@ -115,10 +152,7 @@ fun WatchListScreen(
                 WatchListChip(
                     title = stringResource(LR.string.profile_navigation_starred),
                     iconRes = IR.drawable.ic_starred,
-                    onClick = {
-                        viewModel.onStarredClicked()
-                        navigateToRoute(StarredScreen.ROUTE)
-                    },
+                    onClick = onStarredClick,
                 )
             }
 
@@ -126,10 +160,7 @@ fun WatchListScreen(
                 WatchListChip(
                     title = stringResource(LR.string.settings),
                     iconRes = IR.drawable.ic_profile_settings,
-                    onClick = {
-                        viewModel.onSettingsClicked()
-                        navigateToRoute(SettingsScreen.ROUTE)
-                    },
+                    onClick = onSettingsClick,
                 )
             }
         }
@@ -140,10 +171,18 @@ fun WatchListScreen(
 @Composable
 private fun WatchListPreview() {
     WearAppTheme {
-        WatchListScreen(
-            toNowPlaying = {},
-            navigateToRoute = {},
+        Content(
             columnState = ScalingLazyColumnState(),
+            upNextState = UpNextQueue.State.Empty,
+            refreshState = RefreshState.Never,
+            onRefresh = {},
+            onNowPlayingClick = {},
+            onPodcastsClick = {},
+            onDownloadsClick = {},
+            onPlaylistsClick = {},
+            onFilesClick = {},
+            onStarredClick = {},
+            onSettingsClick = {},
         )
     }
 }
