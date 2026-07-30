@@ -12,7 +12,7 @@
   ],
   "display": {
     "surface": "dark",
-    "hero": "Screens/Watch list"
+    "hero": "Screens/App entry"
   },
   "groupOrder": [
     "Screens",
