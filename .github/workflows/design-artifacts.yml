@@ -89,19 +89,33 @@ jobs:
           - system: pocketcasts
             spec: catalog.spec.json
             module: ':modules:services:compose'
-            # This catalog runs STRICT — no allowIncomplete. Its ~140 entries fan out across
-            # nine themes, which used to push the render past the renderer's separate, fixed
-            # 180-second metadata subscriber deadline (compose-ai-tools#2857): PNGs completed
-            # but the trailing semantics capture went partial, so ~20 components published
-            # without an a11y tree, and only allowIncomplete let it publish at all.
+            allowIncomplete: true
+            # This entry publishes with the completeness gate OFF, and it should not stay that
+            # way — see compose-ai-tools#2963. The reason is NOT the one this comment used to
+            # give, so the history is worth keeping straight:
             #
-            # That deadline is fixed upstream (compose-ai-tools#2948, merged in #3020, shipped
-            # in v0.19.10): the semantics collector now uses an inactivity budget governed by
-            # --timeout instead of the fixed 180s wall, so a wide catalog captures every tree
-            # as long as renders keep landing. The `compose-ai-preview` pin above is on 0.19.10
-            # and the render CLI tracks it via `cli-version: catalog`, so the strict run gets
-            # the fix. If a future wide-catalog render regresses on semantics, prefer raising
-            # --timeout over reinstating allowIncomplete. Tracked in #2963.
+            # The original cause was the renderer's separate, fixed 180-second metadata
+            # subscriber deadline (compose-ai-tools#2857 / #2948): this catalog's ~140 entries
+            # fan out across nine themes, the PNGs completed, and the trailing semantics
+            # capture went partial. That deadline IS fixed — #3020, shipped in v0.19.10, made
+            # it an inactivity window governed by --timeout, and the pin above is on 0.19.10
+            # with the render CLI tracking it via `cli-version: catalog`.
+            #
+            # Dropping the flag on 0.19.10 nonetheless failed (run 30585359568) with the same
+            # 22 componentIds missing a11y trees as the 0.19.4 run — byte-identical, where the
+            # deadline's signature was a different partial set every time. The residual cause
+            # is compose-ai-tools#3049: `bundle pack --with-semantics` reads back
+            # `data/<previewId>/compose-semantics.json`, but a `@PreviewParameter` fan-out's
+            # sidecar is written per parameter VALUE, so the lookup misses it. Every one of the
+            # 41 dropped previews here takes a @PreviewParameter; no other preview is affected.
+            # That is why `pocketcasts-wear` below stays strict — it has none.
+            #
+            # So this flag comes off when #3049 lands and the pin moves to the release carrying
+            # it, not before. Raising --timeout will not help, and neither will `priority` /
+            # `modePriority` (#2950): the gate reads semantics off the base candidate before any
+            # deferral thins the image set. Note the cost while it is on — the flag is
+            # all-or-nothing, so a genuinely broken REQUIRED render in this system publishes
+            # unnoticed too.
           - system: pocketcasts-wear
             spec: catalog.wear.spec.json
             module: ':wear'
