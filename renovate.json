@@ -1,0 +1,24 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Renovate exists on this fork for exactly one job: keep the compose-preview tooling current on `previews`, the branch that carries the design catalogs (catalog.spec.json / catalog.wear.spec.json and .github/workflows/design-artifacts.yml). Everything else on the fork tracks upstream Automattic and is already covered by .github/dependabot.yml on main — hence baseBranches, gradle-only, and the disable-everything rule below. This file lives on the default branch because that is where Renovate reads its config from; the copy on `previews` is a byte-identical mirror kept so the two can't disagree.",
+  "extends": ["github>yschimke/renovate-config"],
+  "baseBranches": ["previews"],
+  "enabledManagers": ["gradle"],
+  "packageRules": [
+    {
+      "description": "Nothing on this fork is Renovate's to update by default — see the top-level description.",
+      "matchDepNames": ["/.*/"],
+      "enabled": false
+    },
+    {
+      "description": "compose-ai-tools ships the ee.schimke.composeai.preview Gradle plugin and the preview-annotations artifact as one release, pinned here by the single `compose-ai-preview` catalog key — which design-artifacts.yml also resolves the render CLI from (`cli-version: catalog`, `catalog-key: compose-ai-preview`), so bumping it moves plugin and CLI together and can't leave them skewed. That release IS the renderer behind /pocketcasts and /pocketcasts-wear, and the fork's UI code tracks upstream, so a stale pin here is the main way the published catalogs go stale. Automerge once CI on `previews` is green: design-artifacts.yml already re-renders and republishes both delivery branches on push to `previews` when gradle/libs.versions.toml moves, and a Renovate merge is made with the app's token, which does raise `push` — so bump -> merge -> re-render -> publish runs with nobody in the loop. platformAutomerge stays false via the shared preset, so Renovate waits for every check rather than merging ahead of them. Left on the preset's weekly schedule rather than `at any time`: compose-ai-tools cuts several releases a day and a republish here is two full catalog renders.",
+      "groupName": "compose-ai-tools",
+      "matchDepNames": [
+        "ee.schimke.composeai.preview",
+        "ee.schimke.composeai:preview-annotations"
+      ],
+      "enabled": true,
+      "automerge": true
+    }
+  ]
+}
