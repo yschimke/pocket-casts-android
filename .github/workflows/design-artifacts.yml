@@ -1,0 +1,153 @@
+name: Design Artifacts
+
+# Render Pocket Casts' `@Preview` catalogs and publish each one's importable sticker
+# sheet to a clean `design-artifacts/<system>` branch, which the public preview server
+# (preview.coo.ee) serves at /<system>/.
+#
+# Two systems ship from this repo:
+#   * pocketcasts       — the phone/tablet design system in :modules:services:compose
+#   * pocketcasts-wear  — the Wear OS surfaces in :wear
+#
+# They are genuinely different design systems rather than one system at two sizes. The
+# mobile module is Material 2 wearing a Pocket Casts skin: `AppTheme` resolves a
+# `Theme.ThemeType` to ~100 semantic roles published through `LocalColors`, and nine
+# palettes are user-selectable. Wear is Wear Compose Material with its own dark-only
+# theme and its own components (`Chip`, `ScalingLazyColumn`, curved text) that have no
+# mobile counterpart — hence two specs, two matrix entries, and no shared palette.
+#
+# The render → validate → generate → publish pipeline is delegated wholesale to the
+# reusable workflow in compose-ai-tools; this file is only the per-system matrix.
+# Unlike compose-samples, Pocket Casts is a single Gradle build rooted at the repo
+# root, so there is no per-sample working-directory.
+
+on:
+  # The delivery branches are force-pushed snapshots, and the renderer moves underneath
+  # them even when nothing here changes — a compose-ai-tools release alters the rendered
+  # output without any commit to this repo. The cron is what catches that drift.
+  #
+  # `schedule` and `workflow_dispatch` are only raised for the copy of a workflow on the
+  # DEFAULT branch, and such a run checks that branch out — so this file has to exist on
+  # `main` (it now does) AND name the branch to render, because `main` carries no
+  # catalog.spec.json. The `ref` input this needs landed upstream in compose-ai-tools
+  # 0.19.10 (#3022); it is wired below as `ref: ${{ inputs.ref || 'previews' }}`, which
+  # resolves to `previews` for schedule and push (where `inputs` is null) and to whatever
+  # the dispatch form supplies otherwise. This comment used to record the limitation that
+  # made only the `push` trigger real; all three triggers work now.
+  schedule:
+    - cron: '0 6 * * 1' # Mondays, 06:00 UTC
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: 'Branch, tag or SHA of this repo to render. The catalogs live on `previews`; override only to trial a spec from a side branch.'
+        type: string
+        default: previews
+      allow_incomplete:
+        description: 'Publish even if some previews fail to render or lack semantics (use while tuning a spec).'
+        type: boolean
+        default: false
+  push:
+    branches:
+      - previews
+    paths:
+      - 'catalog*.spec.json'
+      - 'modules/services/compose/src/main/**'
+      - 'modules/services/compose/src/debug/**'
+      - 'modules/services/compose/build.gradle.kts'
+      - 'modules/services/ui/src/main/**'
+      - 'wear/src/main/**'
+      - 'wear/src/debug/**'
+      - 'wear/build.gradle.kts'
+      - '.github/workflows/design-artifacts.yml'
+      # A compose-preview bump changes what discovery finds and how it renders, so the
+      # published catalogs go stale on a version change just as surely as on a spec edit.
+      # Without this the bump lands and the delivery branches keep serving the previous
+      # renderer's output until someone dispatches by hand.
+      #
+      # Note what this does and does not cover: it fires when *this repo's pin* moves —
+      # i.e. when the `compose-ai-preview` version here is bumped — which is the change
+      # that actually alters the rendered output. It does not fire when compose-ai-tools
+      # cuts a release this repo hasn't pinned yet; the Monday cron covers that gap.
+      # Closing it properly would need a repository_dispatch from compose-ai-tools.
+      - 'gradle/libs.versions.toml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: design-artifacts-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    # Never let the upstream repo — or a fork of this fork — push delivery branches.
+    # The catalogs are a yschimke-fork concern and deliberately do not exist upstream.
+    if: ${{ github.repository == 'yschimke/pocket-casts-android' }}
+    name: ${{ matrix.system }}
+    permissions:
+      contents: write
+    strategy:
+      # One system's render failing shouldn't stop the other publishing.
+      fail-fast: false
+      matrix:
+        include:
+          - system: pocketcasts
+            spec: catalog.spec.json
+            module: ':modules:services:compose'
+            allowIncomplete: true
+            # This entry publishes with the completeness gate OFF, and it should not stay that
+            # way — see compose-ai-tools#2963. The reason is NOT the one this comment used to
+            # give, so the history is worth keeping straight:
+            #
+            # The original cause was the renderer's separate, fixed 180-second metadata
+            # subscriber deadline (compose-ai-tools#2857 / #2948): this catalog's ~140 entries
+            # fan out across nine themes, the PNGs completed, and the trailing semantics
+            # capture went partial. That deadline IS fixed — #3020, shipped in v0.19.10, made
+            # it an inactivity window governed by --timeout, and the pin above is on 0.19.10
+            # with the render CLI tracking it via `cli-version: catalog`.
+            #
+            # Dropping the flag on 0.19.10 nonetheless failed (run 30585359568) with the same
+            # 22 componentIds missing a11y trees as the 0.19.4 run — byte-identical, where the
+            # deadline's signature was a different partial set every time. The residual cause
+            # is compose-ai-tools#3049: `bundle pack --with-semantics` reads back
+            # `data/<previewId>/compose-semantics.json`, but a `@PreviewParameter` fan-out's
+            # sidecar is written per parameter VALUE, so the lookup misses it. Every one of the
+            # 41 dropped previews here takes a @PreviewParameter; no other preview is affected.
+            # That is why `pocketcasts-wear` below stays strict — it has none.
+            #
+            # So this flag comes off when #3049 lands and the pin moves to the release carrying
+            # it, not before. Raising --timeout will not help, and neither will `priority` /
+            # `modePriority` (#2950): the gate reads semantics off the base candidate before any
+            # deferral thins the image set. Note the cost while it is on — the flag is
+            # all-or-nothing, so a genuinely broken REQUIRED render in this system publishes
+            # unnoticed too.
+          - system: pocketcasts-wear
+            spec: catalog.wear.spec.json
+            module: ':wear'
+    uses: yschimke/compose-ai-tools/.github/workflows/design-artifacts-reusable.yml@main
+    with:
+      system: ${{ matrix.system }}
+      spec: ${{ matrix.spec }}
+      module: ${{ matrix.module }}
+      # Which branch to render. `inputs` is null for `schedule` and `push`, so both fall
+      # through to `previews` — the only branch that carries the specs and the catalog
+      # previews. A dispatch defaults to `previews` too, via the input above.
+      ref: ${{ inputs.ref || 'previews' }}
+      # Track the CLI to the Gradle plugin version pinned in this repo's version catalog
+      # rather than taking whatever 'latest' resolves to on the day. Version skew between
+      # the two was a contributing factor in compose-ai-tools#2857 (workflow CLI on 0.19.1
+      # against plugin 0.18.6), and it is silent — the render just behaves differently.
+      cli-version: catalog
+      catalog-key: compose-ai-preview
+      # Carry the executable render bundle onto the delivery branch and split it per
+      # preview, so preview.coo.ee re-renders these live instead of replaying baked
+      # PNGs — that's what makes the device / theme / knob controls do anything. These
+      # are Android (Robolectric) renders and the serve host runs an Android daemon, so
+      # `full` split mode — each per-preview bundle keeping its re-render classpath —
+      # is the right tier.
+      publish-live-bundle: true
+      split-per-preview: true
+      split-mode: full
+      allow-incomplete: ${{ matrix.allowIncomplete || inputs.allow_incomplete || false }}
+      commit-user-name: Yuri Schimke
+      commit-user-email: yuri@schimke.ee
+      timeout-minutes: 90
