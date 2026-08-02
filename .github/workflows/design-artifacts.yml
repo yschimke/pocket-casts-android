@@ -25,18 +25,22 @@ on:
   # them even when nothing here changes — a compose-ai-tools release alters the rendered
   # output without any commit to this repo. The cron is what catches that drift.
   #
-  # KNOWN LIMITATION, do not assume this is firing: GitHub only raises `schedule` (and
-  # only offers `workflow_dispatch`) for workflows on the DEFAULT branch. This catalog
-  # lives on `previews`, so today only the `push` trigger below actually runs. Moving
-  # this file to `main` does not by itself fix it either: a scheduled run checks out the
-  # default branch, and `design-artifacts-reusable.yml` has no `ref` input, so it would
-  # render a `main` that carries no catalog.spec.json. Making the cron real needs either
-  # a `ref` input upstream or the catalog itself on `main`. Kept here so it works the day
-  # one of those lands, and so the intent is on the record.
+  # `schedule` and `workflow_dispatch` are only raised for the copy of a workflow on the
+  # DEFAULT branch, and such a run checks that branch out — so this file has to exist on
+  # `main` (it now does) AND name the branch to render, because `main` carries no
+  # catalog.spec.json. The `ref` input this needs landed upstream in compose-ai-tools
+  # 0.19.10 (#3022); it is wired below as `ref: ${{ inputs.ref || 'previews' }}`, which
+  # resolves to `previews` for schedule and push (where `inputs` is null) and to whatever
+  # the dispatch form supplies otherwise. This comment used to record the limitation that
+  # made only the `push` trigger real; all three triggers work now.
   schedule:
     - cron: '0 6 * * 1' # Mondays, 06:00 UTC
   workflow_dispatch:
     inputs:
+      ref:
+        description: 'Branch, tag or SHA of this repo to render. The catalogs live on `previews`; override only to trial a spec from a side branch.'
+        type: string
+        default: previews
       allow_incomplete:
         description: 'Publish even if some previews fail to render or lack semantics (use while tuning a spec).'
         type: boolean
@@ -124,6 +128,10 @@ jobs:
       system: ${{ matrix.system }}
       spec: ${{ matrix.spec }}
       module: ${{ matrix.module }}
+      # Which branch to render. `inputs` is null for `schedule` and `push`, so both fall
+      # through to `previews` — the only branch that carries the specs and the catalog
+      # previews. A dispatch defaults to `previews` too, via the input above.
+      ref: ${{ inputs.ref || 'previews' }}
       # Track the CLI to the Gradle plugin version pinned in this repo's version catalog
       # rather than taking whatever 'latest' resolves to on the day. Version skew between
       # the two was a contributing factor in compose-ai-tools#2857 (workflow CLI on 0.19.1
