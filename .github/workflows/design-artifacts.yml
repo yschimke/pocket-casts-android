@@ -102,8 +102,9 @@ jobs:
             # subscriber deadline (compose-ai-tools#2857 / #2948): this catalog's ~140 entries
             # fan out across nine themes, the PNGs completed, and the trailing semantics
             # capture went partial. That deadline IS fixed — #3020, shipped in v0.19.10, made
-            # it an inactivity window governed by --timeout, and the pin above is on 0.19.10
-            # with the render CLI tracking it via `cli-version: catalog`.
+            # it an inactivity window governed by --timeout, and the pin above is at or beyond
+            # that release (0.19.25 today), with the render CLI tracking it via
+            # `cli-version: catalog`.
             #
             # Dropping the flag on 0.19.10 nonetheless failed (run 30585359568) with the same
             # 22 componentIds missing a11y trees as the 0.19.4 run — byte-identical, where the
@@ -115,7 +116,7 @@ jobs:
             # That is why `pocketcasts-wear` below stays strict — it has none.
             #
             # So this flag comes off when #3049 lands and the pin moves to the release carrying
-            # it, not before. Raising --timeout will not help, and neither will `priority` /
+            # it, not before — it is still open as of 0.19.25, so the flag stays. Raising --timeout will not help, and neither will `priority` /
             # `modePriority` (#2950): the gate reads semantics off the base candidate before any
             # deferral thins the image set. Note the cost while it is on — the flag is
             # all-or-nothing, so a genuinely broken REQUIRED render in this system publishes
