@@ -29,6 +29,7 @@ import au.com.shiftyjelly.pocketcasts.compose.PodcastColorsParameterProvider
 import au.com.shiftyjelly.pocketcasts.compose.components.TextC50
 import au.com.shiftyjelly.pocketcasts.compose.components.TextH30
 import au.com.shiftyjelly.pocketcasts.compose.preview.PocketCastsPreviewTheme
+import au.com.shiftyjelly.pocketcasts.compose.preview.PreviewPocketCastsLightDark
 import au.com.shiftyjelly.pocketcasts.compose.preview.ThemePreviewParameterProvider
 import au.com.shiftyjelly.pocketcasts.models.type.AdReportReason
 import au.com.shiftyjelly.pocketcasts.ui.theme.Theme.ThemeType
@@ -101,7 +102,7 @@ private val AdReportReason.textLabel get() = when (this) {
     AdReportReason.Other -> LR.string.ad_report_reason_other
 }
 
-@Preview
+@PreviewPocketCastsLightDark
 @PreviewWrapper(PocketCastsPreviewTheme::class)
 @Composable
 private fun AdReportReasonsColumnPreview(

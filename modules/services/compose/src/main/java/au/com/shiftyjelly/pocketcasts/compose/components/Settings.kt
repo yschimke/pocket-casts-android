@@ -47,6 +47,7 @@ import au.com.shiftyjelly.pocketcasts.compose.components.SettingsSection.horizon
 import au.com.shiftyjelly.pocketcasts.compose.components.SettingsSection.indentedStartPadding
 import au.com.shiftyjelly.pocketcasts.compose.components.SettingsSection.verticalPadding
 import au.com.shiftyjelly.pocketcasts.compose.preview.PocketCastsPreviewTheme
+import au.com.shiftyjelly.pocketcasts.compose.preview.PreviewPocketCastsLightDark
 import au.com.shiftyjelly.pocketcasts.compose.preview.ThemePreviewParameterProvider
 import au.com.shiftyjelly.pocketcasts.compose.theme
 import au.com.shiftyjelly.pocketcasts.ui.theme.Theme
@@ -457,7 +458,7 @@ private fun SettingSectionDarkPreview() {
     }
 }
 
-@Preview(name = "Info")
+@PreviewPocketCastsLightDark
 @PreviewWrapper(PocketCastsPreviewTheme::class)
 @Composable
 private fun SettingInfoRowPreview() {

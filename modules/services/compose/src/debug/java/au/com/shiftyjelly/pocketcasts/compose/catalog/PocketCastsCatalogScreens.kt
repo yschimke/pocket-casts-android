@@ -24,6 +24,7 @@ import au.com.shiftyjelly.pocketcasts.compose.components.SettingRow
 import au.com.shiftyjelly.pocketcasts.compose.components.SettingRowToggle
 import au.com.shiftyjelly.pocketcasts.compose.components.SettingSection
 import au.com.shiftyjelly.pocketcasts.compose.preview.PocketCastsPreviewTheme
+import au.com.shiftyjelly.pocketcasts.compose.preview.PreviewPocketCastsLightDarkPhone
 import au.com.shiftyjelly.pocketcasts.compose.preview.ThemePreviewParameterProvider
 import au.com.shiftyjelly.pocketcasts.compose.theme
 import au.com.shiftyjelly.pocketcasts.ui.theme.Theme
@@ -49,7 +50,7 @@ import au.com.shiftyjelly.pocketcasts.images.R as IR
  * These live in the `debug` source set, so nothing here reaches a release build.
  */
 
-@Preview(name = "Settings", widthDp = 412, heightDp = 892)
+@PreviewPocketCastsLightDarkPhone
 @PreviewWrapper(PocketCastsPreviewTheme::class)
 @Composable
 private fun PocketCastsSettingsScreenPreview() {
@@ -75,7 +76,7 @@ private fun PocketCastsSettingsScreenMediumPreview() {
     SettingsScreen(Theme.ThemeType.LIGHT)
 }
 
-@Preview(name = "Account", widthDp = 412, heightDp = 892)
+@PreviewPocketCastsLightDarkPhone
 @PreviewWrapper(PocketCastsPreviewTheme::class)
 @Composable
 private fun PocketCastsAccountScreenPreview() {
