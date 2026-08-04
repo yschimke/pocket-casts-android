@@ -19,9 +19,11 @@ import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.tooling.preview.PreviewParameter
+import androidx.compose.ui.tooling.preview.PreviewWrapper
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import au.com.shiftyjelly.pocketcasts.compose.AppThemeWithBackground
+import au.com.shiftyjelly.pocketcasts.compose.preview.PocketCastsPreviewTheme
 import au.com.shiftyjelly.pocketcasts.compose.preview.ThemePreviewParameterProvider
 import au.com.shiftyjelly.pocketcasts.compose.theme
 import au.com.shiftyjelly.pocketcasts.ui.theme.Theme.ThemeType
@@ -113,6 +115,7 @@ private val indigoSparkle = Color(0xFF5C8BCC) to Color(0xFF95B0E6)
 private val graySparkle = Color(0xFFCCD6D9) to Color(0xFFE5F7FF)
 
 @Preview
+@PreviewWrapper(PocketCastsPreviewTheme::class)
 @Composable
 private fun SparkleImagePreview(
     @PreviewParameter(ThemePreviewParameterProvider::class) theme: ThemeType,

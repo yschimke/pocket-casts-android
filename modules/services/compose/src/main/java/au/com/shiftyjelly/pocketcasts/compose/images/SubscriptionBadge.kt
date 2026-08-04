@@ -24,6 +24,7 @@ import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.tooling.preview.PreviewWrapper
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.dp
@@ -36,6 +37,7 @@ import au.com.shiftyjelly.pocketcasts.compose.patronPurpleLight
 import au.com.shiftyjelly.pocketcasts.compose.plusGold
 import au.com.shiftyjelly.pocketcasts.compose.plusGoldDark
 import au.com.shiftyjelly.pocketcasts.compose.plusGoldLight
+import au.com.shiftyjelly.pocketcasts.compose.preview.PocketCastsPreviewTheme
 import au.com.shiftyjelly.pocketcasts.compose.theme
 import au.com.shiftyjelly.pocketcasts.payment.SubscriptionTier
 import au.com.shiftyjelly.pocketcasts.ui.theme.Theme
@@ -308,6 +310,7 @@ enum class SubscriptionBadgeDisplayMode {
 }
 
 @Preview(name = "Colored")
+@PreviewWrapper(PocketCastsPreviewTheme::class)
 @Composable
 private fun SubscriptionBadgePlusColoredLightThemePreview() {
     AppThemeWithBackground(Theme.ThemeType.LIGHT) {

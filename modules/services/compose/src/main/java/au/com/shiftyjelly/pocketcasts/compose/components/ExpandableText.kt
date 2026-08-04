@@ -35,8 +35,10 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.rememberTextMeasurer
 import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.tooling.preview.PreviewWrapper
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import au.com.shiftyjelly.pocketcasts.compose.preview.PocketCastsPreviewTheme
 import kotlin.math.roundToInt
 import kotlinx.coroutines.withTimeoutOrNull
 
@@ -185,6 +187,7 @@ private fun AnnotatedString.urlRanges(): List<UrlRange> = getLinkAnnotations(0, 
 }
 
 @Preview
+@PreviewWrapper(PocketCastsPreviewTheme::class)
 @Composable
 private fun ExpandedTextPreviewRegular() {
     ExpandableTextPreview(

@@ -38,6 +38,7 @@ import androidx.compose.ui.graphics.vector.rememberVectorPainter
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.tooling.preview.PreviewParameter
+import androidx.compose.ui.tooling.preview.PreviewWrapper
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import au.com.shiftyjelly.pocketcasts.compose.AppTheme
@@ -45,6 +46,7 @@ import au.com.shiftyjelly.pocketcasts.compose.AppThemeWithBackground
 import au.com.shiftyjelly.pocketcasts.compose.components.SettingsSection.horizontalPadding
 import au.com.shiftyjelly.pocketcasts.compose.components.SettingsSection.indentedStartPadding
 import au.com.shiftyjelly.pocketcasts.compose.components.SettingsSection.verticalPadding
+import au.com.shiftyjelly.pocketcasts.compose.preview.PocketCastsPreviewTheme
 import au.com.shiftyjelly.pocketcasts.compose.preview.ThemePreviewParameterProvider
 import au.com.shiftyjelly.pocketcasts.compose.theme
 import au.com.shiftyjelly.pocketcasts.ui.theme.Theme
@@ -456,6 +458,7 @@ private fun SettingSectionDarkPreview() {
 }
 
 @Preview(name = "Info")
+@PreviewWrapper(PocketCastsPreviewTheme::class)
 @Composable
 private fun SettingInfoRowPreview() {
     AppThemeWithBackground(Theme.ThemeType.LIGHT) {

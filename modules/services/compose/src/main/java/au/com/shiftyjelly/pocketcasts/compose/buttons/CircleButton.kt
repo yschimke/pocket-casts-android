@@ -11,9 +11,11 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.tooling.preview.PreviewWrapper
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import au.com.shiftyjelly.pocketcasts.compose.AppTheme
+import au.com.shiftyjelly.pocketcasts.compose.preview.PocketCastsPreviewTheme
 import au.com.shiftyjelly.pocketcasts.ui.theme.Theme
 
 @Composable
@@ -30,6 +32,7 @@ fun CircleButton(size: Dp, onClick: () -> Unit, backgroundColor: Color, modifier
 }
 
 @Preview(showBackground = true)
+@PreviewWrapper(PocketCastsPreviewTheme::class)
 @Composable
 private fun CircleButtonPreview() {
     AppTheme(Theme.ThemeType.LIGHT) {

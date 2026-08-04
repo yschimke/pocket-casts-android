@@ -7,7 +7,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.tooling.preview.PreviewWrapper
 import au.com.shiftyjelly.pocketcasts.compose.AppTheme
+import au.com.shiftyjelly.pocketcasts.compose.preview.PocketCastsPreviewTheme
 import au.com.shiftyjelly.pocketcasts.compose.theme
 import au.com.shiftyjelly.pocketcasts.ui.theme.Theme
 import au.com.shiftyjelly.pocketcasts.images.R as IR
@@ -31,6 +33,7 @@ private fun VerticalLogoLightPreview() {
 }
 
 @Preview(showBackground = true, backgroundColor = 0xFF000000)
+@PreviewWrapper(PocketCastsPreviewTheme::class)
 @Composable
 private fun VerticalLogoDarkPreview() {
     AppTheme(Theme.ThemeType.DARK) {

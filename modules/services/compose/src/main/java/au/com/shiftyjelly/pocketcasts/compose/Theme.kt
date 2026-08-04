@@ -14,6 +14,8 @@ import au.com.shiftyjelly.pocketcasts.ui.theme.Theme
 
 val LocalColors = staticCompositionLocalOf { PocketCastsTheme(type = Theme.ThemeType.LIGHT, colors = ThemeLightColors) }
 
+internal val LocalPreviewThemeType = staticCompositionLocalOf<Theme.ThemeType?> { null }
+
 /**
  * This theme should be used to support light/dark colors if the composable root of the view tree
  * does not support the use of contentColor.
@@ -38,8 +40,9 @@ fun AppTheme(
     themeType: Theme.ThemeType,
     content: @Composable () -> Unit,
 ) {
-    val colors = themeTypeToColors(themeType)
-    val theme = PocketCastsTheme(type = themeType, colors = colors)
+    val resolvedThemeType = LocalPreviewThemeType.current ?: themeType
+    val colors = themeTypeToColors(resolvedThemeType)
+    val theme = PocketCastsTheme(type = resolvedThemeType, colors = colors)
 
     CompositionLocalProvider(LocalColors provides theme) {
         MaterialTheme(
