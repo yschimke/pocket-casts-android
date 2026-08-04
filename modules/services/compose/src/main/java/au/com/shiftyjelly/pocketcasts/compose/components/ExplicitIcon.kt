@@ -21,6 +21,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import au.com.shiftyjelly.pocketcasts.compose.AppThemeWithBackground
 import au.com.shiftyjelly.pocketcasts.compose.preview.PocketCastsPreviewTheme
+import au.com.shiftyjelly.pocketcasts.compose.preview.PreviewPocketCastsLightDark
 import au.com.shiftyjelly.pocketcasts.compose.preview.ThemePreviewParameterProvider
 import au.com.shiftyjelly.pocketcasts.compose.theme
 import au.com.shiftyjelly.pocketcasts.ui.theme.Theme
@@ -41,7 +42,7 @@ fun ExplicitIcon(
     )
 }
 
-@Preview
+@PreviewPocketCastsLightDark
 @PreviewWrapper(PocketCastsPreviewTheme::class)
 @Composable
 private fun ExplicitIconThemePreview(

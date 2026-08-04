@@ -30,6 +30,7 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import au.com.shiftyjelly.pocketcasts.compose.AppTheme
 import au.com.shiftyjelly.pocketcasts.compose.preview.PocketCastsPreviewTheme
+import au.com.shiftyjelly.pocketcasts.compose.preview.PreviewPocketCastsLightDark
 import au.com.shiftyjelly.pocketcasts.compose.preview.ThemePreviewParameterProvider
 import au.com.shiftyjelly.pocketcasts.compose.theme
 import au.com.shiftyjelly.pocketcasts.repositories.images.PocketCastsImageRequestFactory
@@ -238,7 +239,7 @@ private fun PlaylistArtworkNoEpisodePreview(
     }
 }
 
-@Preview
+@PreviewPocketCastsLightDark
 @PreviewWrapper(PocketCastsPreviewTheme::class)
 @Composable
 private fun PlaylistArtworkSingleEpisodePreview() {

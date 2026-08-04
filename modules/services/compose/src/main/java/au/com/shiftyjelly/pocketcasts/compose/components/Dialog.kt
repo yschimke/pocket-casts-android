@@ -41,6 +41,7 @@ import androidx.compose.ui.window.Dialog
 import androidx.compose.ui.window.DialogProperties
 import au.com.shiftyjelly.pocketcasts.compose.AppTheme
 import au.com.shiftyjelly.pocketcasts.compose.preview.PocketCastsPreviewTheme
+import au.com.shiftyjelly.pocketcasts.compose.preview.PreviewPocketCastsLightDark
 import au.com.shiftyjelly.pocketcasts.compose.preview.ThemePreviewParameterProvider
 import au.com.shiftyjelly.pocketcasts.compose.theme
 import au.com.shiftyjelly.pocketcasts.ui.theme.Theme
@@ -372,7 +373,7 @@ private fun DialogRadioButton(
     }
 }
 
-@Preview
+@PreviewPocketCastsLightDark
 @PreviewWrapper(PocketCastsPreviewTheme::class)
 @Composable
 private fun SimpleDialogPreview(

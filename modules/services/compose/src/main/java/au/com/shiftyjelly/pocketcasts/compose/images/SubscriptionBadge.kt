@@ -38,6 +38,7 @@ import au.com.shiftyjelly.pocketcasts.compose.plusGold
 import au.com.shiftyjelly.pocketcasts.compose.plusGoldDark
 import au.com.shiftyjelly.pocketcasts.compose.plusGoldLight
 import au.com.shiftyjelly.pocketcasts.compose.preview.PocketCastsPreviewTheme
+import au.com.shiftyjelly.pocketcasts.compose.preview.PreviewPocketCastsLightDark
 import au.com.shiftyjelly.pocketcasts.compose.theme
 import au.com.shiftyjelly.pocketcasts.payment.SubscriptionTier
 import au.com.shiftyjelly.pocketcasts.ui.theme.Theme
@@ -309,7 +310,7 @@ enum class SubscriptionBadgeDisplayMode {
     ColoredWithBlackForeground,
 }
 
-@Preview(name = "Colored")
+@PreviewPocketCastsLightDark
 @PreviewWrapper(PocketCastsPreviewTheme::class)
 @Composable
 private fun SubscriptionBadgePlusColoredLightThemePreview() {

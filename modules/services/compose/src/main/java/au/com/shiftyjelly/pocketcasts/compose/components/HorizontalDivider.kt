@@ -13,6 +13,7 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import au.com.shiftyjelly.pocketcasts.compose.AppTheme
 import au.com.shiftyjelly.pocketcasts.compose.preview.PocketCastsPreviewTheme
+import au.com.shiftyjelly.pocketcasts.compose.preview.PreviewPocketCastsLightDarkBackground
 import au.com.shiftyjelly.pocketcasts.compose.theme
 import au.com.shiftyjelly.pocketcasts.ui.theme.Theme
 
@@ -31,7 +32,7 @@ fun HorizontalDivider(
     )
 }
 
-@Preview(showBackground = true)
+@PreviewPocketCastsLightDarkBackground
 @PreviewWrapper(PocketCastsPreviewTheme::class)
 @Composable
 private fun HorizontalDividerLightPreview() {

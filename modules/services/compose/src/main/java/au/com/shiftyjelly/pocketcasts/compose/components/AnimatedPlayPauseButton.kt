@@ -17,11 +17,11 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.semantics
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.tooling.preview.PreviewWrapper
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import au.com.shiftyjelly.pocketcasts.compose.preview.PocketCastsPreviewTheme
+import au.com.shiftyjelly.pocketcasts.compose.preview.PreviewPocketCastsLightDarkIcon
 import com.airbnb.lottie.LottieProperty
 import com.airbnb.lottie.SimpleColorFilter
 import com.airbnb.lottie.compose.LottieAnimation
@@ -98,7 +98,7 @@ fun AnimatedPlayPauseButton(
     }
 }
 
-@Preview(widthDp = 80, heightDp = 80)
+@PreviewPocketCastsLightDarkIcon
 @PreviewWrapper(PocketCastsPreviewTheme::class)
 @Composable
 private fun AnimatedPlayButtonPreview() {

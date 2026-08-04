@@ -39,6 +39,7 @@ import androidx.compose.ui.tooling.preview.PreviewWrapper
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import au.com.shiftyjelly.pocketcasts.compose.preview.PocketCastsPreviewTheme
+import au.com.shiftyjelly.pocketcasts.compose.preview.PreviewPocketCastsLightDark
 import kotlin.math.roundToInt
 import kotlinx.coroutines.withTimeoutOrNull
 
@@ -186,7 +187,7 @@ private fun AnnotatedString.urlRanges(): List<UrlRange> = getLinkAnnotations(0, 
     }
 }
 
-@Preview
+@PreviewPocketCastsLightDark
 @PreviewWrapper(PocketCastsPreviewTheme::class)
 @Composable
 private fun ExpandedTextPreviewRegular() {

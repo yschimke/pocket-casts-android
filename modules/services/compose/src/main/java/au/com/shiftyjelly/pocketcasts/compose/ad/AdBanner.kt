@@ -59,6 +59,7 @@ import au.com.shiftyjelly.pocketcasts.compose.PodcastColorsParameterProvider
 import au.com.shiftyjelly.pocketcasts.compose.components.CoilImage
 import au.com.shiftyjelly.pocketcasts.compose.extensions.fractionedSp
 import au.com.shiftyjelly.pocketcasts.compose.preview.PocketCastsPreviewTheme
+import au.com.shiftyjelly.pocketcasts.compose.preview.PreviewPocketCastsLightDark
 import au.com.shiftyjelly.pocketcasts.compose.preview.ThemePreviewParameterProvider
 import au.com.shiftyjelly.pocketcasts.compose.theme
 import au.com.shiftyjelly.pocketcasts.models.entity.BlazeAd
@@ -226,7 +227,7 @@ private val ContentPadding = PaddingValues(8.dp)
 private val IconSize = 24.dp
 private val TouchTargetSize = 48.dp
 
-@Preview
+@PreviewPocketCastsLightDark
 @PreviewWrapper(PocketCastsPreviewTheme::class)
 @Composable
 private fun AdBannerThemePreview(
