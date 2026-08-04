@@ -324,17 +324,6 @@ private fun SubscriptionBadgePlusColoredLightThemePreview() {
 
 @Preview(name = "Colored")
 @Composable
-private fun SubscriptionBadgePlusColoredDarkThemePreview() {
-    AppThemeWithBackground(Theme.ThemeType.DARK) {
-        SubscriptionBadgeForTier(
-            tier = SubscriptionTier.Plus,
-            displayMode = SubscriptionBadgeDisplayMode.Colored,
-        )
-    }
-}
-
-@Preview(name = "Colored")
-@Composable
 private fun SubscriptionBadgePlusColoredDarkLightThemePreview() {
     AppThemeWithBackground(Theme.ThemeType.LIGHT) {
         SubscriptionBadgeForTier(

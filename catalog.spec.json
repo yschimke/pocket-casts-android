@@ -67,14 +67,7 @@
         {
           "componentId": "Screens/Account",
           "preview": "PocketCastsAccountScreenPreview",
-          "caption": "Account screen: subscription rows over a primary action and a destructive outlined action.",
-          "variants": [
-            {
-              "preview": "PocketCastsAccountScreenDarkPreview",
-              "caption": "Dark — where the destructive support05 label and border have the least contrast to work with.",
-              "theme": "dark"
-            }
-          ]
+          "caption": "Account screen: subscription rows over a primary action and a destructive outlined action. Dark is where the destructive support05 label and border have the least contrast to work with."
         }
       ]
     },
@@ -606,14 +599,7 @@
         {
           "componentId": "Chrome/Divider",
           "preview": "HorizontalDividerLightPreview",
-          "caption": "The list divider — the thinnest thing in the system, and the one most likely to vanish on a low-contrast palette.",
-          "variants": [
-            {
-              "preview": "HorizontalDividerDarkPreview",
-              "caption": "On the dark palette.",
-              "theme": "dark"
-            }
-          ]
+          "caption": "The list divider — the thinnest thing in the system, and the one most likely to vanish on a low-contrast palette."
         },
         {
           "componentId": "Chrome/Rearrangeable menu action",
@@ -721,13 +707,8 @@
         {
           "componentId": "Identity/Subscription badge",
           "preview": "SubscriptionBadgePlusColoredLightThemePreview",
-          "caption": "The Plus badge in its coloured treatment on a light surface.",
+          "caption": "The Plus badge in its coloured treatment across light and dark surfaces.",
           "variants": [
-            {
-              "preview": "SubscriptionBadgePlusColoredDarkThemePreview",
-              "caption": "Plus, coloured, on dark.",
-              "theme": "dark"
-            },
             {
               "preview": "SubscriptionBadgePlusBlackPreview",
               "caption": "Plus in its monochrome black treatment.",
