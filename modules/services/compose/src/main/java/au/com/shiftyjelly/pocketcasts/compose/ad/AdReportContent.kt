@@ -19,9 +19,11 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.tooling.preview.PreviewWrapper
 import androidx.compose.ui.unit.dp
 import au.com.shiftyjelly.pocketcasts.compose.AppTheme
 import au.com.shiftyjelly.pocketcasts.compose.Devices
+import au.com.shiftyjelly.pocketcasts.compose.preview.PocketCastsPreviewTheme
 import au.com.shiftyjelly.pocketcasts.models.type.AdReportReason
 import au.com.shiftyjelly.pocketcasts.ui.theme.Theme.ThemeType
 
@@ -69,6 +71,7 @@ fun AdReportContent(
 }
 
 @Preview(device = Devices.PORTRAIT_REGULAR)
+@PreviewWrapper(PocketCastsPreviewTheme::class)
 @Composable
 private fun AdReportContentPreview() {
     AppTheme(ThemeType.LIGHT) {

@@ -13,6 +13,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.tooling.preview.PreviewParameter
+import androidx.compose.ui.tooling.preview.PreviewWrapper
 import androidx.compose.ui.unit.dp
 import au.com.shiftyjelly.pocketcasts.compose.AppThemeWithBackground
 import au.com.shiftyjelly.pocketcasts.compose.bars.NavigationButton
@@ -22,6 +23,7 @@ import au.com.shiftyjelly.pocketcasts.compose.buttons.RowOutlinedButton
 import au.com.shiftyjelly.pocketcasts.compose.components.SettingRow
 import au.com.shiftyjelly.pocketcasts.compose.components.SettingRowToggle
 import au.com.shiftyjelly.pocketcasts.compose.components.SettingSection
+import au.com.shiftyjelly.pocketcasts.compose.preview.PocketCastsPreviewTheme
 import au.com.shiftyjelly.pocketcasts.compose.preview.ThemePreviewParameterProvider
 import au.com.shiftyjelly.pocketcasts.compose.theme
 import au.com.shiftyjelly.pocketcasts.ui.theme.Theme
@@ -48,6 +50,7 @@ import au.com.shiftyjelly.pocketcasts.images.R as IR
  */
 
 @Preview(name = "Settings", widthDp = 412, heightDp = 892)
+@PreviewWrapper(PocketCastsPreviewTheme::class)
 @Composable
 private fun PocketCastsSettingsScreenPreview() {
     SettingsScreen(Theme.ThemeType.LIGHT)
@@ -73,6 +76,7 @@ private fun PocketCastsSettingsScreenMediumPreview() {
 }
 
 @Preview(name = "Account", widthDp = 412, heightDp = 892)
+@PreviewWrapper(PocketCastsPreviewTheme::class)
 @Composable
 private fun PocketCastsAccountScreenPreview() {
     AccountScreen(Theme.ThemeType.LIGHT)
