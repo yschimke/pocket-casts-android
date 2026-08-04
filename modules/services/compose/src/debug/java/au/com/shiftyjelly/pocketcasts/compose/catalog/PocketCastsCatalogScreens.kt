@@ -83,14 +83,6 @@ private fun PocketCastsAccountScreenPreview() {
     AccountScreen(Theme.ThemeType.LIGHT)
 }
 
-// Dark is where the destructive-action colour (support05) and the outlined button's border have
-// the least contrast to work with.
-@Preview(name = "Account — dark", widthDp = 412, heightDp = 892)
-@Composable
-private fun PocketCastsAccountScreenDarkPreview() {
-    AccountScreen(Theme.ThemeType.DARK)
-}
-
 @Composable
 private fun SettingsScreen(themeType: Theme.ThemeType) {
     AppThemeWithBackground(themeType) {
