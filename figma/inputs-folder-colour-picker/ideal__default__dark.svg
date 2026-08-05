@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="986" height="378" viewBox="0 0 986 378" text-rendering="geometricPrecision" font-family="sans-serif">
+<g transform="translate(16, 16)">
+  <rect x="0" y="0" width="954" height="346" fill="#1C1B1F"/>
+  <g id="Root">
+    <g id="ReusableComposeNode">
+      <rect x="0" y="0" width="954" height="346" fill="#292B2E"/>
+      <g id="ReusableComposeNode">
+        <g id="ReusableComposeNode">
+          <rect x="38" y="43" width="124" height="124" rx="62" ry="62" fill="#DF514C" stroke="#40C3FF" stroke-opacity="0.12" stroke-width="2.62"/>
+          <g id="ReusableComposeNode">
+            <g transform="translate(63 68) scale(3.08 3.08)">
+              <path d="M17.2318 6.3598 C 17.5853 5.9355 18.2159 5.8782 18.6402 6.2318 C 19.0645 6.5853 19.1218 7.2159 18.7682 7.6402 L10.565 17.484 L6.2907 13.1832 C 5.9014 12.7914 5.9034 12.1583 6.2951 11.769 C 6.6868 11.3797 7.32 11.3816 7.7093 11.7733 L10.435 14.516 L17.2318 6.3598 Z" fill="#FFFFFF"/>
+            </g>
+          </g>
+        </g>
+        <g id="ReusableComposeNode">
+          <rect x="202" y="55" width="103" height="103" rx="51.5" ry="51.5" fill="#D24D7A" stroke="#40C3FF" stroke-opacity="0.12" stroke-width="2.62"/>
+          <g id="ReusableComposeNode">
+          </g>
+        </g>
+        <g id="ReusableComposeNode">
+          <rect x="354" y="55" width="103" height="103" rx="51.5" ry="51.5" fill="#EABD49" stroke="#40C3FF" stroke-opacity="0.12" stroke-width="2.62"/>
+          <g id="ReusableComposeNode">
+          </g>
+        </g>
+        <g id="ReusableComposeNode">
+          <rect x="506" y="55" width="103" height="103" rx="51.5" ry="51.5" fill="#EB9D4F" stroke="#40C3FF" stroke-opacity="0.12" stroke-width="2.62"/>
+          <g id="ReusableComposeNode">
+          </g>
+        </g>
+        <g id="ReusableComposeNode">
+          <rect x="658" y="55" width="103" height="103" rx="51.5" ry="51.5" fill="#7FBF5F" stroke="#40C3FF" stroke-opacity="0.12" stroke-width="2.62"/>
+          <g id="ReusableComposeNode">
+          </g>
+        </g>
+        <g id="ReusableComposeNode">
+          <rect x="810" y="55" width="103" height="103" rx="51.5" ry="51.5" fill="#03CEA4" stroke="#40C3FF" stroke-opacity="0.12" stroke-width="2.62"/>
+          <g id="ReusableComposeNode">
+          </g>
+        </g>
+        <g id="ReusableComposeNode">
+          <rect x="50" y="207" width="103" height="103" rx="51.5" ry="51.5" fill="#BDC2C4" stroke="#40C3FF" stroke-opacity="0.12" stroke-width="2.62"/>
+          <g id="ReusableComposeNode">
+          </g>
+        </g>
+        <g id="ReusableComposeNode">
+          <rect x="202" y="207" width="103" height="103" rx="51.5" ry="51.5" fill="#1BA0DC" stroke="#40C3FF" stroke-opacity="0.12" stroke-width="2.62"/>
+          <g id="ReusableComposeNode">
+          </g>
+        </g>
+        <g id="ReusableComposeNode">
+          <rect x="354" y="207" width="103" height="103" rx="51.5" ry="51.5" fill="#5584FA" stroke="#40C3FF" stroke-opacity="0.12" stroke-width="2.62"/>
+          <g id="ReusableComposeNode">
+          </g>
+        </g>
+        <g id="ReusableComposeNode">
+          <rect x="506" y="207" width="103" height="103" rx="51.5" ry="51.5" fill="#FAA5C1" stroke="#40C3FF" stroke-opacity="0.12" stroke-width="2.62"/>
+          <g id="ReusableComposeNode">
+          </g>
+        </g>
+        <g id="ReusableComposeNode">
+          <rect x="658" y="207" width="103" height="103" rx="51.5" ry="51.5" fill="#9D79F2" stroke="#40C3FF" stroke-opacity="0.12" stroke-width="2.62"/>
+          <g id="ReusableComposeNode">
+          </g>
+        </g>
+        <g id="ReusableComposeNode">
+          <rect x="810" y="207" width="103" height="103" rx="51.5" ry="51.5" fill="#A3863B" stroke="#40C3FF" stroke-opacity="0.12" stroke-width="2.62"/>
+          <g id="ReusableComposeNode">
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</g>
+</svg>

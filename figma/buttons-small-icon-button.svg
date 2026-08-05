@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="263" height="158" viewBox="0 0 263 158" text-rendering="geometricPrecision" font-family="sans-serif">
+<g transform="translate(16, 16)">
+  <g id="Root">
+    <g id="ReusableComposeNode">
+      <rect x="0" y="0" width="231" height="126" fill="#FFFFFF"/>
+      <g id="ReusableComposeNode">
+        <rect x="0" y="0" width="231" height="126" fill="#FFFFFF"/>
+        <g id="ReusableComposeNode">
+          <g id="ReusableComposeNode">
+            <g transform="translate(32 32) scale(2.42 2.42)">
+              <path d="M19.364 6.636 C 18.9734 6.2455 18.3403 6.2455 17.9497 6.636 L13 11.5858 L8.0503 6.636 C 7.6597 6.2455 7.0266 6.2455 6.636 6.636 C 6.2455 7.0266 6.2455 7.6597 6.636 8.0503 L11.5858 13 L6.636 17.9497 C 6.2455 18.3403 6.2455 18.9734 6.636 19.364 C 7.0266 19.7545 7.6597 19.7545 8.0503 19.364 L13 14.4142 L17.9497 19.364 C 18.3403 19.7545 18.9734 19.7545 19.364 19.364 C 19.7545 18.9734 19.7545 18.3403 19.364 17.9497 L14.4142 13 L19.364 8.0503 C 19.7545 7.6597 19.7545 7.0266 19.364 6.636 Z" fill="#03A9F4" fill-rule="evenodd"/>
+            </g>
+          </g>
+          <g id="ReusableComposeNode">
+            <g transform="translate(147 41.18) scale(2.62 2.62)">
+              <path d="M13.602 4.19 C 13.149 3.863 12.523 3.97 12.203 4.417 L6.843 11.457 L4.716 9.33 C 4.323 8.937 3.689 8.937 3.296 9.323 C 2.903 9.71 2.903 10.343 3.289 10.737 L6.243 13.69 C 6.643 14.077 7.289 14.063 7.676 13.657 C 7.702 13.623 7.729 13.59 7.756 13.557 L13.8 5.557 C 14.12 5.103 14.013 4.477 13.566 4.161 L13.602 4.19 Z" fill="#03A9F4"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</g>
+</svg>

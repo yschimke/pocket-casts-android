@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="242" height="242" viewBox="0 0 242 242" text-rendering="geometricPrecision" font-family="sans-serif">
+<g transform="translate(16, 16)">
+  <g id="Root">
+    <g id="ReusableComposeNode">
+        <rect x="0" y="0" width="210" height="210" fill="#FFFFFF"/>
+      <g id="ReusableComposeNode">
+          <rect x="0" y="0" width="210" height="210" fill="#FFFFFF"/>
+        <g id="ReusableComposeNode">
+          <g id="ImageKt">
+            <image href="feedback-sparkle-image.figma-raster/2201.png" x="88" y="21" width="89" height="96"/>
+          </g>
+          <g id="ImageKt">
+            <image href="feedback-sparkle-image.figma-raster/2202.png" x="32" y="74" width="51" height="54"/>
+          </g>
+          <g id="ImageKt">
+            <image href="feedback-sparkle-image.figma-raster/2203.png" x="67" y="120" width="61" height="67"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</g>
+</svg>

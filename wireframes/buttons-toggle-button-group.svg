@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 484 210" width="484" height="210" role="img" aria-label="Buttons/Toggle button group layout wireframe">
+  <title>Buttons/Toggle button group — layout wireframe (slots + tokens)</title>
+  <rect width="484" height="210" fill="#ffffff"/>
+  <g>
+    <rect x="0" y="0" width="484" height="210" fill="none" fill-opacity="0" stroke="#5B6470" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="484" height="210" fill="none" fill-opacity="0" stroke="#2E7D6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="484" height="210" fill="#FFFFFF" fill-opacity="1" stroke="#8E6BA8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="3" y="12" font-family="system-ui, sans-serif" font-size="9" fill="#8E6BA8">#FFFFFFFF</text>
+  </g>
+  <g>
+    <rect x="0" y="0" width="484" height="210" fill="#FFFFFF" fill-opacity="1" stroke="#B0813B" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="3" y="12" font-family="system-ui, sans-serif" font-size="9" fill="#B0813B">#FFFFFFFF</text>
+  </g>
+  <g>
+    <path d="M74,42 H410 A21,21 0 0 1 431,63 V147 A21,21 0 0 1 410,168 H74 A21,21 0 0 1 53,147 V63 A21,21 0 0 1 74,42 Z" fill="none" fill-opacity="0" stroke="#03A9F4" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="56" y="54" font-family="system-ui, sans-serif" font-size="9" fill="#03A9F4">◻ #FF03A9F4  pad ·</text>
+  </g>
+  <g>
+    <path d="M74,42 H158 A21,21 0 0 1 179,63 V147 A21,21 0 0 1 158,168 H74 A21,21 0 0 1 53,147 V63 A21,21 0 0 1 74,42 Z" fill="none" fill-opacity="0" stroke="#000000" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="56" y="54" font-family="system-ui, sans-serif" font-size="9" fill="#000000">◻ #00000000</text>
+  </g>
+  <g>
+    <rect x="85" y="74" width="63" height="63" fill="none" fill-opacity="0" stroke="#4F8A4A" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="53" y="42" width="126" height="126" fill="none" fill-opacity="0" stroke="#4F8A4A" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="174" y="42" width="5" height="126" fill="#03A9F4" fill-opacity="1" stroke="#7A7A33" stroke-width="1.5" stroke-opacity="1"/>
+  </g>
+  <g>
+    <path d="M200,42 H284 A21,21 0 0 1 305,63 V147 A21,21 0 0 1 284,168 H200 A21,21 0 0 1 179,147 V63 A21,21 0 0 1 200,42 Z" fill="#03A9F4" fill-opacity="1" stroke="#000000" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="182" y="54" font-family="system-ui, sans-serif" font-size="9" fill="#000000">#FF03A9F4</text>
+  </g>
+  <g>
+    <rect x="211" y="74" width="63" height="63" fill="none" fill-opacity="0" stroke="#4F8A4A" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="179" y="42" width="126" height="126" fill="none" fill-opacity="0" stroke="#4F8A4A" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="300" y="42" width="5" height="126" fill="#03A9F4" fill-opacity="1" stroke="#7A7A33" stroke-width="1.5" stroke-opacity="1"/>
+  </g>
+  <g>
+    <path d="M326,42 H410 A21,21 0 0 1 431,63 V147 A21,21 0 0 1 410,168 H326 A21,21 0 0 1 305,147 V63 A21,21 0 0 1 326,42 Z" fill="none" fill-opacity="0" stroke="#000000" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="308" y="54" font-family="system-ui, sans-serif" font-size="9" fill="#000000">◻ #00000000</text>
+  </g>
+  <g>
+    <rect x="337" y="74" width="63" height="63" fill="none" fill-opacity="0" stroke="#4F8A4A" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="305" y="42" width="126" height="126" fill="none" fill-opacity="0" stroke="#4F8A4A" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="426" y="42" width="5" height="126" fill="#03A9F4" fill-opacity="1" stroke="#7A7A33" stroke-width="1.5" stroke-opacity="1"/>
+  </g>
+</svg>

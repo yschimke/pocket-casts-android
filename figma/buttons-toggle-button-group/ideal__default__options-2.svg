@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="242" viewBox="0 0 390 242" text-rendering="geometricPrecision" font-family="sans-serif">
+<g transform="translate(16, 16)">
+  <g id="Root">
+    <g id="ReusableComposeNode">
+      <rect x="0" y="0" width="358" height="210" fill="#FFFFFF"/>
+      <clipPath id="clip-0"><rect x="53" y="42" width="252" height="126" rx="21" ry="21"/></clipPath>
+      <g id="ReusableComposeNode">
+        <rect x="56" y="45" width="246" height="120" rx="18" ry="18" fill="none" stroke="#03A9F4" stroke-width="5.25"/>
+        <g clip-path="url(#clip-0)">
+          <g id="ReusableComposeNode">
+            <rect x="53" y="42" width="126" height="126" rx="21" ry="21" fill="#03A9F4"/>
+            <g id="ReusableComposeNode">
+              <g transform="translate(85 74) scale(2.62 2.62)">
+                <path d="M12 2 C 11.4477 2 11 2.4477 11 3 V13.5858 L7.7071 10.2929 C 7.3166 9.9024 6.6834 9.9024 6.2929 10.2929 C 5.9024 10.6834 5.9024 11.3166 6.2929 11.7071 L12 17.4142 L17.7071 11.7071 C 18.0976 11.3166 18.0976 10.6834 17.7071 10.2929 C 17.3166 9.9024 16.6834 9.9024 16.2929 10.2929 L13 13.5858 V3 C 13 2.4477 12.5523 2 12 2 Z" fill="#FFFFFF" fill-rule="evenodd"/>
+                <path d="M5 21 C 5 20.4477 5.4477 20 6 20 H18 C 18.5523 20 19 20.4477 19 21 C 19 21.5523 18.5523 22 18 22 H6 C 5.4477 22 5 21.5523 5 21 Z" fill="#FFFFFF" fill-opacity="0.5"/>
+              </g>
+            </g>
+            <g id="ReusableComposeNode">
+              <rect x="174" y="42" width="5" height="126" fill="#03A9F4"/>
+            </g>
+          </g>
+          <g id="ReusableComposeNode">
+            <g id="ReusableComposeNode">
+              <g transform="translate(211 74) scale(2.62 2.62)">
+                <path d="M5.307 18.9271 C 5.0736 20.2879 6.2533 21.151 7.4802 20.506 L12 18.1298 L16.5198 20.506 C 17.7419 21.1484 18.9273 20.2933 18.693 18.9271 L17.8298 13.8942 L21.4863 10.3299 C 22.475 9.3662 22.028 7.9745 20.6563 7.7752 L15.603 7.0409 L13.3431 2.4619 C 12.7321 1.2238 11.2704 1.2188 10.6569 2.4619 L8.397 7.0409 L3.3437 7.7752 C 1.9774 7.9737 1.521 9.3623 2.5136 10.3299 L6.1702 13.8942 L5.307 18.9271 Z M16.5497 18.2622 L12 15.8702 L7.4503 18.2622 L8.3192 13.196 L4.6384 9.6081 L9.7251 8.8689 L12 4.2596 L14.2749 8.8689 L19.3616 9.6081 L15.6808 13.196 L16.5497 18.2622 Z" fill="#03A9F4" fill-rule="evenodd"/>
+              </g>
+            </g>
+            <g id="ReusableComposeNode">
+              <rect x="300" y="42" width="5" height="126" fill="#03A9F4"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</g>
+</svg>
