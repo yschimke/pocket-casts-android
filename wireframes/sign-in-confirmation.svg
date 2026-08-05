@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 454 454" width="454" height="454" role="img" aria-label="Sign-in/Confirmation layout wireframe">
+  <title>Sign-in/Confirmation — layout wireframe (slots + tokens)</title>
+  <rect width="454" height="454" fill="#ffffff"/>
+  <g>
+    <rect x="0" y="0" width="454" height="454" fill="none" fill-opacity="0" stroke="#5B6470" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="454" height="454" fill="none" fill-opacity="0" stroke="#2E7D6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="454" height="454" fill="none" fill-opacity="0" stroke="#8E6BA8" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="454" height="454" fill="none" fill-opacity="0" stroke="#B0813B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="454" height="454" fill="none" fill-opacity="0" stroke="#3B72A8" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="32" y="103" width="390" height="42" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="247" width="454" height="104" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M134,247 H134 A52,52 0 0 1 186,299 V299 A52,52 0 0 1 134,351 H134 A52,52 0 0 1 82,299 V299 A52,52 0 0 1 134,247 Z" fill="#AECBFA" fill-opacity="1" stroke="#4F8A4A" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="85" y="259" font-family="system-ui, sans-serif" font-size="9" fill="#4F8A4A">#FFAECBFA</text>
+  </g>
+  <g>
+    <path d="M134,247 H134 A52,52 0 0 1 186,299 V299 A52,52 0 0 1 134,351 H134 A52,52 0 0 1 82,299 V299 A52,52 0 0 1 134,247 Z" fill="#303133" fill-opacity="1" stroke="#7A7A33" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="85" y="259" font-family="system-ui, sans-serif" font-size="9" fill="#7A7A33">#FF303133</text>
+  </g>
+  <g>
+    <rect x="110" y="275" width="48" height="48" fill="none" fill-opacity="0" stroke="#5B6470" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M320,247 H320 A52,52 0 0 1 372,299 V299 A52,52 0 0 1 320,351 H320 A52,52 0 0 1 268,299 V299 A52,52 0 0 1 320,247 Z" fill="#AECBFA" fill-opacity="1" stroke="#4F8A4A" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="271" y="259" font-family="system-ui, sans-serif" font-size="9" fill="#4F8A4A">#FFAECBFA</text>
+  </g>
+  <g>
+    <path d="M320,247 H320 A52,52 0 0 1 372,299 V299 A52,52 0 0 1 320,351 H320 A52,52 0 0 1 268,299 V299 A52,52 0 0 1 320,247 Z" fill="#FF0000" fill-opacity="1" stroke="#7A7A33" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="271" y="259" font-family="system-ui, sans-serif" font-size="9" fill="#7A7A33">#FFFF0000</text>
+  </g>
+  <g>
+    <rect x="296" y="275" width="48" height="48" fill="none" fill-opacity="0" stroke="#5B6470" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+</svg>

@@ -1,0 +1,301 @@
+{
+  "system": "pocketcasts-wear",
+  "title": "Pocket Casts for Wear OS",
+  "label": "Compose",
+  "source": {
+    "repo": "yschimke/pocket-casts-android",
+    "ref": "previews",
+    "module": ":wear"
+  },
+  "generatedAt": "2026-08-05T23:14:57.531Z",
+  "mappings": [
+    {
+      "componentId": "Screens/Settings",
+      "figmaLayerName": "Screens/Settings",
+      "componentName": "SettingsScreenPreview_unchecked",
+      "source": "https://github.com/yschimke/pocket-casts-android/blob/previews/wear/src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/settings/SettingsScreen.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "SettingsScreenPreview_unchecked",
+      "figmaSvg": "figma/screens-settings.svg"
+    },
+    {
+      "componentId": "Screens/Privacy settings",
+      "figmaLayerName": "Screens/Privacy settings",
+      "componentName": "PrivacySettingsScreenPreview",
+      "source": "https://github.com/yschimke/pocket-casts-android/blob/previews/wear/src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/settings/PrivacySettingsScreen.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "PrivacySettingsScreenPreview",
+      "figmaSvg": "figma/screens-privacy-settings.svg"
+    },
+    {
+      "componentId": "Screens/Up Next options",
+      "figmaLayerName": "Screens/Up Next options",
+      "componentName": "UpNextOptionsScreenPreview",
+      "source": "https://github.com/yschimke/pocket-casts-android/blob/previews/wear/src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/episode/UpNextOptionsScreen.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "UpNextOptionsScreenPreview",
+      "figmaSvg": "figma/screens-up-next-options.svg"
+    },
+    {
+      "componentId": "Screens/Playback effects",
+      "figmaLayerName": "Screens/Playback effects",
+      "componentName": "EffectsScreenDarkPreview",
+      "source": "https://github.com/yschimke/pocket-casts-android/blob/previews/wear/src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/player/EffectsScreen.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "EffectsScreenDarkPreview",
+      "figmaSvg": "figma/screens-playback-effects.svg"
+    },
+    {
+      "componentId": "Episodes/Episode chip",
+      "figmaLayerName": "Episodes/Episode chip",
+      "componentName": "Content",
+      "source": "https://github.com/yschimke/pocket-casts-android/blob/previews/wear/src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/EpisodeChip.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "EpisodeChipPreview",
+      "codeSnippet": "Content(\n    episode = TODO(\"BaseEpisode\"),\n    queueState = TODO(\"State\"),\n    useEpisodeArtwork = TODO(\"Boolean\"),\n    onClick = { },\n)",
+      "imports": [
+        "import au.com.shiftyjelly.pocketcasts.wear.ui.component.Content"
+      ],
+      "parameters": [
+        {
+          "name": "episode",
+          "type": "BaseEpisode",
+          "hasDefault": false,
+          "composableSlot": false
+        },
+        {
+          "name": "queueState",
+          "type": "State",
+          "hasDefault": false,
+          "composableSlot": false
+        },
+        {
+          "name": "useEpisodeArtwork",
+          "type": "Boolean",
+          "hasDefault": false,
+          "composableSlot": false
+        },
+        {
+          "name": "onClick",
+          "type": "() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "useUpNextIcon",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "showImage",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        }
+      ],
+      "figmaSvg": "figma/episodes-episode-chip.svg"
+    },
+    {
+      "componentId": "Episodes/Date and time text",
+      "figmaLayerName": "Episodes/Date and time text",
+      "componentName": "EpisodeDateTimeTextPreview",
+      "source": "https://github.com/yschimke/pocket-casts-android/blob/previews/wear/src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/episode/EpisodeDateTimeText.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "EpisodeDateTimeTextPreview",
+      "figmaSvg": "figma/episodes-date-and-time-text.svg"
+    },
+    {
+      "componentId": "Playback/Now playing chip",
+      "figmaLayerName": "Playback/Now playing chip",
+      "componentName": "NowPlayingChipPreview",
+      "source": "https://github.com/yschimke/pocket-casts-android/blob/previews/wear/src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/NowPlayingChip.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "NowPlayingChipPreview",
+      "figmaSvg": "figma/playback-now-playing-chip.svg"
+    },
+    {
+      "componentId": "Playback/Play button",
+      "figmaLayerName": "Playback/Play button",
+      "componentName": "PlayButtonPreview",
+      "source": "https://github.com/yschimke/pocket-casts-android/blob/previews/wear/src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/episode/PlayButton.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "PlayButtonPreview",
+      "figmaSvg": "figma/playback-play-button.svg"
+    },
+    {
+      "componentId": "Playback/Queue button",
+      "figmaLayerName": "Playback/Queue button",
+      "componentName": "QueueButtonPreview",
+      "source": "https://github.com/yschimke/pocket-casts-android/blob/previews/wear/src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/episode/QueueButton.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "QueueButtonPreview",
+      "figmaSvg": "figma/playback-queue-button.svg"
+    },
+    {
+      "componentId": "Playback/Download button",
+      "figmaLayerName": "Playback/Download button",
+      "componentName": "DownloadButtonStatesPreview",
+      "source": "https://github.com/yschimke/pocket-casts-android/blob/previews/wear/src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/episode/DownloadButton.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "DownloadButtonStatesPreview",
+      "figmaSvg": "figma/playback-download-button.svg"
+    },
+    {
+      "componentId": "Playback/Marquee media display",
+      "figmaLayerName": "Playback/Marquee media display",
+      "componentName": "MarqueeTextMediaDisplay",
+      "source": "https://github.com/yschimke/pocket-casts-android/blob/previews/wear/src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/MarqueeTextMediaDisplay.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "MarqueeTextMediaDisplayPreview",
+      "codeSnippet": "MarqueeTextMediaDisplay()",
+      "imports": [
+        "import au.com.shiftyjelly.pocketcasts.wear.ui.component.MarqueeTextMediaDisplay"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "title",
+          "type": "String?",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "artist",
+          "type": "String?",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "isPlaybackError",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        }
+      ],
+      "figmaSvg": "figma/playback-marquee-media-display.svg"
+    },
+    {
+      "componentId": "Sign-in/Phone instructions",
+      "figmaLayerName": "Sign-in/Phone instructions",
+      "componentName": "LoginWithPhoneInstructionsPreview",
+      "source": "https://github.com/yschimke/pocket-casts-android/blob/previews/wear/src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/authentication/LoginWithPhoneScreen.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "LoginWithPhoneInstructionsPreview",
+      "figmaSvg": "figma/sign-in-phone-instructions.svg"
+    },
+    {
+      "componentId": "Sign-in/Confirmation",
+      "figmaLayerName": "Sign-in/Confirmation",
+      "componentName": "ObtainConfirmationScreen",
+      "source": "https://github.com/yschimke/pocket-casts-android/blob/previews/wear/src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/ObtainConfirmationScreen.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "ObtainConfirmationScreenPreview",
+      "codeSnippet": "ObtainConfirmationScreen(\n    text = TODO(\"String\"),\n    onConfirm = { },\n    onCancel = { },\n)",
+      "imports": [
+        "import au.com.shiftyjelly.pocketcasts.wear.ui.component.ObtainConfirmationScreen"
+      ],
+      "parameters": [
+        {
+          "name": "text",
+          "type": "String",
+          "hasDefault": false,
+          "composableSlot": false
+        },
+        {
+          "name": "onConfirm",
+          "type": "() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        },
+        {
+          "name": "onCancel",
+          "type": "() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        }
+      ],
+      "figmaSvg": "figma/sign-in-confirmation.svg"
+    },
+    {
+      "componentId": "Chrome/Time text",
+      "figmaLayerName": "Chrome/Time text",
+      "componentName": "TimeTextWithConnectivityConnectedPreview",
+      "source": "https://github.com/yschimke/pocket-casts-android/blob/previews/wear/src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/TimeTextWithConnectivity.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "TimeTextWithConnectivityConnectedPreview",
+      "figmaSvg": "figma/chrome-time-text.svg"
+    },
+    {
+      "componentId": "States/Loading",
+      "figmaLayerName": "States/Loading",
+      "componentName": "LoadingScreenPreview",
+      "source": "https://github.com/yschimke/pocket-casts-android/blob/previews/wear/src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/LoadingScreen.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "LoadingScreenPreview",
+      "figmaSvg": "figma/states-loading.svg"
+    },
+    {
+      "componentId": "States/No content",
+      "figmaLayerName": "States/No content",
+      "componentName": "NoContentScreenPreview",
+      "source": "https://github.com/yschimke/pocket-casts-android/blob/previews/wear/src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/NoContentScreen.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "NoContentScreenPreview",
+      "figmaSvg": "figma/states-no-content.svg"
+    },
+    {
+      "componentId": "States/Error",
+      "figmaLayerName": "States/Error",
+      "componentName": "ErrorScreenPreview",
+      "source": "https://github.com/yschimke/pocket-casts-android/blob/previews/wear/src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/ErrorScreen.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "ErrorScreenPreview",
+      "figmaSvg": "figma/states-error.svg"
+    },
+    {
+      "componentId": "States/Notification",
+      "figmaLayerName": "States/Notification",
+      "componentName": "NotificationScreenPreview",
+      "source": "https://github.com/yschimke/pocket-casts-android/blob/previews/wear/src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/NotificationScreen.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "NotificationScreenPreview",
+      "figmaSvg": "figma/states-notification.svg"
+    }
+  ]
+}

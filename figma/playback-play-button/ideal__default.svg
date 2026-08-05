@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="136" height="240" viewBox="0 0 136 240" text-rendering="geometricPrecision" font-family="sans-serif">
+<g transform="translate(16, 16)">
+  <g id="Root">
+    <g id="ReusableComposeNode">
+      <clipPath id="clip-0"><rect x="0" y="0" width="104" height="104" rx="52" ry="52"/></clipPath>
+      <g id="ReusableComposeNode">
+        <rect x="0" y="0" width="104" height="104" rx="52" ry="52" fill="#FFFF00"/>
+        <g clip-path="url(#clip-0)">
+          <g id="ReusableComposeNode">
+            <g transform="translate(0 0) scale(3.25 3.25)">
+              <path d="M11 11.002473 C 11 10.448823 11.44266 10 11.998957 10 L13.001043 10 C 13.552752 10 14 10.455761 14 11.002473 L14 20.997526 C 14 21.551178 13.55734 22 13.001043 22 L11.998957 22 C 11.447248 22 11 21.544239 11 20.997526 L11 11.002473 Z M18 11.002473 C 18 10.448823 18.44266 10 18.998957 10 L20.001043 10 C 20.552752 10 21 10.455761 21 11.002473 L21 20.997526 C 21 21.551178 20.55734 22 20.001043 22 L18.998957 22 C 18.447248 22 18 21.544239 18 20.997526 L18 11.002473 Z" fill="#000000" fill-rule="evenodd"/>
+            </g>
+          </g>
+        </g>
+      </g>
+      <clipPath id="clip-1"><rect x="0" y="104" width="104" height="104" rx="52" ry="52"/></clipPath>
+      <g id="ReusableComposeNode">
+        <rect x="0" y="104" width="104" height="104" rx="52" ry="52" fill="#0000FF"/>
+        <g clip-path="url(#clip-1)">
+          <g id="ReusableComposeNode">
+            <g transform="translate(0 104) scale(3.25 3.25)">
+              <path d="M13 10.614641 C 13 10.06099 13.379801 9.840049 13.852594 10.123725 L22.147406 15.100612 C 22.61828 15.383137 22.6202 15.840049 22.147406 16.123724 L13.852594 21.10061 C 13.38172 21.383137 13 21.156406 13 20.609695 L13 10.614641 Z" fill="#000000" fill-rule="evenodd"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</g>
+</svg>
