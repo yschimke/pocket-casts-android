@@ -68,7 +68,7 @@ fun UpNextHistoryPage(
 }
 
 @Composable
-private fun UpNextHistoryPageView(
+internal fun UpNextHistoryPageView(
     state: UiState,
     bottomInset: Dp,
     onBackPress: () -> Unit,
@@ -169,6 +169,22 @@ private fun formatDate(date: Date) = remember(date) {
     dateFormat.format(date)
 }
 
+/**
+ * Fixed instants for the Up Next history previews.
+ *
+ * Both of these screens put a formatted date in front of the user — a row label here, the app bar
+ * title on the details screen — so previews built from `Date()` render differently on every run.
+ * That is only untidy in Android Studio, but the design catalog re-renders these previews and
+ * diffs the PNGs, where a moving clock reads as a UI change. Pinning the instants keeps an
+ * unchanged screen byte-identical between renders.
+ */
+internal object UpNextHistoryPreviewDates {
+    const val FIRST_ENTRY = 1715679000000L // 2024-05-14T09:30:00Z
+    const val SECOND_ENTRY = 1715105100000L // 2024-05-07T18:05:00Z
+    const val FIRST_EPISODE_PUBLISHED = 1715634900000L // 2024-05-13T21:15:00Z
+    const val SECOND_EPISODE_PUBLISHED = 1714374000000L // 2024-04-29T07:00:00Z
+}
+
 @Preview(device = Devices.PORTRAIT_REGULAR)
 @Composable
 private fun UpNextHistoryPageViewPreview(
@@ -179,11 +195,11 @@ private fun UpNextHistoryPageViewPreview(
             state = UiState.Loaded(
                 entries = listOf(
                     UpNextHistoryEntry(
-                        date = Date(),
+                        date = Date(UpNextHistoryPreviewDates.FIRST_ENTRY),
                         episodeCount = 5,
                     ),
                     UpNextHistoryEntry(
-                        date = Date(),
+                        date = Date(UpNextHistoryPreviewDates.SECOND_ENTRY),
                         episodeCount = 3,
                     ),
                 ),

@@ -71,7 +71,7 @@ fun UpNextHistoryDetailsPage(
 }
 
 @Composable
-private fun UpNextHistoryDetailsView(
+internal fun UpNextHistoryDetailsView(
     state: UiState,
     date: Long,
     bottomInset: Dp,
@@ -225,19 +225,19 @@ private fun UpNextHistoryDetailsViewPreview(
 ) {
     AppThemeWithBackground(themeType) {
         UpNextHistoryDetailsView(
-            date = Date().time,
+            date = UpNextHistoryPreviewDates.FIRST_ENTRY,
             state = UiState.Loaded(
                 episodes = listOf(
                     PodcastEpisode(
                         uuid = "1",
                         title = "Episode 1",
-                        publishedDate = Date(),
+                        publishedDate = Date(UpNextHistoryPreviewDates.FIRST_EPISODE_PUBLISHED),
                         duration = 1000.0,
                     ),
                     PodcastEpisode(
                         uuid = "2",
                         title = "Episode 2",
-                        publishedDate = Date(),
+                        publishedDate = Date(UpNextHistoryPreviewDates.SECOND_EPISODE_PUBLISHED),
                         duration = 2000.0,
                     ),
                 ),
@@ -257,7 +257,7 @@ private fun UpNextHistoryDetailsErrorViewPreview(
 ) {
     AppThemeWithBackground(themeType) {
         UpNextHistoryDetailsView(
-            date = Date().time,
+            date = UpNextHistoryPreviewDates.FIRST_ENTRY,
             state = UiState.Error,
             onRestoreClick = {},
             onBackPress = {},

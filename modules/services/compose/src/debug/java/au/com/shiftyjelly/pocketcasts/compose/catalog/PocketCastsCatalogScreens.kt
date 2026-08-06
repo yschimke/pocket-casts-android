@@ -45,7 +45,9 @@ import au.com.shiftyjelly.pocketcasts.images.R as IR
  * These compose only components this module already owns, with fixed content and no ViewModel, so
  * they render deterministically and cannot drift from the real components they are built out of.
  * They are compositions *of* the design system rather than screenshots of the app: the app's own
- * screens live in the feature modules and are not reachable from here.
+ * screens live in the feature modules and are not reachable from here. Those screens are published
+ * separately as the `pocketcasts-screens` catalog, which points the renderer at a feature module
+ * directly — see catalog.screens.spec.json.
  *
  * These live in the `debug` source set, so nothing here reaches a release build.
  */

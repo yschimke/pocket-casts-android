@@ -107,7 +107,7 @@ fun LogsPage(
 }
 
 @Composable
-private fun LogsContent(
+internal fun LogsContent(
     onBackPress: () -> Unit,
     onCopyToClipboard: () -> Unit,
     onShareLogs: () -> Unit,

@@ -6,6 +6,20 @@ plugins {
     alias(libs.plugins.compose.compiler)
     alias(libs.plugins.aboutlibraries)
     alias(libs.plugins.aboutlibraries.android)
+    alias(libs.plugins.compose.ai.preview)
+}
+
+// Renders this module's `@Preview`s to PNG outside Android Studio, feeding the `pocketcasts-screens`
+// catalog (see catalog.screens.spec.json at the repo root). That catalog is the app's real screens,
+// as opposed to `pocketcasts`, which is the design system in :modules:services:compose composed into
+// screen-shaped examples — hence a second module with the plugin applied rather than a second
+// section in the first spec, since a spec renders exactly one module.
+//
+// sdkVersion matches :modules:services:compose deliberately: the two catalogs are read side by side,
+// and a difference in render level would show up as a difference in the components they share.
+composePreview {
+    variant.set("debug")
+    sdkVersion.set(35)
 }
 
 android {
@@ -78,6 +92,8 @@ dependencies {
     implementation(projects.modules.services.localization)
 
     debugImplementation(libs.compose.ui.tooling)
+    // The catalog previews live in `src/debug` so they never reach a release build.
+    debugImplementation(libs.compose.ai.preview.annotations)
 
     debugProdImplementation(libs.compose.ui.tooling)
 

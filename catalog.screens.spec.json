@@ -1,0 +1,127 @@
+{
+  "$schema": "https://raw.githubusercontent.com/yschimke/compose-ai-tools/main/scripts/design-artifacts/catalog.spec.schema.json",
+  "$comment": "Pocket Casts app screens, rendered from :modules:features:settings. This is the companion to the `pocketcasts` catalog and answers a different question. That one renders :modules:services:compose, which is a component library: its `Screens` section is two screen-shaped compositions assembled in `src/debug` out of the module's own app bar, sections and rows, because the app's actual screens live in feature modules that the component library cannot see. This spec renders a feature module directly, so every entry below is a screen the app really ships — the same composable, called with a hand-built state object instead of a view model. Settings is the feature module that goes first because its screens are self-contained: no player, no playback service, no infinite lists of network-loaded artwork. Getting here needed the screens to be functions of their inputs, which most of them already were; `HeadphoneControlsSettingsPage` and `StatusPageView` were hoisted for this, the former out of a Fragment whose rows reached for `childFragmentManager`. Two settings screens are deliberately absent: `HelpPage` is a WebView, so rendering it renders whatever support.pocketcasts.com served that morning, and `NotificationsTestingPage` is an internal debugging tool rather than product surface. Determinism is load-bearing, since the delivery branch is a force-pushed snapshot and the PNGs are diffed: the fixtures use pinned instants rather than `Date()`, artwork is switched off, and `ServiceStatus.Running` is avoided because its spinner has no settled frame. Unlike `pocketcasts` this catalog has no @PreviewParameter fan-out, so it renders strict — see the allow-incomplete note in design-artifacts.yml.",
+  "system": "pocketcasts-screens",
+  "title": "Pocket Casts Screens",
+  "library": [
+    "Compose Material 2 + Pocket Casts theme roles"
+  ],
+  "module": ":modules:features:settings",
+  "modes": [
+    "light",
+    "dark"
+  ],
+  "breakpoints": [
+    {
+      "size": "compact",
+      "widthDp": 412
+    },
+    {
+      "size": "medium",
+      "widthDp": 700
+    }
+  ],
+  "display": {
+    "surface": "light",
+    "hero": "Screens/Headphone controls"
+  },
+  "groupOrder": [
+    "Screens",
+    "States"
+  ],
+  "groups": [
+    {
+      "name": "Screens",
+      "section": "Screens",
+      "components": [
+        {
+          "componentId": "Screens/Headphone controls",
+          "preview": "PocketCastsHeadphoneControlsScreenPreview",
+          "caption": "Headphone controls: a summary paragraph over two action rows and a conditional toggle. The densest use of `SettingRow` in the app — icon, primary and secondary text, and a trailing switch all in one list.",
+          "variants": [
+            {
+              "preview": "PocketCastsHeadphoneControlsSkipOnlyScreenPreview",
+              "caption": "With neither button bound to Add bookmark the confirmation sound row is not composed at all, so the screen is two rows shorter.",
+              "props": {
+                "nextAction": "SKIP_FORWARD"
+              }
+            },
+            {
+              "preview": "PocketCastsHeadphoneControlsMediumScreenPreview",
+              "caption": "Tablet width — rows keep their fixed horizontal padding, so the extra width lands entirely between the label and the switch.",
+              "props": {
+                "widthDp": "700"
+              }
+            }
+          ]
+        },
+        {
+          "componentId": "Screens/Status",
+          "preview": "PocketCastsStatusScreenPreview",
+          "caption": "The connection status report after a run. The one failed row is the interesting one: it swaps the service summary for help text and paints the failure message in `support05`, which is the role with the least contrast to work with in dark.",
+          "variants": [
+            {
+              "preview": "PocketCastsStatusWelcomeScreenPreview",
+              "caption": "Before anything has been checked — a description and a single primary button on an otherwise empty screen.",
+              "props": {
+                "state": "Welcome"
+              }
+            }
+          ]
+        },
+        {
+          "componentId": "Screens/Up Next history",
+          "preview": "PocketCastsUpNextHistoryScreenPreview",
+          "caption": "Up Next history: an explanatory paragraph over dated rows. Plain `TextH40` list rows with no leading icon or trailing control, which is the sparsest list style in the app."
+        },
+        {
+          "componentId": "Screens/Up Next history details",
+          "preview": "PocketCastsUpNextHistoryDetailsScreenPreview",
+          "caption": "One saved queue, with the formatted date promoted into the app bar title and a Restore text action beside it. Episode rows carry artwork, a three-line text block and a divider.",
+          "props": {
+            "useEpisodeArtwork": "false"
+          }
+        },
+        {
+          "componentId": "Screens/Logs",
+          "preview": "PocketCastsLogsScreenPreview",
+          "caption": "The log viewer: monospaced lines under an app bar that carries copy and share actions. The one screen here whose content is deliberately not styled by the design system.",
+          "variants": [
+            {
+              "preview": "PocketCastsLogsEmptyScreenPreview",
+              "caption": "With nothing to share the app bar's share action drops out — the only difference from the loaded state, and easy to regress unnoticed.",
+              "props": {
+                "logLines": "empty"
+              }
+            }
+          ]
+        },
+        {
+          "componentId": "Screens/What's New",
+          "preview": "PocketCastsWhatsNewScreenPreview",
+          "caption": "The What's New sheet over a scrim: illustration header, headline, body and a full-width confirm button. The only modal in this catalog, and the only screen that dims what is behind it.",
+          "variants": [
+            {
+              "preview": "PocketCastsWhatsNewUpsellScreenPreview",
+              "caption": "Shown to a user without the entitlement — the confirm button becomes the trial upsell, changing both the call to action and the sheet's height.",
+              "props": {
+                "isUserEntitled": "false"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "States",
+      "section": "Screens",
+      "components": [
+        {
+          "componentId": "States/Up Next history — error",
+          "preview": "PocketCastsUpNextHistoryErrorScreenPreview",
+          "caption": "The generic error state: a single centred line of `TextH50` under the screen's own app bar. Worth a sticker of its own because it is the shared shape every list screen in this module falls back to."
+        }
+      ]
+    }
+  ]
+}

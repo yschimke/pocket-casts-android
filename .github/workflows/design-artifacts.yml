@@ -4,16 +4,25 @@ name: Design Artifacts
 # sheet to a clean `design-artifacts/<system>` branch, which the public preview server
 # (preview.coo.ee) serves at /<system>/.
 #
-# Two systems ship from this repo:
-#   * pocketcasts       — the phone/tablet design system in :modules:services:compose
-#   * pocketcasts-wear  — the Wear OS surfaces in :wear
+# Three systems ship from this repo:
+#   * pocketcasts          — the phone/tablet design system in :modules:services:compose
+#   * pocketcasts-wear     — the Wear OS surfaces in :wear
+#   * pocketcasts-screens  — the app's own screens, from :modules:features:settings
 #
-# They are genuinely different design systems rather than one system at two sizes. The
-# mobile module is Material 2 wearing a Pocket Casts skin: `AppTheme` resolves a
-# `Theme.ThemeType` to ~100 semantic roles published through `LocalColors`, and nine
+# The first two are genuinely different design systems rather than one system at two
+# sizes. The mobile module is Material 2 wearing a Pocket Casts skin: `AppTheme` resolves
+# a `Theme.ThemeType` to ~100 semantic roles published through `LocalColors`, and nine
 # palettes are user-selectable. Wear is Wear Compose Material with its own dark-only
 # theme and its own components (`Chip`, `ScalingLazyColumn`, curved text) that have no
-# mobile counterpart — hence two specs, two matrix entries, and no shared palette.
+# mobile counterpart — hence separate specs and no shared palette.
+#
+# `pocketcasts-screens` is a different axis again: same design system as `pocketcasts`,
+# but assembled product screens instead of components. A spec renders exactly one Gradle
+# module, and :modules:services:compose cannot see the feature modules that depend on it,
+# so the screens in that catalog are compositions built from the library's own parts. This
+# third entry points the renderer at a feature module directly, so what it publishes is the
+# app's real screens. Settings goes first because its screens are self-contained; adding
+# another feature module is a fourth spec and a fourth matrix entry, not a change here.
 #
 # The render → validate → generate → publish pipeline is delegated wholesale to the
 # reusable workflow in compose-ai-tools; this file is only the per-system matrix.
@@ -54,6 +63,11 @@ on:
       - 'modules/services/compose/src/debug/**'
       - 'modules/services/compose/build.gradle.kts'
       - 'modules/services/ui/src/main/**'
+      # The `pocketcasts-screens` catalog renders this module: `src/debug` holds the catalog
+      # previews themselves, `src/main` the screens they call.
+      - 'modules/features/settings/src/main/**'
+      - 'modules/features/settings/src/debug/**'
+      - 'modules/features/settings/build.gradle.kts'
       - 'wear/src/main/**'
       - 'wear/src/debug/**'
       - 'wear/build.gradle.kts'
@@ -124,6 +138,17 @@ jobs:
           - system: pocketcasts-wear
             spec: catalog.wear.spec.json
             module: ':wear'
+          - system: pocketcasts-screens
+            spec: catalog.screens.spec.json
+            module: ':modules:features:settings'
+            # Strict, like `pocketcasts-wear` and unlike `pocketcasts`. The completeness gate is
+            # only off for that system because of compose-ai-tools#3049, which drops the semantics
+            # sidecar for previews that fan out over a `@PreviewParameter` provider. Every catalog
+            # preview in this system takes no parameters — the light/dark pair comes from
+            # `@PreviewPocketCastsLightDarkPhone` and the theme from a `@PreviewWrapper` — so none
+            # of them can hit that bug, and a genuinely broken render here should fail the publish.
+            # The nine-palette `ThemePreviewParameterProvider` previews that live beside each screen
+            # in `src/main` still render, they are just not entries in the spec.
     uses: yschimke/compose-ai-tools/.github/workflows/design-artifacts-reusable.yml@main
     with:
       system: ${{ matrix.system }}

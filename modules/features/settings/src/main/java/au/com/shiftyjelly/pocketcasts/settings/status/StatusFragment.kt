@@ -36,7 +36,6 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import androidx.lifecycle.viewmodel.compose.viewModel
 import au.com.shiftyjelly.pocketcasts.compose.AppThemeWithBackground
 import au.com.shiftyjelly.pocketcasts.compose.bars.ThemedTopAppBar
 import au.com.shiftyjelly.pocketcasts.compose.extensions.contentWithoutConsumedInsets
@@ -83,6 +82,37 @@ fun StatusPage(
     appBarInsets: WindowInsets = AppBarDefaults.topAppBarWindowInsets,
     viewModel: StatusViewModel = hiltViewModel(),
 ) {
+    val context = LocalContext.current
+    StatusPageView(
+        state = viewModel.uiState.collectAsState().value,
+        bottomInset = bottomInset,
+        onBackPress = onBackPress,
+        onRun = viewModel::run,
+        onSendReport = { viewModel.sendReport(context) },
+        appBarInsets = appBarInsets,
+        modifier = modifier,
+    )
+}
+
+/**
+ * The status screen with its view model lifted out: the whole screen, app bar included, as a
+ * function of [StatusUiState].
+ *
+ * The app bar used to sit in the stateful [StatusPage] alongside the `hiltViewModel()` call, which
+ * left the only previewable composable here a fragment of the page rather than the page. Both
+ * states this screen has — the "run the checks" prompt and the results list — are now renderable
+ * without a view model.
+ */
+@Composable
+internal fun StatusPageView(
+    state: StatusUiState,
+    bottomInset: Dp,
+    onBackPress: () -> Unit,
+    onRun: () -> Unit,
+    onSendReport: () -> Unit,
+    modifier: Modifier = Modifier,
+    appBarInsets: WindowInsets = AppBarDefaults.topAppBarWindowInsets,
+) {
     LazyColumn(
         contentPadding = PaddingValues(bottom = bottomInset),
         modifier = modifier,
@@ -95,11 +125,10 @@ fun StatusPage(
             )
         }
         item {
-            val context = LocalContext.current
             StatusPageContent(
-                state = viewModel.uiState.collectAsState().value,
-                onRun = viewModel::run,
-                onSendReport = { viewModel.sendReport(context) },
+                state = state,
+                onRun = onRun,
+                onSendReport = onSendReport,
             )
         }
     }

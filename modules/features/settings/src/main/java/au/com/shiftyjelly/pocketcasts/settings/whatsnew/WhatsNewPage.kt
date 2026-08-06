@@ -84,7 +84,7 @@ fun WhatsNewPage(
 }
 
 @Composable
-private fun WhatsNewPageLoaded(
+internal fun WhatsNewPageLoaded(
     state: UiState.Loaded,
     onConfirm: () -> Unit,
     onClose: () -> Unit,
