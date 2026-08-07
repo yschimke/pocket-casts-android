@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="80" height="272" viewBox="0 0 80 272" text-rendering="geometricPrecision" font-family="sans-serif">
-<g transform="translate(16, 16)">
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="240" viewBox="0 0 48 240" text-rendering="geometricPrecision" font-family="sans-serif">
+<g transform="translate(0, 0)">
   <g id="Root">
     <g id="ReusableComposeNode">
       <g id="ReusableComposeNode">
@@ -10,7 +10,7 @@
       </g>
       <g id="ReusableComposeNode">
         <g id="ReusableComposeNode">
-          <image href="ideal__default.figma-raster/257.png" x="0" y="48" width="48" height="48"/>
+          <image href="ideal__default.figma-raster/265.png" x="0" y="48" width="48" height="48"/>
         </g>
         <g id="ReusableComposeNode">
           <g transform="translate(0 48) scale(2 2)">
@@ -20,7 +20,7 @@
       </g>
       <g id="ReusableComposeNode">
         <g id="ReusableComposeNode">
-          <image href="ideal__default.figma-raster/260.png" x="0" y="96" width="48" height="48"/>
+          <image href="ideal__default.figma-raster/268.png" x="0" y="96" width="48" height="48"/>
         </g>
         <g id="ReusableComposeNode">
           <g transform="translate(0 96) scale(2 2)">

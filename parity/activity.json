@@ -1,0 +1,19 @@
+{
+  "schema": "compose-preview-activity/v1",
+  "generatedAt": "2026-08-07T23:05:06.467Z",
+  "windowDays": 30,
+  "code": {
+    "repo": "yschimke/pocket-casts-android",
+    "ref": "previews",
+    "events": [
+      {
+        "sha": "864dd9e7cfc37a6ccf703b6b6b30011c83a48215",
+        "subject": "Merge pull request #17 from yschimke/agent/compose-ai-tools-45-upgrade-hs9deh",
+        "at": "2026-08-07T23:50:21+01:00",
+        "author": "Yuri Schimke",
+        "previewIds": [],
+        "components": []
+      }
+    ]
+  }
+}
