@@ -7,7 +7,7 @@
     "ref": "previews",
     "module": ":modules:services:compose"
   },
-  "generatedAt": "2026-08-05T23:14:40.096Z",
+  "generatedAt": "2026-08-07T23:04:18.728Z",
   "mappings": [
     {
       "componentId": "Screens/Settings",

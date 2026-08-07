@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="431" height="1376" viewBox="0 0 431 1376" text-rendering="geometricPrecision" font-family="sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="399" height="1344" viewBox="0 0 399 1344" text-rendering="geometricPrecision" font-family="sans-serif">
 <defs>
   <filter id="shadow-5" x="-50%" y="-50%" width="200%" height="200%">
     <feDropShadow dx="0" dy="2.5" stdDeviation="3" flood-color="#000000" flood-opacity="0.26"/>
@@ -46,7 +46,7 @@
     <stop offset="1" stop-color="#000000" stop-opacity="0.19"/>
   </linearGradient>
 </defs>
-<g transform="translate(16, 16)">
+<g transform="translate(0, 0)">
   <g id="Root">
     <g id="ReusableComposeNode">
         <rect x="0" y="0" width="399" height="1344" fill="#FFFFFF"/>
@@ -68,7 +68,7 @@
       <g id="ReusableComposeNode" filter="url(#shadow-5)">
           <rect x="42" y="231" width="147" height="147" rx="10.5" ry="10.5" fill="#FF9D3B"/>
         <g id="ReusableComposeNode">
-          <image href="ideal__default__size-small.figma-raster/2530.png" x="54" y="243" width="55" height="55"/>
+          <image href="ideal__default__size-small.figma-raster/2687.png" x="54" y="243" width="55" height="55"/>
         </g>
         <g id="ReusableComposeNode">
           <rect x="122" y="243" width="55" height="55" rx="10.5" ry="10.5" fill="url(#gf-4)"/>
@@ -83,10 +83,10 @@
       <g id="ReusableComposeNode" filter="url(#shadow-5)">
           <rect x="42" y="420" width="147" height="147" rx="10.5" ry="10.5" fill="#FEC635"/>
         <g id="ReusableComposeNode">
-          <image href="ideal__default__size-small.figma-raster/2536.png" x="54" y="432" width="55" height="55"/>
+          <image href="ideal__default__size-small.figma-raster/2693.png" x="54" y="432" width="55" height="55"/>
         </g>
         <g id="ReusableComposeNode">
-          <image href="ideal__default__size-small.figma-raster/2537.png" x="122" y="432" width="55" height="55"/>
+          <image href="ideal__default__size-small.figma-raster/2694.png" x="122" y="432" width="55" height="55"/>
         </g>
         <g id="ReusableComposeNode">
           <rect x="54" y="500" width="55" height="55" rx="10.5" ry="10.5" fill="url(#gf-7)"/>
@@ -98,13 +98,13 @@
       <g id="ReusableComposeNode" filter="url(#shadow-5)">
           <rect x="42" y="609" width="147" height="147" rx="10.5" ry="10.5" fill="#78D549"/>
         <g id="ReusableComposeNode">
-          <image href="ideal__default__size-small.figma-raster/2542.png" x="54" y="621" width="55" height="55"/>
+          <image href="ideal__default__size-small.figma-raster/2699.png" x="54" y="621" width="55" height="55"/>
         </g>
         <g id="ReusableComposeNode">
-          <image href="ideal__default__size-small.figma-raster/2543.png" x="122" y="621" width="55" height="55"/>
+          <image href="ideal__default__size-small.figma-raster/2700.png" x="122" y="621" width="55" height="55"/>
         </g>
         <g id="ReusableComposeNode">
-          <image href="ideal__default__size-small.figma-raster/2544.png" x="54" y="689" width="55" height="55"/>
+          <image href="ideal__default__size-small.figma-raster/2701.png" x="54" y="689" width="55" height="55"/>
         </g>
         <g id="ReusableComposeNode">
           <rect x="122" y="689" width="55" height="55" rx="10.5" ry="10.5" fill="url(#gf-9)"/>
@@ -113,31 +113,31 @@
       <g id="ReusableComposeNode" filter="url(#shadow-5)">
           <rect x="42" y="798" width="147" height="147" rx="10.5" ry="10.5" fill="#03A9F4"/>
         <g id="ReusableComposeNode">
-          <image href="ideal__default__size-small.figma-raster/2548.png" x="54" y="810" width="55" height="55"/>
+          <image href="ideal__default__size-small.figma-raster/2705.png" x="54" y="810" width="55" height="55"/>
         </g>
         <g id="ReusableComposeNode">
-          <image href="ideal__default__size-small.figma-raster/2549.png" x="122" y="810" width="55" height="55"/>
+          <image href="ideal__default__size-small.figma-raster/2706.png" x="122" y="810" width="55" height="55"/>
         </g>
         <g id="ReusableComposeNode">
-          <image href="ideal__default__size-small.figma-raster/2550.png" x="54" y="878" width="55" height="55"/>
+          <image href="ideal__default__size-small.figma-raster/2707.png" x="54" y="878" width="55" height="55"/>
         </g>
         <g id="ReusableComposeNode">
-          <image href="ideal__default__size-small.figma-raster/2551.png" x="122" y="878" width="55" height="55"/>
+          <image href="ideal__default__size-small.figma-raster/2708.png" x="122" y="878" width="55" height="55"/>
         </g>
       </g>
       <g id="ReusableComposeNode" filter="url(#shadow-5)">
           <rect x="42" y="987" width="315" height="315" rx="22.49" ry="22.49" fill="#5D31C4"/>
         <g id="ReusableComposeNode">
-          <image href="ideal__default__size-small.figma-raster/2554.png" x="68" y="1013" width="118" height="118"/>
+          <image href="ideal__default__size-small.figma-raster/2711.png" x="68" y="1013" width="118" height="118"/>
         </g>
         <g id="ReusableComposeNode">
-          <image href="ideal__default__size-small.figma-raster/2555.png" x="213" y="1013" width="118" height="118"/>
+          <image href="ideal__default__size-small.figma-raster/2712.png" x="213" y="1013" width="118" height="118"/>
         </g>
         <g id="ReusableComposeNode">
-          <image href="ideal__default__size-small.figma-raster/2556.png" x="68" y="1158" width="118" height="118"/>
+          <image href="ideal__default__size-small.figma-raster/2713.png" x="68" y="1158" width="118" height="118"/>
         </g>
         <g id="ReusableComposeNode">
-          <image href="ideal__default__size-small.figma-raster/2557.png" x="213" y="1158" width="118" height="118"/>
+          <image href="ideal__default__size-small.figma-raster/2714.png" x="213" y="1158" width="118" height="118"/>
         </g>
       </g>
     </g>

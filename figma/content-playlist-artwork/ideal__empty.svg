@@ -1,10 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="242" height="242" viewBox="0 0 242 242" text-rendering="geometricPrecision" font-family="sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="210" height="210" viewBox="0 0 210 210" text-rendering="geometricPrecision" font-family="sans-serif">
 <defs>
   <filter id="shadow-3" x="-50%" y="-50%" width="200%" height="200%">
     <feDropShadow dx="0" dy="1.5" stdDeviation="1.79" flood-color="#000000" flood-opacity="0.26"/>
   </filter>
 </defs>
-<g transform="translate(16, 16)">
+<g transform="translate(0, 0)">
   <g id="Root">
     <g id="ReusableComposeNode" filter="url(#shadow-3)">
       <rect x="0" y="0" width="210" height="210" rx="15.0" ry="15.0" fill="#E0E6EA"/>
