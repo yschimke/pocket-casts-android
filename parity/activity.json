@@ -1,15 +1,15 @@
 {
   "schema": "compose-preview-activity/v1",
-  "generatedAt": "2026-08-07T23:08:42.064Z",
+  "generatedAt": "2026-08-08T00:35:41.996Z",
   "windowDays": 30,
   "code": {
     "repo": "yschimke/pocket-casts-android",
     "ref": "previews",
     "events": [
       {
-        "sha": "864dd9e7cfc37a6ccf703b6b6b30011c83a48215",
-        "subject": "Merge pull request #17 from yschimke/agent/compose-ai-tools-45-upgrade-hs9deh",
-        "at": "2026-08-07T23:50:21+01:00",
+        "sha": "3ae949ad624a064cd116131a2a9a9c10dc2454e2",
+        "subject": "Merge pull request #18 from yschimke/agent/compose-ai-tools-46-upgrade",
+        "at": "2026-08-08T01:17:03+01:00",
         "author": "Yuri Schimke",
         "previewIds": [],
         "components": []
