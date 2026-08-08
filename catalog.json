@@ -1242,8 +1242,8 @@
   "library": [
     "Wear Compose Material"
   ],
-  "renderer": "compose-preview 0.19.45",
-  "generatedAt": "2026-08-07T23:04:01.895Z",
+  "renderer": "compose-preview 0.19.46",
+  "generatedAt": "2026-08-08T00:31:58.481Z",
   "display": {
     "surface": "dark",
     "hero": "Screens/App entry"
