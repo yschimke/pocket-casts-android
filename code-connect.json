@@ -1,0 +1,113 @@
+{
+  "system": "pocketcasts-screens",
+  "title": "Pocket Casts Screens",
+  "label": "Compose",
+  "source": {
+    "repo": "yschimke/pocket-casts-android",
+    "ref": "previews",
+    "module": ":modules:features:settings"
+  },
+  "generatedAt": "2026-08-08T07:22:27.074Z",
+  "mappings": [
+    {
+      "componentId": "Screens/Headphone controls",
+      "figmaLayerName": "Screens/Headphone controls",
+      "componentName": "PocketCastsHeadphoneControlsScreenPreview",
+      "source": "https://github.com/yschimke/pocket-casts-android/blob/previews/modules/features/settings/src/debug/java/au/com/shiftyjelly/pocketcasts/settings/catalog/PocketCastsSettingsScreens.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "PocketCastsHeadphoneControlsScreenPreview",
+      "figmaSvg": "figma/screens-headphone-controls.svg"
+    },
+    {
+      "componentId": "Screens/Status",
+      "figmaLayerName": "Screens/Status",
+      "componentName": "PocketCastsStatusScreenPreview",
+      "source": "https://github.com/yschimke/pocket-casts-android/blob/previews/modules/features/settings/src/debug/java/au/com/shiftyjelly/pocketcasts/settings/catalog/PocketCastsSettingsScreens.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "PocketCastsStatusScreenPreview",
+      "figmaSvg": "figma/screens-status.svg"
+    },
+    {
+      "componentId": "Screens/Up Next history",
+      "figmaLayerName": "Screens/Up Next history",
+      "componentName": "PocketCastsUpNextHistoryScreenPreview",
+      "source": "https://github.com/yschimke/pocket-casts-android/blob/previews/modules/features/settings/src/debug/java/au/com/shiftyjelly/pocketcasts/settings/catalog/PocketCastsSettingsScreens.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "PocketCastsUpNextHistoryScreenPreview",
+      "figmaSvg": "figma/screens-up-next-history.svg"
+    },
+    {
+      "componentId": "Screens/Up Next history details",
+      "figmaLayerName": "Screens/Up Next history details",
+      "componentName": "PocketCastsUpNextHistoryDetailsScreenPreview",
+      "source": "https://github.com/yschimke/pocket-casts-android/blob/previews/modules/features/settings/src/debug/java/au/com/shiftyjelly/pocketcasts/settings/catalog/PocketCastsSettingsScreens.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "PocketCastsUpNextHistoryDetailsScreenPreview",
+      "figmaSvg": "figma/screens-up-next-history-details.svg"
+    },
+    {
+      "componentId": "Screens/Logs",
+      "figmaLayerName": "Screens/Logs",
+      "componentName": "PocketCastsLogsScreenPreview",
+      "source": "https://github.com/yschimke/pocket-casts-android/blob/previews/modules/features/settings/src/debug/java/au/com/shiftyjelly/pocketcasts/settings/catalog/PocketCastsSettingsScreens.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "PocketCastsLogsScreenPreview",
+      "figmaSvg": "figma/screens-logs.svg"
+    },
+    {
+      "componentId": "Screens/What's New",
+      "figmaLayerName": "Screens/What's New",
+      "componentName": "WhatsNewPageLoaded",
+      "source": "https://github.com/yschimke/pocket-casts-android/blob/previews/modules/features/settings/src/main/java/au/com/shiftyjelly/pocketcasts/settings/whatsnew/WhatsNewPage.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "PocketCastsWhatsNewScreenPreview",
+      "codeSnippet": "WhatsNewPageLoaded(\n    state = TODO(\"Loaded\"),\n    onConfirm = { },\n    onClose = { },\n    header = { },\n)",
+      "imports": [
+        "import au.com.shiftyjelly.pocketcasts.settings.whatsnew.WhatsNewPageLoaded"
+      ],
+      "parameters": [
+        {
+          "name": "state",
+          "type": "Loaded",
+          "hasDefault": false,
+          "composableSlot": false
+        },
+        {
+          "name": "onConfirm",
+          "type": "() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        },
+        {
+          "name": "onClose",
+          "type": "() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        },
+        {
+          "name": "header",
+          "type": "() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "figma/screens-what-s-new.svg"
+    },
+    {
+      "componentId": "States/Up Next history — error",
+      "figmaLayerName": "States/Up Next history — error",
+      "componentName": "PocketCastsUpNextHistoryErrorScreenPreview",
+      "source": "https://github.com/yschimke/pocket-casts-android/blob/previews/modules/features/settings/src/debug/java/au/com/shiftyjelly/pocketcasts/settings/catalog/PocketCastsSettingsScreens.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "PocketCastsUpNextHistoryErrorScreenPreview",
+      "figmaSvg": "figma/states-up-next-history-error.svg"
+    }
+  ]
+}
