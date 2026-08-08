@@ -149,6 +149,20 @@ jobs:
             # of them can hit that bug, and a genuinely broken render here should fail the publish.
             # The nine-palette `ThemePreviewParameterProvider` previews that live beside each screen
             # in `src/main` still render, they are just not entries in the spec.
+            #
+            # The ONLY system here that needs `preview-annotations`, and the reason is structural:
+            # the spec pre-flight is a build-free SOURCE scan, so it can only expand a multipreview
+            # whose declaration it can see in the module it scans. `@PreviewPocketCastsLightDarkPhone`
+            # is declared in `:modules:services:compose`
+            # (`src/main/.../compose/preview/PocketCastsPreviewTheme.kt`), which IS the module
+            # `pocketcasts` scans — so that system resolves it for free — but is a *dependency* of
+            # `:modules:features:settings`, so the scan here never sees it. Every entry annotated
+            # with it then reports "matches no @Preview function in the scanned module" and the
+            # pre-flight fails the whole system, which is what it did on every run since this
+            # catalog was added (2026-08-06). Naming it here teaches the pre-flight the fan-out.
+            # `@PreviewWrapper` is not listed: it is a wrapper, not a multipreview, and does not
+            # expand to `@Preview`s.
+            previewAnnotations: PreviewPocketCastsLightDarkPhone
     uses: yschimke/compose-ai-tools/.github/workflows/design-artifacts-reusable.yml@main
     with:
       system: ${{ matrix.system }}
@@ -164,6 +178,10 @@ jobs:
       # against plugin 0.18.6), and it is silent — the render just behaves differently.
       cli-version: catalog
       catalog-key: compose-ai-preview
+      # Multipreview annotations the build-free spec pre-flight cannot see from the scanned
+      # module's own sources. Empty for every system whose multipreviews are declared in the
+      # module it scans; see the note on the `pocketcasts-screens` matrix entry.
+      preview-annotations: ${{ matrix.previewAnnotations || '' }}
       # Carry the executable render bundle onto the delivery branch and split it per
       # preview, so preview.coo.ee re-renders these live instead of replaying baked
       # PNGs — that's what makes the device / theme / knob controls do anything. These
