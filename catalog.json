@@ -957,8 +957,8 @@
   "library": [
     "Compose Material 2 + Pocket Casts theme roles"
   ],
-  "renderer": "compose-preview 0.19.46",
-  "generatedAt": "2026-08-08T07:22:24.146Z",
+  "renderer": "compose-preview 0.19.49",
+  "generatedAt": "2026-08-08T19:12:58.459Z",
   "display": {
     "surface": "light",
     "hero": "Screens/Headphone controls"
