@@ -1,15 +1,15 @@
 {
   "schema": "compose-preview-activity/v1",
-  "generatedAt": "2026-08-08T07:21:57.537Z",
+  "generatedAt": "2026-08-08T19:11:16.329Z",
   "windowDays": 30,
   "code": {
     "repo": "yschimke/pocket-casts-android",
     "ref": "previews",
     "events": [
       {
-        "sha": "dcc38d99f6224f6b4059dfd98a293f7bb293df46",
-        "subject": "Merge pull request #19 from yschimke/agent/fix-screens-multipreview-preflight",
-        "at": "2026-08-08T08:07:08+01:00",
+        "sha": "26d7cda6abded0e8b3219aae3800a56da39b0ac4",
+        "subject": "Merge pull request #20 from yschimke/agent/compose-ai-tools-0.19.49",
+        "at": "2026-08-08T19:21:01+01:00",
         "author": "Yuri Schimke",
         "previewIds": [],
         "components": []

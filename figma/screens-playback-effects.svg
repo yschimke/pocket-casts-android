@@ -46,7 +46,7 @@
           </g>
         </g>
         <g id="Row">
-          <image href="screens-playback-effects.figma-raster/367.png" x="51" y="359" width="352" height="90"/>
+          <image href="screens-playback-effects.figma-raster/423.png" x="51" y="359" width="352" height="90"/>
         </g>
         <g id="Column">
           <g id="Row">
@@ -56,7 +56,7 @@
               </g>
             </g>
             <g id="Empty">
-              <text x="128" y="520.66" font-size="28" font-family="Roboto, sans-serif" font-weight="700" letter-spacing="1" fill="#000000">Trim Silence</text>
+              <text x="128" y="520.66" font-size="28" font-family="Roboto, sans-serif" font-weight="700" letter-spacing="1" fill="#303133">Trim Silence</text>
             </g>
           </g>
           <g id="Row">
