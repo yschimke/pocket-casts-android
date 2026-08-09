@@ -254,7 +254,8 @@
       "group": "Screens",
       "caption": "A settings screen assembled from this module's own app bar, sections and rows — the surface pattern most Pocket Casts screens follow.",
       "wireframe": "wireframes/screens-settings.svg",
-      "sourceFile": "src/debug/java/au/com/shiftyjelly/pocketcasts/compose/catalog/PocketCastsCatalogScreens.kt"
+      "sourceFile": "src/debug/java/au/com/shiftyjelly/pocketcasts/compose/catalog/PocketCastsCatalogScreens.kt",
+      "bodyLine": 58
     },
     {
       "componentId": "Screens/Account",
@@ -442,7 +443,8 @@
       "group": "Screens",
       "caption": "Account screen: subscription rows over a primary action and a destructive outlined action. Dark is where the destructive support05 label and border have the least contrast to work with.",
       "wireframe": "wireframes/screens-account.svg",
-      "sourceFile": "src/debug/java/au/com/shiftyjelly/pocketcasts/compose/catalog/PocketCastsCatalogScreens.kt"
+      "sourceFile": "src/debug/java/au/com/shiftyjelly/pocketcasts/compose/catalog/PocketCastsCatalogScreens.kt",
+      "bodyLine": 84
     },
     {
       "componentId": "Buttons/Row button",
@@ -554,7 +556,8 @@
       "group": "Buttons",
       "caption": "The filled full-width action button — the primary call to action on almost every Pocket Casts sheet.",
       "wireframe": "wireframes/buttons-row-button.svg",
-      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/buttons/RowButton.kt"
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/buttons/RowButton.kt",
+      "bodyLine": 82
     },
     {
       "componentId": "Buttons/Row outlined button",
@@ -645,7 +648,8 @@
       "group": "Buttons",
       "caption": "The secondary full-width action — a border and a tinted label rather than a fill.",
       "wireframe": "wireframes/buttons-row-outlined-button.svg",
-      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/buttons/RowOutlinedButton.kt"
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/buttons/RowOutlinedButton.kt",
+      "bodyLine": 119
     },
     {
       "componentId": "Buttons/Row text button",
@@ -724,7 +728,8 @@
       "group": "Buttons",
       "caption": "The lowest-emphasis full-width action: label only, no fill or border.",
       "wireframe": "wireframes/buttons-row-text-button.svg",
-      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/buttons/RowTextButton.kt"
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/buttons/RowTextButton.kt",
+      "bodyLine": 41
     },
     {
       "componentId": "Buttons/Row loading button",
@@ -836,7 +841,8 @@
       "group": "Buttons",
       "caption": "The filled action button with an in-place progress state, used where a tap kicks off a network call.",
       "wireframe": "wireframes/buttons-row-loading-button.svg",
-      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/buttons/RowLoadingButton.kt"
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/buttons/RowLoadingButton.kt",
+      "bodyLine": 62
     },
     {
       "componentId": "Buttons/Gradient row button",
@@ -884,7 +890,8 @@
       "group": "Buttons",
       "caption": "The gradient-filled action reserved for Plus and Patron upgrade paths.",
       "wireframe": "wireframes/buttons-gradient-row-button.svg",
-      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/buttons/GradientRowButton.kt"
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/buttons/GradientRowButton.kt",
+      "bodyLine": 79
     },
     {
       "componentId": "Buttons/Row close button",
@@ -937,7 +944,8 @@
       "group": "Buttons",
       "caption": "The full-width dismiss action at the foot of a sheet.",
       "wireframe": "wireframes/buttons-row-close-button.svg",
-      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/buttons/RowCloseButton.kt"
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/buttons/RowCloseButton.kt",
+      "bodyLine": 34
     },
     {
       "componentId": "Buttons/Circle button",
@@ -1001,7 +1009,8 @@
       "group": "Buttons",
       "caption": "The round filled button used for compact single-action affordances.",
       "wireframe": "wireframes/buttons-circle-button.svg",
-      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/buttons/CircleButton.kt"
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/buttons/CircleButton.kt",
+      "bodyLine": 37
     },
     {
       "componentId": "Buttons/Circle icon button",
@@ -1065,7 +1074,8 @@
       "group": "Buttons",
       "caption": "A round icon button on a tinted circle.",
       "wireframe": "wireframes/buttons-circle-icon-button.svg",
-      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/buttons/CircleIconButton.kt"
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/buttons/CircleIconButton.kt",
+      "bodyLine": 72
     },
     {
       "componentId": "Buttons/Close button",
@@ -1118,7 +1128,8 @@
       "group": "Buttons",
       "caption": "The bare close affordance used in sheet and dialog corners.",
       "wireframe": "wireframes/buttons-close-button.svg",
-      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/buttons/CloseButton.kt"
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/buttons/CloseButton.kt",
+      "bodyLine": 33
     },
     {
       "componentId": "Buttons/Small icon button",
@@ -1200,7 +1211,8 @@
       "group": "Buttons",
       "caption": "The 32dp icon button with an unbounded ripple — the compact tap target used inside rows and toolbars. Previewed across all nine palettes.",
       "wireframe": "wireframes/buttons-small-icon-button.svg",
-      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/buttons/IconButtonSmall.kt"
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/buttons/IconButtonSmall.kt",
+      "bodyLine": 69
     },
     {
       "componentId": "Buttons/Toggle button group",
@@ -1360,7 +1372,8 @@
       "group": "Buttons",
       "caption": "The bordered segmented icon group behind the podcasts-layout and filter pickers, across all nine palettes. Its selected cell inverts to primaryInteractive02 on a primaryInteractive01 fill.",
       "wireframe": "wireframes/buttons-toggle-button-group.svg",
-      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/buttons/ToggleButtonGroup.kt"
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/buttons/ToggleButtonGroup.kt",
+      "bodyLine": 116
     },
     {
       "componentId": "Buttons/Button tabs",
@@ -1468,7 +1481,8 @@
       "group": "Buttons",
       "caption": "The pill tab row used to switch between list scopes.",
       "wireframe": "wireframes/buttons-button-tabs.svg",
-      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/buttons/ButtonTabs.kt"
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/buttons/ButtonTabs.kt",
+      "bodyLine": 121
     },
     {
       "componentId": "Buttons/Time play button",
@@ -1534,7 +1548,8 @@
       "group": "Buttons",
       "caption": "The play affordance that doubles as a duration/remaining-time label, across all nine palettes.",
       "wireframe": "wireframes/buttons-time-play-button.svg",
-      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/buttons/TimePlayButton.kt"
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/buttons/TimePlayButton.kt",
+      "bodyLine": 92
     },
     {
       "componentId": "Inputs/Form field",
@@ -1608,7 +1623,8 @@
       "group": "Inputs",
       "caption": "The standard single-line text field used across sign-in and naming flows.",
       "wireframe": "wireframes/inputs-form-field.svg",
-      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/FormField.kt"
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/FormField.kt",
+      "bodyLine": 119
     },
     {
       "componentId": "Inputs/Email and password fields",
@@ -1698,7 +1714,8 @@
       "group": "Inputs",
       "caption": "The paired email and password fields with their reveal toggle — the sign-in form.",
       "wireframe": "wireframes/inputs-email-and-password-fields.svg",
-      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/EmailAndPasswordFields.kt"
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/EmailAndPasswordFields.kt",
+      "bodyLine": 217
     },
     {
       "componentId": "Inputs/Search bar",
@@ -1839,7 +1856,8 @@
       "group": "Inputs",
       "caption": "The search field in its default and small styles, filled and empty, across all nine palettes.",
       "wireframe": "wireframes/inputs-search-bar.svg",
-      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/SearchBar.kt"
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/SearchBar.kt",
+      "bodyLine": 386
     },
     {
       "componentId": "Inputs/Number stepper",
@@ -1912,7 +1930,8 @@
       "group": "Inputs",
       "caption": "Minus/value/plus stepper, used for skip intervals and episode limits.",
       "wireframe": "wireframes/inputs-number-stepper.svg",
-      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/NumberStepper.kt"
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/NumberStepper.kt",
+      "bodyLine": 66
     },
     {
       "componentId": "Inputs/Segmented tab bar",
@@ -1995,7 +2014,8 @@
       "group": "Inputs",
       "caption": "The segmented control used to switch between two or three peer views.",
       "wireframe": "wireframes/inputs-segmented-tab-bar.svg",
-      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/SegmentedTabBar.kt"
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/SegmentedTabBar.kt",
+      "bodyLine": 138
     },
     {
       "componentId": "Inputs/Selected option column",
@@ -2189,7 +2209,8 @@
       "group": "Inputs",
       "caption": "A single-select option list with a checked row, across all nine palettes.",
       "wireframe": "wireframes/inputs-selected-option-column.svg",
-      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/SelectedOptionColumn.kt"
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/SelectedOptionColumn.kt",
+      "bodyLine": 140
     },
     {
       "componentId": "Inputs/Folder colour picker",
@@ -2583,7 +2604,8 @@
       "group": "Inputs",
       "caption": "The folder colour swatch picker with its selection ring.",
       "wireframe": "wireframes/inputs-folder-colour-picker.svg",
-      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/FolderColorPicker.kt"
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/FolderColorPicker.kt",
+      "bodyLine": 74
     },
     {
       "componentId": "Content/Text styles",
@@ -2796,7 +2818,8 @@
       "group": "Content",
       "caption": "The whole H10–P60 type ramp in one sheet — the sizes, weights and colours every other component draws from.",
       "wireframe": "wireframes/content-text-styles.svg",
-      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/TextStyles.kt"
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/TextStyles.kt",
+      "bodyLine": 568
     },
     {
       "componentId": "Content/Expandable text",
@@ -2861,7 +2884,8 @@
       "group": "Content",
       "caption": "Clamped description text with its show-more affordance.",
       "wireframe": "wireframes/content-expandable-text.svg",
-      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/ExpandableText.kt"
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/ExpandableText.kt",
+      "bodyLine": 193
     },
     {
       "componentId": "Content/Auto-resize text",
@@ -2893,7 +2917,8 @@
       "group": "Content",
       "caption": "Text that shrinks to fit a fixed box rather than wrapping or ellipsising.",
       "wireframe": "wireframes/content-auto-resize-text.svg",
-      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/AutoResizeText.kt"
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/AutoResizeText.kt",
+      "bodyLine": 183
     },
     {
       "componentId": "Content/Podcast selected text",
@@ -2968,7 +2993,8 @@
       "group": "Content",
       "caption": "The 'n podcasts selected' summary line.",
       "wireframe": "wireframes/content-podcast-selected-text.svg",
-      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/PodcastSelectedText.kt"
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/PodcastSelectedText.kt",
+      "bodyLine": 41
     },
     {
       "componentId": "Content/Explicit icon",
@@ -3012,7 +3038,8 @@
       "group": "Content",
       "caption": "The explicit-content badge at its default and two alternative tints, across all nine palettes.",
       "wireframe": "wireframes/content-explicit-icon.svg",
-      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/ExplicitIcon.kt"
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/ExplicitIcon.kt",
+      "bodyLine": 48
     },
     {
       "componentId": "Content/Playlist artwork",
@@ -3074,7 +3101,8 @@
       "group": "Content",
       "caption": "Playlist artwork built from a single episode's cover.",
       "wireframe": "wireframes/content-playlist-artwork.svg",
-      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/PlaylistArtwork.kt"
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/PlaylistArtwork.kt",
+      "bodyLine": 245
     },
     {
       "componentId": "Content/Folder image",
@@ -3194,7 +3222,8 @@
       "group": "Content",
       "caption": "A folder's tinted cover grid.",
       "wireframe": "wireframes/content-folder-image.svg",
-      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/folder/FolderImage.kt"
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/folder/FolderImage.kt",
+      "bodyLine": 218
     },
     {
       "componentId": "Content/Podcast subscribe row",
@@ -3310,7 +3339,8 @@
       "group": "Content",
       "caption": "A podcast list row with its inline subscribe toggle, across all nine palettes.",
       "wireframe": "wireframes/content-podcast-subscribe-row.svg",
-      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/podcast/ListPodcastSubscribeRow.kt"
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/podcast/ListPodcastSubscribeRow.kt",
+      "bodyLine": 97
     },
     {
       "componentId": "Content/Podcast select list",
@@ -3404,7 +3434,8 @@
       "group": "Content",
       "caption": "The multi-select podcast list used when scoping a filter.",
       "wireframe": "wireframes/content-podcast-select-list.svg",
-      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/podcast/PodcastSelectGrid.kt"
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/podcast/PodcastSelectGrid.kt",
+      "bodyLine": 108
     },
     {
       "componentId": "Content/Bookmark row",
@@ -3520,10 +3551,10 @@
           "bounds": {
             "x": 42,
             "y": 104,
-            "width": 224,
+            "width": 225,
             "height": 37
           },
-          "label": "Aug 8, 7:10 PM",
+          "label": "Aug 9, 9:18 AM",
           "padding": {
             "start": 0,
             "top": 4,
@@ -3546,10 +3577,10 @@
           "bounds": {
             "x": 147,
             "y": 287,
-            "width": 224,
+            "width": 225,
             "height": 37
           },
-          "label": "Aug 8, 7:10 PM",
+          "label": "Aug 9, 9:18 AM",
           "padding": {
             "start": 0,
             "top": 4,
@@ -3572,10 +3603,10 @@
           "bounds": {
             "x": 147,
             "y": 470,
-            "width": 224,
+            "width": 225,
             "height": 37
           },
-          "label": "Aug 8, 7:10 PM",
+          "label": "Aug 9, 9:18 AM",
           "padding": {
             "start": 0,
             "top": 4,
@@ -3599,7 +3630,8 @@
       "group": "Content",
       "caption": "A bookmark list row: title, timestamp and play affordance, across all nine palettes.",
       "wireframe": "wireframes/content-bookmark-row.svg",
-      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/bookmark/BookmarkRow.kt"
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/bookmark/BookmarkRow.kt",
+      "bodyLine": 191
     },
     {
       "componentId": "Feedback/Banner",
@@ -3716,7 +3748,8 @@
       "group": "Feedback",
       "caption": "The inline dismissible banner used for tips and upsell nudges, across all nine palettes.",
       "wireframe": "wireframes/feedback-banner.svg",
-      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/Banner.kt"
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/Banner.kt",
+      "bodyLine": 158
     },
     {
       "componentId": "Feedback/No content banner",
@@ -3858,7 +3891,8 @@
       "group": "Feedback",
       "caption": "The empty-state banner — icon, title, subtitle and up to two actions, across all nine palettes.",
       "wireframe": "wireframes/feedback-no-content-banner.svg",
-      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/NoContentBanner.kt"
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/NoContentBanner.kt",
+      "bodyLine": 234
     },
     {
       "componentId": "Feedback/Dialog",
@@ -3908,7 +3942,8 @@
       "group": "Feedback",
       "caption": "The standard confirm/dismiss dialog, across all nine palettes.",
       "wireframe": "wireframes/feedback-dialog.svg",
-      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/Dialog.kt"
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/Dialog.kt",
+      "bodyLine": 379
     },
     {
       "componentId": "Feedback/Tooltip",
@@ -3952,7 +3987,8 @@
       "group": "Feedback",
       "caption": "The coach-mark tooltip with its pointer, across all nine palettes.",
       "wireframe": "wireframes/feedback-tooltip.svg",
-      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/Tooltip.kt"
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/Tooltip.kt",
+      "bodyLine": 461
     },
     {
       "componentId": "Feedback/Sparkle image",
@@ -4027,7 +4063,8 @@
       "group": "Feedback",
       "caption": "The sparkle treatment used to celebrate an upgrade or a completed action, across all nine palettes.",
       "wireframe": "wireframes/feedback-sparkle-image.svg",
-      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/SparkleImage.kt"
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/SparkleImage.kt",
+      "bodyLine": 120
     },
     {
       "componentId": "Chrome/Top app bar",
@@ -4140,7 +4177,8 @@
       "group": "Chrome",
       "caption": "The themed top app bar in its solid and immersive styles, across all nine palettes. Its secondaryUi01 background against the content's primaryUi01 is the pairing most worth checking per theme.",
       "wireframe": "wireframes/chrome-top-app-bar.svg",
-      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/bars/ThemedTopAppBar.kt"
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/bars/ThemedTopAppBar.kt",
+      "bodyLine": 210
     },
     {
       "componentId": "Chrome/Bottom sheet app bar",
@@ -4202,7 +4240,8 @@
       "group": "Chrome",
       "caption": "The app bar used at the head of a modal sheet, with a close affordance.",
       "wireframe": "wireframes/chrome-bottom-sheet-app-bar.svg",
-      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/bars/BottomSheetAppBar.kt"
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/bars/BottomSheetAppBar.kt",
+      "bodyLine": 41
     },
     {
       "componentId": "Chrome/Bottom sheet content",
@@ -4349,7 +4388,8 @@
       "group": "Chrome",
       "caption": "The full modal sheet body — title, copy and stacked actions, across all nine palettes.",
       "wireframe": "wireframes/chrome-bottom-sheet-content.svg",
-      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/bottomsheet/BottomSheetContent.kt"
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/bottomsheet/BottomSheetContent.kt",
+      "bodyLine": 192
     },
     {
       "componentId": "Chrome/Pager dot indicator",
@@ -4622,7 +4662,8 @@
       "group": "Chrome",
       "caption": "The paging dots used under onboarding and end-of-year carousels.",
       "wireframe": "wireframes/chrome-pager-dot-indicator.svg",
-      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/PagerDotIndicator.kt"
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/PagerDotIndicator.kt",
+      "bodyLine": 82
     },
     {
       "componentId": "Chrome/Divider",
@@ -4654,7 +4695,8 @@
       "group": "Chrome",
       "caption": "The list divider — the thinnest thing in the system, and the one most likely to vanish on a low-contrast palette.",
       "wireframe": "wireframes/chrome-divider.svg",
-      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/HorizontalDivider.kt"
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/HorizontalDivider.kt",
+      "bodyLine": 37
     },
     {
       "componentId": "Chrome/Rearrangeable menu action",
@@ -4807,7 +4849,8 @@
       "group": "Chrome",
       "caption": "A drag-to-reorder action row, as used when customising the player's action bar.",
       "wireframe": "wireframes/chrome-rearrangeable-menu-action.svg",
-      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/rearrange/MenuActionRearrange.kt"
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/rearrange/MenuActionRearrange.kt",
+      "bodyLine": 217
     },
     {
       "componentId": "Settings/Setting row",
@@ -4908,7 +4951,8 @@
       "group": "Settings",
       "caption": "The workhorse settings row: primary text, optional secondary text, optional icon and optional toggle.",
       "wireframe": "wireframes/settings-setting-row.svg",
-      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/Settings.kt"
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/Settings.kt",
+      "bodyLine": 365
     },
     {
       "componentId": "Settings/Setting section",
@@ -5038,7 +5082,8 @@
       "group": "Settings",
       "caption": "A titled group of setting rows with its divider, across all nine palettes.",
       "wireframe": "wireframes/settings-setting-section.svg",
-      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/Settings.kt"
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/Settings.kt",
+      "bodyLine": 333
     },
     {
       "componentId": "Settings/Setting info row",
@@ -5070,7 +5115,8 @@
       "group": "Settings",
       "caption": "The explanatory row that sits under a setting to describe what it does.",
       "wireframe": "wireframes/settings-setting-info-row.svg",
-      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/Settings.kt"
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/Settings.kt",
+      "bodyLine": 464
     },
     {
       "componentId": "Identity/User avatar",
@@ -5145,7 +5191,8 @@
       "group": "Identity",
       "caption": "The profile avatar with its subscription ring, across all nine palettes.",
       "wireframe": "wireframes/identity-user-avatar.svg",
-      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/UserAvatar.kt"
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/UserAvatar.kt",
+      "bodyLine": 258
     },
     {
       "componentId": "Identity/Subscription badge",
@@ -5254,7 +5301,8 @@
       "group": "Identity",
       "caption": "The Plus badge in its coloured treatment across light and dark surfaces.",
       "wireframe": "wireframes/identity-subscription-badge.svg",
-      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/images/SubscriptionBadge.kt"
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/images/SubscriptionBadge.kt",
+      "bodyLine": 316
     },
     {
       "componentId": "Identity/Pocket Casts logo",
@@ -5296,7 +5344,8 @@
       "group": "Identity",
       "caption": "The roundel on its own.",
       "wireframe": "wireframes/identity-pocket-casts-logo.svg",
-      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/PocketCastsPill.kt"
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/PocketCastsPill.kt",
+      "bodyLine": 81
     },
     {
       "componentId": "Identity/Horizontal logo",
@@ -5328,7 +5377,8 @@
       "group": "Identity",
       "caption": "Roundel and wordmark side by side, the lockup used in app bars.",
       "wireframe": "wireframes/identity-horizontal-logo.svg",
-      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/images/HorizontalLogo.kt"
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/images/HorizontalLogo.kt",
+      "bodyLine": 37
     },
     {
       "componentId": "Identity/Vertical logo",
@@ -5379,7 +5429,8 @@
       "group": "Identity",
       "caption": "The stacked lockup used on splash and sign-in surfaces.",
       "wireframe": "wireframes/identity-vertical-logo.svg",
-      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/images/VerticalLogo.kt"
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/images/VerticalLogo.kt",
+      "bodyLine": 39
     },
     {
       "componentId": "Identity/Pocket Casts pill",
@@ -5427,7 +5478,8 @@
       "group": "Identity",
       "caption": "The branded attribution pill stamped onto shared images.",
       "wireframe": "wireframes/identity-pocket-casts-pill.svg",
-      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/PocketCastsPill.kt"
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/PocketCastsPill.kt",
+      "bodyLine": 69
     },
     {
       "componentId": "Identity/Count badge",
@@ -5511,7 +5563,8 @@
       "group": "Identity",
       "caption": "The numeric badge at its medium size.",
       "wireframe": "wireframes/identity-count-badge.svg",
-      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/images/CountBadge.kt"
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/images/CountBadge.kt",
+      "bodyLine": 161
     },
     {
       "componentId": "Identity/Gradient icon",
@@ -5555,7 +5608,8 @@
       "group": "Identity",
       "caption": "An icon filled with the Plus gradient rather than a flat tint.",
       "wireframe": "wireframes/identity-gradient-icon.svg",
-      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/GradientIcon.kt"
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/GradientIcon.kt",
+      "bodyLine": 98
     },
     {
       "componentId": "Ads/Ad banner",
@@ -5715,7 +5769,8 @@
       "group": "Ads",
       "caption": "The in-app ad banner across all nine palettes.",
       "wireframe": "wireframes/ads-ad-banner.svg",
-      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/ad/AdBanner.kt"
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/ad/AdBanner.kt",
+      "bodyLine": 233
     },
     {
       "componentId": "Ads/Ad decisions column",
@@ -5845,7 +5900,8 @@
       "group": "Ads",
       "caption": "The 'why this ad' options sheet, across all nine palettes.",
       "wireframe": "wireframes/ads-ad-decisions-column.svg",
-      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/ad/AdDecisionsColumn.kt"
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/ad/AdDecisionsColumn.kt",
+      "bodyLine": 115
     },
     {
       "componentId": "Ads/Ad report reasons",
@@ -6088,7 +6144,8 @@
       "group": "Ads",
       "caption": "The report-an-ad reason list, across all nine palettes.",
       "wireframe": "wireframes/ads-ad-report-reasons.svg",
-      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/ad/AdReportReasonsColumn.kt"
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/ad/AdReportReasonsColumn.kt",
+      "bodyLine": 108
     },
     {
       "componentId": "Ads/Ad report content",
@@ -6217,7 +6274,8 @@
       "group": "Ads",
       "caption": "The confirmation shown once an ad has been reported.",
       "wireframe": "wireframes/ads-ad-report-content.svg",
-      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/ad/AdReportContent.kt"
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/ad/AdReportContent.kt",
+      "bodyLine": 76
     },
     {
       "componentId": "Insights/Calendar heat map",
@@ -6300,7 +6358,8 @@
       "group": "Insights",
       "caption": "The listening-history heat map — a bespoke grid whose correctness is only visible as pixels. Across all nine palettes.",
       "wireframe": "wireframes/insights-calendar-heat-map.svg",
-      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/stats/CalendarHeatMap.kt"
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/stats/CalendarHeatMap.kt",
+      "bodyLine": 408
     },
     {
       "componentId": "Insights/Player header row",
@@ -6353,7 +6412,8 @@
       "group": "Insights",
       "caption": "The player's header row under podcast-derived colours, across all nine palettes.",
       "wireframe": "wireframes/insights-player-header-row.svg",
-      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/bookmark/HeaderRow.kt"
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/bookmark/HeaderRow.kt",
+      "bodyLine": 81
     },
     {
       "componentId": "Motion/Animated play button",
@@ -6421,19 +6481,70 @@
       "group": "Motion",
       "caption": "The play/pause morph, captured as a still frame.",
       "wireframe": "wireframes/motion-animated-play-button.svg",
-      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/AnimatedPlayPauseButton.kt"
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/AnimatedPlayPauseButton.kt",
+      "bodyLine": 104
     }
   ],
   "library": [
     "Compose Material 2 + Pocket Casts theme roles"
   ],
-  "renderer": "compose-preview 0.19.49",
-  "generatedAt": "2026-08-08T19:11:24.581Z",
+  "renderer": "compose-preview 0.19.51",
+  "generatedAt": "2026-08-09T09:19:57.736Z",
   "display": {
     "surface": "light",
     "hero": "Screens/Settings"
   },
-  "tokensFile": "tokens.dtcg.json",
+  "themes": [
+    {
+      "id": "au.com.shiftyjelly.pocketcasts.compose.catalog.PocketCastsClassicLightThemeCatalog",
+      "tokensFile": "themes/au.com.shiftyjelly.pocketcasts.compose.catalog.pocketcastsclassiclightthemecatalog.dtcg.json",
+      "name": "Classic Light",
+      "group": "Pocket Casts",
+      "dark": false
+    },
+    {
+      "id": "au.com.shiftyjelly.pocketcasts.compose.catalog.PocketCastsDarkContrastThemeCatalog",
+      "tokensFile": "themes/au.com.shiftyjelly.pocketcasts.compose.catalog.pocketcastsdarkcontrastthemecatalog.dtcg.json",
+      "name": "Dark Contrast",
+      "group": "Pocket Casts",
+      "dark": false
+    },
+    {
+      "id": "au.com.shiftyjelly.pocketcasts.compose.catalog.PocketCastsElectricThemeCatalog",
+      "tokensFile": "themes/au.com.shiftyjelly.pocketcasts.compose.catalog.pocketcastselectricthemecatalog.dtcg.json",
+      "name": "Electric",
+      "group": "Pocket Casts",
+      "dark": false
+    },
+    {
+      "id": "au.com.shiftyjelly.pocketcasts.compose.catalog.PocketCastsExtraDarkThemeCatalog",
+      "tokensFile": "themes/au.com.shiftyjelly.pocketcasts.compose.catalog.pocketcastsextradarkthemecatalog.dtcg.json",
+      "name": "Extra Dark",
+      "group": "Pocket Casts",
+      "dark": false
+    },
+    {
+      "id": "au.com.shiftyjelly.pocketcasts.compose.catalog.PocketCastsIndigoThemeCatalog",
+      "tokensFile": "themes/au.com.shiftyjelly.pocketcasts.compose.catalog.pocketcastsindigothemecatalog.dtcg.json",
+      "name": "Indigo",
+      "group": "Pocket Casts",
+      "dark": false
+    },
+    {
+      "id": "au.com.shiftyjelly.pocketcasts.compose.catalog.PocketCastsLightContrastThemeCatalog",
+      "tokensFile": "themes/au.com.shiftyjelly.pocketcasts.compose.catalog.pocketcastslightcontrastthemecatalog.dtcg.json",
+      "name": "Light Contrast",
+      "group": "Pocket Casts",
+      "dark": false
+    },
+    {
+      "id": "au.com.shiftyjelly.pocketcasts.compose.catalog.PocketCastsRoseThemeCatalog",
+      "tokensFile": "themes/au.com.shiftyjelly.pocketcasts.compose.catalog.pocketcastsrosethemecatalog.dtcg.json",
+      "name": "Rosé",
+      "group": "Pocket Casts",
+      "dark": false
+    }
+  ],
   "liveBundle": {
     "path": "bundle/",
     "file": "bundle.png"
