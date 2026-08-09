@@ -7,25 +7,25 @@
       <g id="LayoutNodeSubcompositionsState">
         <g clip-path="url(#clip-0)">
           <g id="Empty">
-            <text x="227" y="118.91" font-size="30.84" font-family="Roboto, sans-serif" font-weight="500" letter-spacing="0.38" text-anchor="middle" fill="#FFFFFF" fill-opacity="0.87">Log in on phone</text>
+            <text x="227" y="96.31" font-size="29.18" font-family="Roboto, sans-serif" font-weight="500" letter-spacing="0.36" text-anchor="middle" fill="#FFFFFF" fill-opacity="0.87">Log in on phone</text>
           </g>
           <g id="Spacer">
           </g>
           <g id="Empty">
-            <text font-size="24" font-family="Roboto, sans-serif" font-weight="700" fill="#FFFFFF" fill-opacity="0.87"><tspan x="31" y="180" textLength="392" lengthAdjust="spacing">1. Log into Pocket Casts on a paired</tspan><tspan x="144" y="212" textLength="166" lengthAdjust="spacing">Android phone.</tspan></text>
+            <text font-size="24" font-family="Roboto, sans-serif" font-weight="700" fill="#FFFFFF" fill-opacity="0.87"><tspan x="31" y="156" textLength="392" lengthAdjust="spacing">1. Log into Pocket Casts on a paired</tspan><tspan x="144" y="188" textLength="166" lengthAdjust="spacing">Android phone.</tspan></text>
           </g>
           <g id="Spacer">
           </g>
           <g id="Empty">
-            <text font-size="24" font-family="Roboto, sans-serif" font-weight="700" fill="#FFFFFF" fill-opacity="0.87"><tspan x="46" y="264" textLength="362" lengthAdjust="spacing">2. The next time you open Pocket</tspan><tspan x="56" y="296" textLength="342" lengthAdjust="spacing">Casts on your watch and have a</tspan><tspan x="57" y="328" textLength="340" lengthAdjust="spacing">network connection, you will be</tspan><tspan x="173" y="360" textLength="108" lengthAdjust="spacing">logged in.</tspan></text>
+            <text font-size="24" font-family="Roboto, sans-serif" font-weight="700" fill="#FFFFFF" fill-opacity="0.87"><tspan x="46" y="240" textLength="362" lengthAdjust="spacing">2. The next time you open Pocket</tspan><tspan x="56" y="272" textLength="342" lengthAdjust="spacing">Casts on your watch and have a</tspan><tspan x="57" y="304" textLength="340" lengthAdjust="spacing">network connection, you will be</tspan><tspan x="173" y="336" textLength="108" lengthAdjust="spacing">logged in.</tspan></text>
           </g>
           <g id="Empty">
-            <text font-size="17.26" font-family="Roboto, sans-serif" font-weight="700" fill="#FFFFFF" fill-opacity="0.87"><tspan x="88" y="438" textLength="386" lengthAdjust="spacing">If you are having trouble, make sure</tspan><tspan x="105" y="461" textLength="338" lengthAdjust="spacing">your phone is running the same</tspan><tspan x="103" y="484" textLength="344" lengthAdjust="spacing">version of Pocket Casts as your</tspan><tspan x="159" y="507" textLength="190" lengthAdjust="spacing">watch (8.17-rc-2)</tspan></text>
+            <text font-size="18.05" font-family="Roboto, sans-serif" font-weight="700" fill="#FFFFFF" fill-opacity="0.87"><tspan x="82" y="415" textLength="386" lengthAdjust="spacing">If you are having trouble, make sure</tspan><tspan x="100" y="439" textLength="338" lengthAdjust="spacing">your phone is running the same</tspan><tspan x="97" y="463" textLength="344" lengthAdjust="spacing">version of Pocket Casts as your</tspan><tspan x="155" y="487" textLength="190" lengthAdjust="spacing">watch (8.17-rc-2)</tspan></text>
           </g>
         </g>
       </g>
       <g id="ReusableComposeNode">
-        <image href="ideal__default.figma-raster/21.png" x="0" y="0" width="454" height="454"/>
+        <image href="ideal__default.figma-raster/8.png" x="0" y="0" width="454" height="454"/>
       </g>
     </g>
   </g>

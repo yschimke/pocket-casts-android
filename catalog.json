@@ -82,7 +82,8 @@
       "group": "Screens",
       "caption": "The watch settings list with its toggles off.",
       "wireframe": "wireframes/screens-settings.svg",
-      "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/settings/SettingsScreen.kt"
+      "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/settings/SettingsScreen.kt",
+      "bodyLine": 288
     },
     {
       "componentId": "Screens/Privacy settings",
@@ -159,7 +160,8 @@
       "group": "Screens",
       "caption": "The analytics opt-out screen, with its longer explanatory body text.",
       "wireframe": "wireframes/screens-privacy-settings.svg",
-      "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/settings/PrivacySettingsScreen.kt"
+      "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/settings/PrivacySettingsScreen.kt",
+      "bodyLine": 122
     },
     {
       "componentId": "Screens/Up Next options",
@@ -257,7 +259,8 @@
       "group": "Screens",
       "caption": "The play-next / play-last chooser shown when queueing an episode.",
       "wireframe": "wireframes/screens-up-next-options.svg",
-      "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/episode/UpNextOptionsScreen.kt"
+      "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/episode/UpNextOptionsScreen.kt",
+      "bodyLine": 77
     },
     {
       "componentId": "Screens/Playback effects",
@@ -515,7 +518,8 @@
       "group": "Screens",
       "caption": "Speed, trim silence and volume boost — the densest control screen in the watch app.",
       "wireframe": "wireframes/screens-playback-effects.svg",
-      "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/player/EffectsScreen.kt"
+      "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/player/EffectsScreen.kt",
+      "bodyLine": 252
     },
     {
       "componentId": "Episodes/Episode chip",
@@ -663,7 +667,8 @@
       "group": "Episodes",
       "caption": "The list row for an episode: artwork, title and metadata inside a Wear Chip.",
       "wireframe": "wireframes/episodes-episode-chip.svg",
-      "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/EpisodeChip.kt"
+      "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/EpisodeChip.kt",
+      "bodyLine": 237
     },
     {
       "componentId": "Episodes/Date and time text",
@@ -684,7 +689,8 @@
       "group": "Episodes",
       "caption": "The published-date and duration line, the smallest type in the watch app.",
       "wireframe": "wireframes/episodes-date-and-time-text.svg",
-      "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/episode/EpisodeDateTimeText.kt"
+      "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/episode/EpisodeDateTimeText.kt",
+      "bodyLine": 65
     },
     {
       "componentId": "Playback/Now playing chip",
@@ -738,7 +744,8 @@
       "group": "Playback",
       "caption": "The persistent now-playing entry point at the head of the watch list.",
       "wireframe": "wireframes/playback-now-playing-chip.svg",
-      "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/NowPlayingChip.kt"
+      "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/NowPlayingChip.kt",
+      "bodyLine": 170
     },
     {
       "componentId": "Playback/Play button",
@@ -778,7 +785,8 @@
       "group": "Playback",
       "caption": "The round play affordance on an episode screen.",
       "wireframe": "wireframes/playback-play-button.svg",
-      "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/episode/PlayButton.kt"
+      "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/episode/PlayButton.kt",
+      "bodyLine": 53
     },
     {
       "componentId": "Playback/Queue button",
@@ -799,7 +807,8 @@
       "group": "Playback",
       "caption": "The add-to-Up-Next affordance.",
       "wireframe": "wireframes/playback-queue-button.svg",
-      "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/episode/QueueButton.kt"
+      "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/episode/QueueButton.kt",
+      "bodyLine": 42
     },
     {
       "componentId": "Playback/Download button",
@@ -832,7 +841,8 @@
       "group": "Playback",
       "caption": "All five download states stacked — not downloaded, queued, downloading, downloaded and errored.",
       "wireframe": "wireframes/playback-download-button.svg",
-      "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/episode/DownloadButton.kt"
+      "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/episode/DownloadButton.kt",
+      "bodyLine": 78
     },
     {
       "componentId": "Playback/Marquee media display",
@@ -853,7 +863,8 @@
       "group": "Playback",
       "caption": "The scrolling title/subtitle pair used where a track name overflows the watch's width.",
       "wireframe": "wireframes/playback-marquee-media-display.svg",
-      "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/MarqueeTextMediaDisplay.kt"
+      "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/MarqueeTextMediaDisplay.kt",
+      "bodyLine": 72
     },
     {
       "componentId": "Sign-in/Phone instructions",
@@ -909,9 +920,9 @@
         {
           "bounds": {
             "x": 24,
-            "y": 242,
-            "width": 405,
-            "height": 123
+            "y": 218,
+            "width": 406,
+            "height": 124
           },
           "label": "2. The next time you open Pocket Casts on your watch and have a network connection, you will be logged in.",
           "padding": {
@@ -923,10 +934,10 @@
         },
         {
           "bounds": {
-            "x": 80,
-            "y": 422,
-            "width": 293,
-            "height": 32
+            "x": 74,
+            "y": 398,
+            "width": 305,
+            "height": 56
           },
           "label": "If you are having trouble, make sure your phone is running the same version of Pocket Casts as your watch (8.17-rc-2)",
           "padding": {
@@ -941,7 +952,8 @@
       "group": "Sign-in",
       "caption": "The 'continue on your phone' instructions — the entry point to pairing.",
       "wireframe": "wireframes/sign-in-phone-instructions.svg",
-      "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/authentication/LoginWithPhoneScreen.kt"
+      "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/authentication/LoginWithPhoneScreen.kt",
+      "bodyLine": 259
     },
     {
       "componentId": "Sign-in/Confirmation",
@@ -1057,7 +1069,8 @@
       "group": "Sign-in",
       "caption": "The generic confirm/cancel screen used for destructive watch actions.",
       "wireframe": "wireframes/sign-in-confirmation.svg",
-      "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/ObtainConfirmationScreen.kt"
+      "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/ObtainConfirmationScreen.kt",
+      "bodyLine": 103
     },
     {
       "componentId": "Chrome/Time text",
@@ -1089,7 +1102,8 @@
       "group": "Chrome",
       "caption": "The curved time text at the top of the bezel while the watch is connected.",
       "wireframe": "wireframes/chrome-time-text.svg",
-      "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/TimeTextWithConnectivity.kt"
+      "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/TimeTextWithConnectivity.kt",
+      "bodyLine": 66
     },
     {
       "componentId": "States/Loading",
@@ -1111,7 +1125,8 @@
       "group": "States",
       "caption": "The full-screen loading indicator.",
       "wireframe": "wireframes/states-loading.svg",
-      "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/LoadingScreen.kt"
+      "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/LoadingScreen.kt",
+      "bodyLine": 28
     },
     {
       "componentId": "States/No content",
@@ -1149,7 +1164,8 @@
       "group": "States",
       "caption": "The empty state: icon, title and explanatory copy sized for the watch.",
       "wireframe": "wireframes/states-no-content.svg",
-      "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/NoContentScreen.kt"
+      "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/NoContentScreen.kt",
+      "bodyLine": 35
     },
     {
       "componentId": "States/Error",
@@ -1200,7 +1216,8 @@
       "group": "States",
       "caption": "The error state. Until this branch its preview was a copy of NotificationScreen's and rendered under that name.",
       "wireframe": "wireframes/states-error.svg",
-      "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/ErrorScreen.kt"
+      "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/ErrorScreen.kt",
+      "bodyLine": 63
     },
     {
       "componentId": "States/Notification",
@@ -1236,19 +1253,28 @@
       "group": "States",
       "caption": "The transient notification screen the watch app uses to acknowledge an action.",
       "wireframe": "wireframes/states-notification.svg",
-      "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/NotificationScreen.kt"
+      "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/NotificationScreen.kt",
+      "bodyLine": 77
     }
   ],
   "library": [
     "Wear Compose Material"
   ],
-  "renderer": "compose-preview 0.19.49",
-  "generatedAt": "2026-08-08T19:10:08.002Z",
+  "renderer": "compose-preview 0.19.51",
+  "generatedAt": "2026-08-09T09:23:46.054Z",
   "display": {
     "surface": "dark",
     "hero": "Screens/App entry"
   },
-  "tokensFile": "tokens.dtcg.json",
+  "themes": [
+    {
+      "id": "au.com.shiftyjelly.pocketcasts.wear.catalog.PocketCastsWearThemeCatalog",
+      "tokensFile": "themes/au.com.shiftyjelly.pocketcasts.wear.catalog.pocketcastswearthemecatalog.dtcg.json",
+      "name": "Wear",
+      "group": "Pocket Casts",
+      "dark": false
+    }
+  ],
   "liveBundle": {
     "path": "bundle/",
     "file": "bundle.png"

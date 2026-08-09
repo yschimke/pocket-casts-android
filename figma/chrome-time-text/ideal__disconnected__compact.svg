@@ -3,10 +3,10 @@
 <g transform="translate(0, 0)" clip-path="url(#deviceRound)">
   <g id="Root">
     <g id="ReusableComposeNode">
-      <path id="curve-c0" d="M 176.71 32.3 A 160.42 160.42 0 0 1 184.69 31.73" fill="none"/><text font-size="28" font-weight="500" fill="#FFFFFF" dominant-baseline="alphabetic"><textPath href="#curve-c0" startOffset="50%" text-anchor="middle">·</textPath></text>
-      <path id="curve-c1" d="M 192.68 31.57 A 160.42 160.42 0 0 1 247.51 41.48" fill="none"/><text font-size="28" font-weight="500" fill="#FFFFFF" dominant-baseline="alphabetic"><textPath href="#curve-c1" startOffset="50%" text-anchor="middle">7:09</textPath></text>
+      <path id="curve-c0" d="M 168.77 33.26 A 160.42 160.42 0 0 1 176.71 32.3" fill="none"/><text font-size="28" font-weight="500" fill="#FFFFFF" dominant-baseline="alphabetic"><textPath href="#curve-c0" startOffset="50%" text-anchor="middle">·</textPath></text>
+      <path id="curve-c1" d="M 184.69 31.73 A 160.42 160.42 0 0 1 254.95 44.43" fill="none"/><text font-size="28" font-weight="500" fill="#FFFFFF" dominant-baseline="alphabetic"><textPath href="#curve-c1" startOffset="50%" text-anchor="middle">10:10</textPath></text>
       <g id="ReusableComposeNode">
-        <g transform="translate(131 9) scale(0.03 0.03)">
+        <g transform="translate(122 10) scale(0.04 0.04)">
           <path d="M792 904 L686 800 L260 800 q -92 0 -156 -64 T 0 0 q 0 -77 47.5 -137 T 0 0 q 3 -8 6 -15.5 t 0 0 L56 168 l56 -56 l736 736 l-56 56 Z M260 720 h346 L284 398 q -2 11 -3 21 t 0 0 h-20 q -58 0 -99 41 t 0 0 q 0 58 41 99 t 0 0 Z M445 559 Z M864 750 L806 694 q 17 -14 25.5 -32.5 T 0 0 q 0 -42 -29 -71 t 0 0 h-60 v-80 q 0 -83 -58.5 -141.5 T 0 0 q -27 0 -52 6.5 T 0 0 l-58 -58 q 35 -24 74.5 -36.5 T 0 0 q 117 0 198.5 81.5 T 0 0 q 69 8 114.5 59.5 T 0 0 q 0 39 -15 72.5 T 0 0 Z M593 481 Z" fill="#FFFFFF"/>
         </g>
       </g>
