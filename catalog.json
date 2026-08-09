@@ -185,7 +185,8 @@
       "group": "Screens",
       "caption": "Headphone controls: a summary paragraph over two action rows and a conditional toggle. The densest use of `SettingRow` in the app — icon, primary and secondary text, and a trailing switch all in one list.",
       "wireframe": "wireframes/screens-headphone-controls.svg",
-      "sourceFile": "src/debug/java/au/com/shiftyjelly/pocketcasts/settings/catalog/PocketCastsSettingsScreens.kt"
+      "sourceFile": "src/debug/java/au/com/shiftyjelly/pocketcasts/settings/catalog/PocketCastsSettingsScreens.kt",
+      "bodyLine": 58
     },
     {
       "componentId": "Screens/Status",
@@ -344,7 +345,8 @@
       "group": "Screens",
       "caption": "The connection status report after a run. The one failed row is the interesting one: it swaps the service summary for help text and paints the failure message in `support05`, which is the role with the least contrast to work with in dark.",
       "wireframe": "wireframes/screens-status.svg",
-      "sourceFile": "src/debug/java/au/com/shiftyjelly/pocketcasts/settings/catalog/PocketCastsSettingsScreens.kt"
+      "sourceFile": "src/debug/java/au/com/shiftyjelly/pocketcasts/settings/catalog/PocketCastsSettingsScreens.kt",
+      "bodyLine": 152
     },
     {
       "componentId": "Screens/Up Next history",
@@ -443,7 +445,8 @@
       "group": "Screens",
       "caption": "Up Next history: an explanatory paragraph over dated rows. Plain `TextH40` list rows with no leading icon or trailing control, which is the sparsest list style in the app.",
       "wireframe": "wireframes/screens-up-next-history.svg",
-      "sourceFile": "src/debug/java/au/com/shiftyjelly/pocketcasts/settings/catalog/PocketCastsSettingsScreens.kt"
+      "sourceFile": "src/debug/java/au/com/shiftyjelly/pocketcasts/settings/catalog/PocketCastsSettingsScreens.kt",
+      "bodyLine": 92
     },
     {
       "componentId": "Screens/Up Next history details",
@@ -529,7 +532,8 @@
       "group": "Screens",
       "caption": "One saved queue, with the formatted date promoted into the app bar title and a Restore text action beside it. Episode rows carry artwork, a three-line text block and a divider.",
       "wireframe": "wireframes/screens-up-next-history-details.svg",
-      "sourceFile": "src/debug/java/au/com/shiftyjelly/pocketcasts/settings/catalog/PocketCastsSettingsScreens.kt"
+      "sourceFile": "src/debug/java/au/com/shiftyjelly/pocketcasts/settings/catalog/PocketCastsSettingsScreens.kt",
+      "bodyLine": 121
     },
     {
       "componentId": "Screens/Logs",
@@ -692,7 +696,8 @@
       "group": "Screens",
       "caption": "The log viewer: monospaced lines under an app bar that carries copy and share actions. The one screen here whose content is deliberately not styled by the design system.",
       "wireframe": "wireframes/screens-logs.svg",
-      "sourceFile": "src/debug/java/au/com/shiftyjelly/pocketcasts/settings/catalog/PocketCastsSettingsScreens.kt"
+      "sourceFile": "src/debug/java/au/com/shiftyjelly/pocketcasts/settings/catalog/PocketCastsSettingsScreens.kt",
+      "bodyLine": 215
     },
     {
       "componentId": "Screens/What's New",
@@ -880,7 +885,8 @@
       "group": "Screens",
       "caption": "The What's New sheet over a scrim: illustration header, headline, body and a full-width confirm button. The only modal in this catalog, and the only screen that dims what is behind it.",
       "wireframe": "wireframes/screens-what-s-new.svg",
-      "sourceFile": "src/debug/java/au/com/shiftyjelly/pocketcasts/settings/catalog/PocketCastsSettingsScreens.kt"
+      "sourceFile": "src/debug/java/au/com/shiftyjelly/pocketcasts/settings/catalog/PocketCastsSettingsScreens.kt",
+      "bodyLine": 253
     },
     {
       "componentId": "States/Up Next history — error",
@@ -951,14 +957,15 @@
       "group": "States",
       "caption": "The generic error state: a single centred line of `TextH50` under the screen's own app bar. Worth a sticker of its own because it is the shared shape every list screen in this module falls back to.",
       "wireframe": "wireframes/states-up-next-history-error.svg",
-      "sourceFile": "src/debug/java/au/com/shiftyjelly/pocketcasts/settings/catalog/PocketCastsSettingsScreens.kt"
+      "sourceFile": "src/debug/java/au/com/shiftyjelly/pocketcasts/settings/catalog/PocketCastsSettingsScreens.kt",
+      "bodyLine": 109
     }
   ],
   "library": [
     "Compose Material 2 + Pocket Casts theme roles"
   ],
-  "renderer": "compose-preview 0.19.49",
-  "generatedAt": "2026-08-08T19:12:58.459Z",
+  "renderer": "compose-preview 0.19.51",
+  "generatedAt": "2026-08-09T09:26:16.874Z",
   "display": {
     "surface": "light",
     "hero": "Screens/Headphone controls"
