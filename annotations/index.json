@@ -976,7 +976,7 @@
           "height": 28
         },
         "label": "text 12sp/16",
-        "role": "08 Aug • 30m",
+        "role": "09 Aug • 30m",
         "detail": {
           "token": "text",
           "unit": "sp",
@@ -1012,7 +1012,7 @@
           "height": 28
         },
         "label": "text 12sp/16",
-        "role": "08 Aug • 30m",
+        "role": "09 Aug • 30m",
         "detail": {
           "token": "text",
           "unit": "sp",
@@ -1048,7 +1048,7 @@
           "height": 28
         },
         "label": "text 12sp/16",
-        "role": "08 Aug • 30m",
+        "role": "09 Aug • 30m",
         "detail": {
           "token": "text",
           "unit": "sp",
@@ -1084,7 +1084,7 @@
           "height": 0
         },
         "label": "text 12sp/16",
-        "role": "08 Aug • 30m",
+        "role": "09 Aug • 30m",
         "detail": {
           "token": "text",
           "unit": "sp",
@@ -1120,7 +1120,7 @@
           "height": 0
         },
         "label": "text 12sp/16",
-        "role": "08 Aug • 30m",
+        "role": "09 Aug • 30m",
         "detail": {
           "token": "text",
           "unit": "sp",
@@ -1294,9 +1294,9 @@
         "kind": "layout",
         "bounds": {
           "x": 24,
-          "y": 218,
-          "width": 406,
-          "height": 124
+          "y": 242,
+          "width": 405,
+          "height": 123
         },
         "label": "pad t 0dp e 0dp b 24dp s 0dp",
         "role": "2. The next time you open Pocket Casts on your watch and have a network connection, you will be logged in.",
@@ -1311,10 +1311,10 @@
       {
         "kind": "layout",
         "bounds": {
-          "x": 74,
-          "y": 398,
-          "width": 305,
-          "height": 56
+          "x": 80,
+          "y": 422,
+          "width": 293,
+          "height": 32
         },
         "label": "pad t 0dp e 0dp b 24dp s 0dp",
         "role": "If you are having trouble, make sure your phone is running the same version of Pocket Casts as your watch (8.17-rc-2)",
@@ -1329,10 +1329,10 @@
       {
         "kind": "typography",
         "bounds": {
-          "x": 120,
-          "y": 68,
-          "width": 214,
-          "height": 34
+          "x": 114,
+          "y": 89,
+          "width": 226,
+          "height": 36
         },
         "label": "text 16sp/20",
         "role": "Log in on phone",
@@ -1348,7 +1348,7 @@
         "kind": "typography",
         "bounds": {
           "x": 24,
-          "y": 134,
+          "y": 158,
           "width": 406,
           "height": 60
         },
@@ -1366,9 +1366,9 @@
         "kind": "typography",
         "bounds": {
           "x": 24,
-          "y": 218,
-          "width": 406,
-          "height": 124
+          "y": 242,
+          "width": 405,
+          "height": 123
         },
         "label": "text 12sp/16",
         "role": "2. The next time you open Pocket Casts on your watch and have a network connection, you will be logged in.",
@@ -1383,10 +1383,10 @@
       {
         "kind": "typography",
         "bounds": {
-          "x": 74,
-          "y": 398,
-          "width": 305,
-          "height": 56
+          "x": 80,
+          "y": 422,
+          "width": 293,
+          "height": 32
         },
         "label": "text 12sp/16",
         "role": "If you are having trouble, make sure your phone is running the same version of Pocket Casts as your watch (8.17-rc-2)",
@@ -1404,9 +1404,9 @@
         "kind": "layout",
         "bounds": {
           "x": 24,
-          "y": 218,
-          "width": 406,
-          "height": 124
+          "y": 242,
+          "width": 405,
+          "height": 123
         },
         "label": "pad t 0dp e 0dp b 24dp s 0dp",
         "role": "2. The next time you open Pocket Casts on your watch and have a network connection, you will be logged in.",
@@ -1421,10 +1421,10 @@
       {
         "kind": "layout",
         "bounds": {
-          "x": 74,
-          "y": 398,
-          "width": 305,
-          "height": 56
+          "x": 80,
+          "y": 422,
+          "width": 293,
+          "height": 32
         },
         "label": "pad t 0dp e 0dp b 24dp s 0dp",
         "role": "If you are having trouble, make sure your phone is running the same version of Pocket Casts as your watch (8.17-rc-2)",
@@ -1439,10 +1439,10 @@
       {
         "kind": "typography",
         "bounds": {
-          "x": 120,
-          "y": 68,
-          "width": 214,
-          "height": 34
+          "x": 114,
+          "y": 89,
+          "width": 226,
+          "height": 36
         },
         "label": "text 16sp/20",
         "role": "Log in on phone",
@@ -1458,7 +1458,7 @@
         "kind": "typography",
         "bounds": {
           "x": 24,
-          "y": 134,
+          "y": 158,
           "width": 406,
           "height": 60
         },
@@ -1476,9 +1476,9 @@
         "kind": "typography",
         "bounds": {
           "x": 24,
-          "y": 218,
-          "width": 406,
-          "height": 124
+          "y": 242,
+          "width": 405,
+          "height": 123
         },
         "label": "text 12sp/16",
         "role": "2. The next time you open Pocket Casts on your watch and have a network connection, you will be logged in.",
@@ -1493,10 +1493,10 @@
       {
         "kind": "typography",
         "bounds": {
-          "x": 74,
-          "y": 398,
-          "width": 305,
-          "height": 56
+          "x": 80,
+          "y": 422,
+          "width": 293,
+          "height": 32
         },
         "label": "text 12sp/16",
         "role": "If you are having trouble, make sure your phone is running the same version of Pocket Casts as your watch (8.17-rc-2)",
@@ -1514,9 +1514,9 @@
         "kind": "layout",
         "bounds": {
           "x": 24,
-          "y": 218,
-          "width": 406,
-          "height": 124
+          "y": 242,
+          "width": 405,
+          "height": 123
         },
         "label": "pad t 0dp e 0dp b 24dp s 0dp",
         "role": "2. The next time you open Pocket Casts on your watch and have a network connection, you will be logged in.",
@@ -1531,10 +1531,10 @@
       {
         "kind": "layout",
         "bounds": {
-          "x": 74,
-          "y": 398,
-          "width": 305,
-          "height": 56
+          "x": 80,
+          "y": 422,
+          "width": 293,
+          "height": 32
         },
         "label": "pad t 0dp e 0dp b 24dp s 0dp",
         "role": "If you are having trouble, make sure your phone is running the same version of Pocket Casts as your watch (8.17-rc-2)",
@@ -1549,10 +1549,10 @@
       {
         "kind": "typography",
         "bounds": {
-          "x": 120,
-          "y": 68,
-          "width": 214,
-          "height": 34
+          "x": 114,
+          "y": 89,
+          "width": 226,
+          "height": 36
         },
         "label": "text 16sp/20",
         "role": "Log in on phone",
@@ -1568,7 +1568,7 @@
         "kind": "typography",
         "bounds": {
           "x": 24,
-          "y": 134,
+          "y": 158,
           "width": 406,
           "height": 60
         },
@@ -1586,9 +1586,9 @@
         "kind": "typography",
         "bounds": {
           "x": 24,
-          "y": 218,
-          "width": 406,
-          "height": 124
+          "y": 242,
+          "width": 405,
+          "height": 123
         },
         "label": "text 12sp/16",
         "role": "2. The next time you open Pocket Casts on your watch and have a network connection, you will be logged in.",
@@ -1603,10 +1603,10 @@
       {
         "kind": "typography",
         "bounds": {
-          "x": 74,
-          "y": 398,
-          "width": 305,
-          "height": 56
+          "x": 80,
+          "y": 422,
+          "width": 293,
+          "height": 32
         },
         "label": "text 12sp/16",
         "role": "If you are having trouble, make sure your phone is running the same version of Pocket Casts as your watch (8.17-rc-2)",
@@ -1624,9 +1624,9 @@
         "kind": "layout",
         "bounds": {
           "x": 24,
-          "y": 218,
-          "width": 406,
-          "height": 124
+          "y": 242,
+          "width": 405,
+          "height": 123
         },
         "label": "pad t 0dp e 0dp b 24dp s 0dp",
         "role": "2. The next time you open Pocket Casts on your watch and have a network connection, you will be logged in.",
@@ -1641,10 +1641,10 @@
       {
         "kind": "layout",
         "bounds": {
-          "x": 74,
-          "y": 398,
-          "width": 305,
-          "height": 56
+          "x": 80,
+          "y": 422,
+          "width": 293,
+          "height": 32
         },
         "label": "pad t 0dp e 0dp b 24dp s 0dp",
         "role": "If you are having trouble, make sure your phone is running the same version of Pocket Casts as your watch (8.17-rc-2)",
@@ -1659,10 +1659,10 @@
       {
         "kind": "typography",
         "bounds": {
-          "x": 120,
-          "y": 68,
-          "width": 214,
-          "height": 34
+          "x": 114,
+          "y": 89,
+          "width": 226,
+          "height": 36
         },
         "label": "text 16sp/20",
         "role": "Log in on phone",
@@ -1678,7 +1678,7 @@
         "kind": "typography",
         "bounds": {
           "x": 24,
-          "y": 134,
+          "y": 158,
           "width": 406,
           "height": 60
         },
@@ -1696,9 +1696,9 @@
         "kind": "typography",
         "bounds": {
           "x": 24,
-          "y": 218,
-          "width": 406,
-          "height": 124
+          "y": 242,
+          "width": 405,
+          "height": 123
         },
         "label": "text 12sp/16",
         "role": "2. The next time you open Pocket Casts on your watch and have a network connection, you will be logged in.",
@@ -1713,10 +1713,10 @@
       {
         "kind": "typography",
         "bounds": {
-          "x": 74,
-          "y": 398,
-          "width": 305,
-          "height": 56
+          "x": 80,
+          "y": 422,
+          "width": 293,
+          "height": 32
         },
         "label": "text 12sp/16",
         "role": "If you are having trouble, make sure your phone is running the same version of Pocket Casts as your watch (8.17-rc-2)",
@@ -1734,9 +1734,9 @@
         "kind": "layout",
         "bounds": {
           "x": 24,
-          "y": 218,
-          "width": 406,
-          "height": 124
+          "y": 242,
+          "width": 405,
+          "height": 123
         },
         "label": "pad t 0dp e 0dp b 24dp s 0dp",
         "role": "2. The next time you open Pocket Casts on your watch and have a network connection, you will be logged in.",
@@ -1751,10 +1751,10 @@
       {
         "kind": "layout",
         "bounds": {
-          "x": 74,
-          "y": 398,
-          "width": 305,
-          "height": 56
+          "x": 80,
+          "y": 422,
+          "width": 293,
+          "height": 32
         },
         "label": "pad t 0dp e 0dp b 24dp s 0dp",
         "role": "If you are having trouble, make sure your phone is running the same version of Pocket Casts as your watch (8.17-rc-2)",
@@ -1769,10 +1769,10 @@
       {
         "kind": "typography",
         "bounds": {
-          "x": 120,
-          "y": 68,
-          "width": 214,
-          "height": 34
+          "x": 114,
+          "y": 89,
+          "width": 226,
+          "height": 36
         },
         "label": "text 16sp/20",
         "role": "Log in on phone",
@@ -1788,7 +1788,7 @@
         "kind": "typography",
         "bounds": {
           "x": 24,
-          "y": 134,
+          "y": 158,
           "width": 406,
           "height": 60
         },
@@ -1806,9 +1806,9 @@
         "kind": "typography",
         "bounds": {
           "x": 24,
-          "y": 218,
-          "width": 406,
-          "height": 124
+          "y": 242,
+          "width": 405,
+          "height": 123
         },
         "label": "text 12sp/16",
         "role": "2. The next time you open Pocket Casts on your watch and have a network connection, you will be logged in.",
@@ -1823,10 +1823,10 @@
       {
         "kind": "typography",
         "bounds": {
-          "x": 74,
-          "y": 398,
-          "width": 305,
-          "height": 56
+          "x": 80,
+          "y": 422,
+          "width": 293,
+          "height": 32
         },
         "label": "text 12sp/16",
         "role": "If you are having trouble, make sure your phone is running the same version of Pocket Casts as your watch (8.17-rc-2)",

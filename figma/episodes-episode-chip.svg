@@ -9,7 +9,7 @@
         <g id="ReusableComposeNode">
           <g id="ReusableComposeNode">
             <g id="ReusableComposeNode">
-              <image href="episodes-episode-chip.figma-raster/289.png" x="36" y="36" width="60" height="60"/>
+              <image href="episodes-episode-chip.figma-raster/79.png" x="36" y="36" width="60" height="60"/>
             </g>
             <g id="ReusableComposeNode">
               <g transform="translate(54 104) scale(2 2)">
@@ -25,7 +25,7 @@
               <text x="108" y="78.04" font-size="28" font-family="Roboto, sans-serif" font-weight="700" fill="#FFFFFF">Sample Episode</text>
             </g>
             <g id="ReusableComposeNode">
-              <text x="108" y="109.28" font-size="24" font-family="Roboto, sans-serif" font-weight="500" letter-spacing="0.2" fill="#BDC1C6">08 Aug • 30m</text>
+              <text x="108" y="109.28" font-size="24" font-family="Roboto, sans-serif" font-weight="500" letter-spacing="0.2" fill="#BDC1C6">09 Aug • 30m</text>
             </g>
           </g>
         </g>
@@ -35,7 +35,7 @@
         <g id="ReusableComposeNode">
           <g id="ReusableComposeNode">
             <g id="ReusableComposeNode">
-              <image href="episodes-episode-chip.figma-raster/301.png" x="36" y="185" width="60" height="60"/>
+              <image href="episodes-episode-chip.figma-raster/91.png" x="36" y="185" width="60" height="60"/>
             </g>
             <g id="ReusableComposeNode">
               <g transform="translate(54 253) scale(2 2)">
@@ -51,7 +51,7 @@
               <text font-size="28" font-family="Roboto, sans-serif" font-weight="700" fill="#FFFFFF"><tspan x="108" y="210" textLength="295" lengthAdjust="spacing">Sample Episode: With a</tspan><tspan x="108" y="242" textLength="306" lengthAdjust="spacing">title that is quite long a…</tspan></text>
             </g>
             <g id="ReusableComposeNode">
-              <text x="108" y="273.27" font-size="24" font-family="Roboto, sans-serif" font-weight="500" letter-spacing="0.2" fill="#BDC1C6">08 Aug • 30m</text>
+              <text x="108" y="273.27" font-size="24" font-family="Roboto, sans-serif" font-weight="500" letter-spacing="0.2" fill="#BDC1C6">09 Aug • 30m</text>
             </g>
           </g>
         </g>
@@ -75,7 +75,7 @@
                 </g>
               </g>
               <g id="ReusableComposeNode">
-                <text x="80" y="390.28" font-size="24" font-family="Roboto, sans-serif" font-weight="500" letter-spacing="0.2" fill="#BDC1C6">08 Aug • 30m</text>
+                <text x="80" y="390.28" font-size="24" font-family="Roboto, sans-serif" font-weight="500" letter-spacing="0.2" fill="#BDC1C6">09 Aug • 30m</text>
               </g>
             </g>
           </g>
@@ -91,7 +91,7 @@
               <g id="ReusableComposeNode">
                 <g clip-path="url(#clip-1)">
                   <g id="ReusableComposeNode">
-                    <image href="episodes-episode-chip.figma-raster/323.png" x="36" y="420" width="60" height="60"/>
+                    <image href="episodes-episode-chip.figma-raster/113.png" x="36" y="420" width="60" height="60"/>
                   </g>
                 </g>
               </g>
@@ -109,7 +109,7 @@
                 <text x="0" y="26.04" font-size="28" font-family="Roboto, sans-serif" font-weight="700" fill="#FFFFFF">Played Episode</text>
               </g>
               <g id="ReusableComposeNode" opacity="0.6">
-                <text x="0" y="24.28" font-size="24" font-family="Roboto, sans-serif" font-weight="500" letter-spacing="0.2" fill="#BDC1C6">08 Aug • 30m</text>
+                <text x="0" y="24.28" font-size="24" font-family="Roboto, sans-serif" font-weight="500" letter-spacing="0.2" fill="#BDC1C6">09 Aug • 30m</text>
               </g>
             </g>
           </g>
@@ -125,7 +125,7 @@
               <g id="ReusableComposeNode">
                 <g clip-path="url(#clip-3)">
                   <g id="ReusableComposeNode">
-                    <image href="episodes-episode-chip.figma-raster/335.png" x="36" y="428" width="60" height="60"/>
+                    <image href="episodes-episode-chip.figma-raster/125.png" x="36" y="428" width="60" height="60"/>
                   </g>
                 </g>
               </g>
@@ -143,7 +143,7 @@
                 <text x="0" y="26.04" font-size="28" font-family="Roboto, sans-serif" font-weight="700" fill="#FFFFFF">Archived Episode</text>
               </g>
               <g id="ReusableComposeNode" opacity="0.6">
-                <text x="0" y="24.28" font-size="24" font-family="Roboto, sans-serif" font-weight="500" letter-spacing="0.2" fill="#BDC1C6">08 Aug • 30m</text>
+                <text x="0" y="24.28" font-size="24" font-family="Roboto, sans-serif" font-weight="500" letter-spacing="0.2" fill="#BDC1C6">09 Aug • 30m</text>
               </g>
             </g>
           </g>

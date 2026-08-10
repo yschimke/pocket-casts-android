@@ -15,7 +15,7 @@
           <text font-size="20" font-family="Roboto, sans-serif" font-weight="500" letter-spacing="0.2" fill="#BDC1C6"><tspan x="52" y="143" textLength="280" lengthAdjust="spacing">Allowing us to collect analytics</tspan><tspan x="39" y="171" textLength="306" lengthAdjust="spacing">and crash reports helps us build a</tspan><tspan x="43" y="199" textLength="298" lengthAdjust="spacing">better app. We understand if you</tspan><tspan x="58" y="227" textLength="268" lengthAdjust="spacing">would prefer not to share this</tspan><tspan x="136" y="255" textLength="112" lengthAdjust="spacing">information.</tspan></text>
         </g>
         <g id="Row">
-          <image href="screens-privacy-settings.figma-raster/192.png" x="33" y="284" width="318" height="96"/>
+          <image href="screens-privacy-settings.figma-raster/404.png" x="33" y="284" width="318" height="96"/>
         </g>
         <g id="Empty">
           <text x="192" y="432.9" font-size="20" font-family="Roboto, sans-serif" font-weight="500" letter-spacing="0.2" text-anchor="middle" fill="#BDC1C6">Allow us to collect analytics.</text>
