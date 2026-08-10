@@ -3551,10 +3551,10 @@
           "bounds": {
             "x": 42,
             "y": 104,
-            "width": 225,
+            "width": 243,
             "height": 37
           },
-          "label": "Aug 9, 9:18 AM",
+          "label": "Aug 10, 7:31 AM",
           "padding": {
             "start": 0,
             "top": 4,
@@ -3577,10 +3577,10 @@
           "bounds": {
             "x": 147,
             "y": 287,
-            "width": 225,
+            "width": 243,
             "height": 37
           },
-          "label": "Aug 9, 9:18 AM",
+          "label": "Aug 10, 7:31 AM",
           "padding": {
             "start": 0,
             "top": 4,
@@ -3603,10 +3603,10 @@
           "bounds": {
             "x": 147,
             "y": 470,
-            "width": 225,
+            "width": 243,
             "height": 37
           },
-          "label": "Aug 9, 9:18 AM",
+          "label": "Aug 10, 7:31 AM",
           "padding": {
             "start": 0,
             "top": 4,
@@ -6489,7 +6489,7 @@
     "Compose Material 2 + Pocket Casts theme roles"
   ],
   "renderer": "compose-preview 0.19.51",
-  "generatedAt": "2026-08-09T09:19:57.736Z",
+  "generatedAt": "2026-08-10T07:33:04.969Z",
   "display": {
     "surface": "light",
     "hero": "Screens/Settings"
