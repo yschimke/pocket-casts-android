@@ -15,7 +15,8 @@
           "theme": "dark",
           "size": "compact",
           "livePreview": "https://preview.coo.ee/pocketcasts-screens/p/screens-headphone-controls__ideal__default__dark__compact",
-          "previewId": "au.com.shiftyjelly.pocketcasts.settings.catalog.PocketCastsSettingsScreensKt.PocketCastsHeadphoneControlsScreenPreview_Dark"
+          "previewId": "au.com.shiftyjelly.pocketcasts.settings.catalog.PocketCastsSettingsScreensKt.PocketCastsHeadphoneControlsScreenPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -26,7 +27,8 @@
           "theme": "light",
           "size": "compact",
           "livePreview": "https://preview.coo.ee/pocketcasts-screens/p/screens-headphone-controls__ideal__default__light__compact",
-          "previewId": "au.com.shiftyjelly.pocketcasts.settings.catalog.PocketCastsSettingsScreensKt.PocketCastsHeadphoneControlsScreenPreview_Light"
+          "previewId": "au.com.shiftyjelly.pocketcasts.settings.catalog.PocketCastsSettingsScreensKt.PocketCastsHeadphoneControlsScreenPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -40,7 +42,8 @@
             "nextAction": "SKIP_FORWARD"
           },
           "livePreview": "https://preview.coo.ee/pocketcasts-screens/p/screens-headphone-controls__ideal__default__dark__compact__nextaction-skip_forward",
-          "previewId": "au.com.shiftyjelly.pocketcasts.settings.catalog.PocketCastsSettingsScreensKt.PocketCastsHeadphoneControlsSkipOnlyScreenPreview_Dark"
+          "previewId": "au.com.shiftyjelly.pocketcasts.settings.catalog.PocketCastsSettingsScreensKt.PocketCastsHeadphoneControlsSkipOnlyScreenPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -54,7 +57,8 @@
             "nextAction": "SKIP_FORWARD"
           },
           "livePreview": "https://preview.coo.ee/pocketcasts-screens/p/screens-headphone-controls__ideal__default__light__compact__nextaction-skip_forward",
-          "previewId": "au.com.shiftyjelly.pocketcasts.settings.catalog.PocketCastsSettingsScreensKt.PocketCastsHeadphoneControlsSkipOnlyScreenPreview_Light"
+          "previewId": "au.com.shiftyjelly.pocketcasts.settings.catalog.PocketCastsSettingsScreensKt.PocketCastsHeadphoneControlsSkipOnlyScreenPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -67,7 +71,8 @@
             "widthDp": "700"
           },
           "livePreview": "https://preview.coo.ee/pocketcasts-screens/p/screens-headphone-controls__ideal__default__medium__widthdp-700",
-          "previewId": "au.com.shiftyjelly.pocketcasts.settings.catalog.PocketCastsSettingsScreensKt.PocketCastsHeadphoneControlsMediumScreenPreview_Headphone_controls___medium_width"
+          "previewId": "au.com.shiftyjelly.pocketcasts.settings.catalog.PocketCastsSettingsScreensKt.PocketCastsHeadphoneControlsMediumScreenPreview_Headphone_controls___medium_width",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -200,7 +205,8 @@
           "theme": "dark",
           "size": "compact",
           "livePreview": "https://preview.coo.ee/pocketcasts-screens/p/screens-status__ideal__default__dark__compact",
-          "previewId": "au.com.shiftyjelly.pocketcasts.settings.catalog.PocketCastsSettingsScreensKt.PocketCastsStatusScreenPreview_Dark"
+          "previewId": "au.com.shiftyjelly.pocketcasts.settings.catalog.PocketCastsSettingsScreensKt.PocketCastsStatusScreenPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -211,7 +217,8 @@
           "theme": "light",
           "size": "compact",
           "livePreview": "https://preview.coo.ee/pocketcasts-screens/p/screens-status__ideal__default__light__compact",
-          "previewId": "au.com.shiftyjelly.pocketcasts.settings.catalog.PocketCastsSettingsScreensKt.PocketCastsStatusScreenPreview_Light"
+          "previewId": "au.com.shiftyjelly.pocketcasts.settings.catalog.PocketCastsSettingsScreensKt.PocketCastsStatusScreenPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -225,7 +232,8 @@
             "state": "Welcome"
           },
           "livePreview": "https://preview.coo.ee/pocketcasts-screens/p/screens-status__ideal__default__dark__compact__state-welcome",
-          "previewId": "au.com.shiftyjelly.pocketcasts.settings.catalog.PocketCastsSettingsScreensKt.PocketCastsStatusWelcomeScreenPreview_Dark"
+          "previewId": "au.com.shiftyjelly.pocketcasts.settings.catalog.PocketCastsSettingsScreensKt.PocketCastsStatusWelcomeScreenPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -239,7 +247,8 @@
             "state": "Welcome"
           },
           "livePreview": "https://preview.coo.ee/pocketcasts-screens/p/screens-status__ideal__default__light__compact__state-welcome",
-          "previewId": "au.com.shiftyjelly.pocketcasts.settings.catalog.PocketCastsSettingsScreensKt.PocketCastsStatusWelcomeScreenPreview_Light"
+          "previewId": "au.com.shiftyjelly.pocketcasts.settings.catalog.PocketCastsSettingsScreensKt.PocketCastsStatusWelcomeScreenPreview_Light",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -360,7 +369,8 @@
           "theme": "dark",
           "size": "compact",
           "livePreview": "https://preview.coo.ee/pocketcasts-screens/p/screens-up-next-history__ideal__default__dark__compact",
-          "previewId": "au.com.shiftyjelly.pocketcasts.settings.catalog.PocketCastsSettingsScreensKt.PocketCastsUpNextHistoryScreenPreview_Dark"
+          "previewId": "au.com.shiftyjelly.pocketcasts.settings.catalog.PocketCastsSettingsScreensKt.PocketCastsUpNextHistoryScreenPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -371,7 +381,8 @@
           "theme": "light",
           "size": "compact",
           "livePreview": "https://preview.coo.ee/pocketcasts-screens/p/screens-up-next-history__ideal__default__light__compact",
-          "previewId": "au.com.shiftyjelly.pocketcasts.settings.catalog.PocketCastsSettingsScreensKt.PocketCastsUpNextHistoryScreenPreview_Light"
+          "previewId": "au.com.shiftyjelly.pocketcasts.settings.catalog.PocketCastsSettingsScreensKt.PocketCastsUpNextHistoryScreenPreview_Light",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -460,7 +471,8 @@
           "theme": "dark",
           "size": "compact",
           "livePreview": "https://preview.coo.ee/pocketcasts-screens/p/screens-up-next-history-details__ideal__default__dark__compact",
-          "previewId": "au.com.shiftyjelly.pocketcasts.settings.catalog.PocketCastsSettingsScreensKt.PocketCastsUpNextHistoryDetailsScreenPreview_Dark"
+          "previewId": "au.com.shiftyjelly.pocketcasts.settings.catalog.PocketCastsSettingsScreensKt.PocketCastsUpNextHistoryDetailsScreenPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -471,7 +483,8 @@
           "theme": "light",
           "size": "compact",
           "livePreview": "https://preview.coo.ee/pocketcasts-screens/p/screens-up-next-history-details__ideal__default__light__compact",
-          "previewId": "au.com.shiftyjelly.pocketcasts.settings.catalog.PocketCastsSettingsScreensKt.PocketCastsUpNextHistoryDetailsScreenPreview_Light"
+          "previewId": "au.com.shiftyjelly.pocketcasts.settings.catalog.PocketCastsSettingsScreensKt.PocketCastsUpNextHistoryDetailsScreenPreview_Light",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -547,7 +560,8 @@
           "theme": "dark",
           "size": "compact",
           "livePreview": "https://preview.coo.ee/pocketcasts-screens/p/screens-logs__ideal__default__dark__compact",
-          "previewId": "au.com.shiftyjelly.pocketcasts.settings.catalog.PocketCastsSettingsScreensKt.PocketCastsLogsScreenPreview_Dark"
+          "previewId": "au.com.shiftyjelly.pocketcasts.settings.catalog.PocketCastsSettingsScreensKt.PocketCastsLogsScreenPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -558,7 +572,8 @@
           "theme": "light",
           "size": "compact",
           "livePreview": "https://preview.coo.ee/pocketcasts-screens/p/screens-logs__ideal__default__light__compact",
-          "previewId": "au.com.shiftyjelly.pocketcasts.settings.catalog.PocketCastsSettingsScreensKt.PocketCastsLogsScreenPreview_Light"
+          "previewId": "au.com.shiftyjelly.pocketcasts.settings.catalog.PocketCastsSettingsScreensKt.PocketCastsLogsScreenPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -572,7 +587,8 @@
             "logLines": "empty"
           },
           "livePreview": "https://preview.coo.ee/pocketcasts-screens/p/screens-logs__ideal__default__dark__compact__loglines-empty",
-          "previewId": "au.com.shiftyjelly.pocketcasts.settings.catalog.PocketCastsSettingsScreensKt.PocketCastsLogsEmptyScreenPreview_Dark"
+          "previewId": "au.com.shiftyjelly.pocketcasts.settings.catalog.PocketCastsSettingsScreensKt.PocketCastsLogsEmptyScreenPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -586,7 +602,8 @@
             "logLines": "empty"
           },
           "livePreview": "https://preview.coo.ee/pocketcasts-screens/p/screens-logs__ideal__default__light__compact__loglines-empty",
-          "previewId": "au.com.shiftyjelly.pocketcasts.settings.catalog.PocketCastsSettingsScreensKt.PocketCastsLogsEmptyScreenPreview_Light"
+          "previewId": "au.com.shiftyjelly.pocketcasts.settings.catalog.PocketCastsSettingsScreensKt.PocketCastsLogsEmptyScreenPreview_Light",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -711,7 +728,8 @@
           "theme": "dark",
           "size": "compact",
           "livePreview": "https://preview.coo.ee/pocketcasts-screens/p/screens-what-s-new__ideal__default__dark__compact",
-          "previewId": "au.com.shiftyjelly.pocketcasts.settings.catalog.PocketCastsSettingsScreensKt.PocketCastsWhatsNewScreenPreview_Dark"
+          "previewId": "au.com.shiftyjelly.pocketcasts.settings.catalog.PocketCastsSettingsScreensKt.PocketCastsWhatsNewScreenPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -722,7 +740,8 @@
           "theme": "light",
           "size": "compact",
           "livePreview": "https://preview.coo.ee/pocketcasts-screens/p/screens-what-s-new__ideal__default__light__compact",
-          "previewId": "au.com.shiftyjelly.pocketcasts.settings.catalog.PocketCastsSettingsScreensKt.PocketCastsWhatsNewScreenPreview_Light"
+          "previewId": "au.com.shiftyjelly.pocketcasts.settings.catalog.PocketCastsSettingsScreensKt.PocketCastsWhatsNewScreenPreview_Light",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -736,7 +755,8 @@
             "isUserEntitled": "false"
           },
           "livePreview": "https://preview.coo.ee/pocketcasts-screens/p/screens-what-s-new__ideal__default__dark__compact__isuserentitled-false",
-          "previewId": "au.com.shiftyjelly.pocketcasts.settings.catalog.PocketCastsSettingsScreensKt.PocketCastsWhatsNewUpsellScreenPreview_Dark"
+          "previewId": "au.com.shiftyjelly.pocketcasts.settings.catalog.PocketCastsSettingsScreensKt.PocketCastsWhatsNewUpsellScreenPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -750,7 +770,8 @@
             "isUserEntitled": "false"
           },
           "livePreview": "https://preview.coo.ee/pocketcasts-screens/p/screens-what-s-new__ideal__default__light__compact__isuserentitled-false",
-          "previewId": "au.com.shiftyjelly.pocketcasts.settings.catalog.PocketCastsSettingsScreensKt.PocketCastsWhatsNewUpsellScreenPreview_Light"
+          "previewId": "au.com.shiftyjelly.pocketcasts.settings.catalog.PocketCastsSettingsScreensKt.PocketCastsWhatsNewUpsellScreenPreview_Light",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -900,7 +921,8 @@
           "theme": "dark",
           "size": "compact",
           "livePreview": "https://preview.coo.ee/pocketcasts-screens/p/states-up-next-history-error__ideal__default__dark__compact",
-          "previewId": "au.com.shiftyjelly.pocketcasts.settings.catalog.PocketCastsSettingsScreensKt.PocketCastsUpNextHistoryErrorScreenPreview_Dark"
+          "previewId": "au.com.shiftyjelly.pocketcasts.settings.catalog.PocketCastsSettingsScreensKt.PocketCastsUpNextHistoryErrorScreenPreview_Dark",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -911,7 +933,8 @@
           "theme": "light",
           "size": "compact",
           "livePreview": "https://preview.coo.ee/pocketcasts-screens/p/states-up-next-history-error__ideal__default__light__compact",
-          "previewId": "au.com.shiftyjelly.pocketcasts.settings.catalog.PocketCastsSettingsScreensKt.PocketCastsUpNextHistoryErrorScreenPreview_Light"
+          "previewId": "au.com.shiftyjelly.pocketcasts.settings.catalog.PocketCastsSettingsScreensKt.PocketCastsUpNextHistoryErrorScreenPreview_Light",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -964,8 +987,8 @@
   "library": [
     "Compose Material 2 + Pocket Casts theme roles"
   ],
-  "renderer": "compose-preview 0.19.57",
-  "generatedAt": "2026-08-11T09:36:41.040Z",
+  "renderer": "compose-preview 0.19.60",
+  "generatedAt": "2026-08-11T23:23:40.013Z",
   "display": {
     "surface": "light",
     "hero": "Screens/Headphone controls"
@@ -992,8 +1015,8 @@
       "preview": "au.com.shiftyjelly.pocketcasts.settings.developer.DeveloperPageKt.CrashMessageDialogPreview",
       "phase": "render",
       "errorClass": "androidx.test.espresso.AppNotIdleException",
-      "message": "Compose did not get idle after 202315 attempts in 60 SECONDS.\n\n1. Check your measure/layout lambdas for infinite composition loops.\n2. Verify that the 'busy' resources listed above are not deadlocked.\n3. Increase Espresso's master idling policy if a longer timeout is required.\n The following Idle Conditions failed .",
-      "stackTrace": "androidx.test.espresso.AppNotIdleException: Compose did not get idle after 202315 attempts in 60 SECONDS.\n\n1. Check your measure/layout lambdas for infinite composition loops.\n2. Verify that the 'busy' resources listed above are not deadlocked.\n3. Increase Espresso's master idling policy if a longer timeout is required.\n The following Idle Conditions failed .\n\tat androidx.test.espresso.AppNotIdleException.create(AppNotIdleException.java:11)\n\tat androidx.compose.ui.test.RobolectricIdlingStrategy.runUntilIdle$lambda$0(RobolectricIdlingStrategy.android.kt:101)\n\tat androidx.compose.ui.test.AndroidSynchronization_androidKt.runOnUiThread(AndroidSynchronization.android.kt:35)\n\tat androidx.compose.ui.test.RobolectricIdlingStrategy.runUntilIdle(RobolectricIdlingStrategy.android.kt:66)\n\tat androidx.compose.ui.test.AndroidComposeUiTestEnvironment.waitForIdle(ComposeUiTest.android.kt:709)\n\tat androidx.compose.ui.test.AndroidComposeUiTestEnvironment.access$waitForIdle(ComposeUiTest.android.kt:474)\n\tat androidx.compose.ui.test.AndroidComposeUiTestEnvironment$AndroidComposeUiTestImpl.waitForIdle(ComposeUiTest.android.kt:845)\n\tat androidx.compose.ui.test.AndroidComposeUiTestEnvironment$AndroidComposeUiTestImpl.setContent(ComposeUiTest.android.kt:933)\n\tat androidx.compose.ui.test.junit4.AndroidComposeTestRule.setContent(AndroidComposeTestRule.android.kt:524)\n\tat ee.schimke.composeai.renderer.RobolectricRenderTestBase$renderDefault$statement$1.evaluate(RobolectricRenderTest.kt:1185)\n\tat androidx.compose.ui.test.junit4.AndroidComposeTestRule$apply$testWithDisposal$1.evaluate(AndroidComposeTestRule.android.kt:418)\n\tat org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:54)\n\tat androidx.compose.ui.test.junit4.AndroidComposeTestRule$apply$1$evaluate$1.invokeSuspend(AndroidComposeTestRule.android.kt:438)\n\tat androidx.compose.ui.test.junit4.AndroidComposeTestRule$apply$1$evaluate$1.invoke(AndroidComposeTestRule.android.kt)\n\tat androidx.compose.ui.test.junit4.AndroidComposeTestRule$apply$1$evaluate$1.invoke(AndroidComposeTestRule.android.kt)\n\tat androidx.compose.ui.test.AndroidComposeUiTestEnvironment$runTest$1$1$1$1$1.invokeSuspend(ComposeUiTest.android.kt:682)\n\tat androidx.compose.ui.test.AndroidComposeUiTestEnvironment$runTest$1$1$1$1$1.invoke(ComposeUiTest.android.kt)\n\tat androidx.compose.ui.test.AndroidComposeUiTestEnvironment$runTest$1$1$1$1$1.invoke(ComposeUiTest.android.kt)\n\tat androidx.compose.ui.test.IdlingStrategy.withStrategy$suspendImpl(IdlingStrategy.android.kt:55)\n\tat androidx.compose.ui.test.IdlingStrategy.withStrategy(IdlingStrategy.android.kt)\n\tat androidx.compose.ui.test.AndroidComposeUiTestEnvironment$runTest$1$1.invokeSuspend(ComposeUiTest.android.kt:679)\n\tat androidx.compose.ui.test.AndroidComposeUiTestEnvironment$runTest$1$1.invoke(ComposeUiTest.android.kt)\n\tat androidx.compose.ui.test.AndroidComposeUiTestEnvironment$runTest$1$1.invoke(ComposeUiTest.android.kt)\n\tat kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt$runTest$2$1$1.invokeSuspend(TestBuilders.kt:317)\n\tat kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)\n\tat kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)\n\tat kotlinx.coroutines.test.TestDispatcher.processEvent$kotlinx_coroutines_test(TestDispatcher.kt:24)\n\tat kotlinx.coroutines.test.TestCoroutineScheduler.tryRunNextTaskUnless$kotlinx_coroutines_test(TestCoroutineScheduler.kt:98)\n\tat kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt$runTest$2$1$workRunner$1.invokeSuspend(TestBuilders.kt:326)\n\tat kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)\n\tat kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)\n\tat kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:256)\n\tat kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:54)\n\tat kotlinx.coroutines.BuildersKt__BuildersKt.runBlockingImpl(Builders.kt:30)\n\tat kotlinx.coroutines.BuildersKt.runBlockingImpl(Unknown Source)\n\tat kotlinx.coroutines.BuildersKt__Builders_concurrentKt.runBlockingK(Builders.concurrent.kt:172)\n\tat kotlinx.coroutines.BuildersKt.runBlockingK(Unknown Source)\n\tat kotlinx.coroutines.BuildersKt__Builders_concurrentKt.runBlockingK$default(Builders.concurrent.kt:157)\n\tat kotlinx.coroutines.BuildersKt.runBlockingK$default(Unknown Source)\n\tat kotlinx.coroutines.test.TestBuildersJvmKt.createTestResult(TestBuildersJvm.kt:10)\n\tat kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt.runTest-8Mi8wO0(TestBuilders.kt:309)\n\tat kotlinx.coroutines.test.TestBuildersKt.runTest-8Mi8wO0(TestBuilders.kt:1)\n\tat kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt.runTest-8Mi8wO0(TestBuilders.kt:167)\n\tat kotlinx.coroutines.test.TestBuildersKt.runTest-8Mi8wO0(TestBuilders.kt:1)\n\tat androidx.compose.ui.test.AndroidComposeUiTestEnvironment.runTest(ComposeUiTest.android.kt:658)\n\tat androidx.compose.ui.test.junit4.AndroidComposeTestRule$apply$1.evaluate(AndroidComposeTestRule.android.kt:438)\n\tat ee.schimke.composeai.renderer.RobolectricRenderTestBase.renderDefault(RobolectricRenderTest.kt:1729)\n\tat ee.schimke.composeai.renderer.RobolectricRenderTestBase.renderPreview(RobolectricRenderTest.kt:652)\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:580)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.robolectric.RobolectricTestRunner$HelperTestRunner$1.evaluate(RobolectricTestRunner.java:542)\n\tat org.robolectric.internal.SandboxTestRunner.lambda$executeInSandbox$4(SandboxTestRunner.java:429)\n\tat org.robolectric.internal.SandboxTestRunner.runInSandbox(SandboxTestRunner.java:455)\n\tat org.robolectric.internal.SandboxTestRunner.executeInSandbox(SandboxTestRunner.java:420)\n\tat org.robolectric.internal.SandboxTestRunner$5.evaluate(SandboxTestRunner.java:405)\n\tat org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)\n\tat org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)\n\tat org.robolectric.internal.SandboxTestRunner.access$000(SandboxTestRunner.java:64)\n\tat org.robolectric.internal.SandboxTestRunner$4.evaluate(SandboxTestRunner.java:294)\n\tat org.robolectric.internal.SandboxTestRunner$2.evaluate(SandboxTestRunner.java:260)\n\tat org.robolectric.internal.SandboxTestRunner$3.lambda$evaluate$0(SandboxTestRunner.java:280)\n\tat org.robolectric.internal.bytecode.Sandbox.lambda$runOnMainThreadWithClassLoader$1(Sandbox.java:112)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\n",
+      "message": "Compose did not get idle after 223813 attempts in 60 SECONDS.\n\n1. Check your measure/layout lambdas for infinite composition loops.\n2. Verify that the 'busy' resources listed above are not deadlocked.\n3. Increase Espresso's master idling policy if a longer timeout is required.\n The following Idle Conditions failed .",
+      "stackTrace": "androidx.test.espresso.AppNotIdleException: Compose did not get idle after 223813 attempts in 60 SECONDS.\n\n1. Check your measure/layout lambdas for infinite composition loops.\n2. Verify that the 'busy' resources listed above are not deadlocked.\n3. Increase Espresso's master idling policy if a longer timeout is required.\n The following Idle Conditions failed .\n\tat androidx.test.espresso.AppNotIdleException.create(AppNotIdleException.java:11)\n\tat androidx.compose.ui.test.RobolectricIdlingStrategy.runUntilIdle$lambda$0(RobolectricIdlingStrategy.android.kt:101)\n\tat androidx.compose.ui.test.AndroidSynchronization_androidKt.runOnUiThread(AndroidSynchronization.android.kt:35)\n\tat androidx.compose.ui.test.RobolectricIdlingStrategy.runUntilIdle(RobolectricIdlingStrategy.android.kt:66)\n\tat androidx.compose.ui.test.AndroidComposeUiTestEnvironment.waitForIdle(ComposeUiTest.android.kt:709)\n\tat androidx.compose.ui.test.AndroidComposeUiTestEnvironment.access$waitForIdle(ComposeUiTest.android.kt:474)\n\tat androidx.compose.ui.test.AndroidComposeUiTestEnvironment$AndroidComposeUiTestImpl.waitForIdle(ComposeUiTest.android.kt:845)\n\tat androidx.compose.ui.test.AndroidComposeUiTestEnvironment$AndroidComposeUiTestImpl.setContent(ComposeUiTest.android.kt:933)\n\tat androidx.compose.ui.test.junit4.AndroidComposeTestRule.setContent(AndroidComposeTestRule.android.kt:524)\n\tat ee.schimke.composeai.renderer.RobolectricRenderTestBase$renderDefault$statement$1.evaluate(RobolectricRenderTest.kt:1185)\n\tat androidx.compose.ui.test.junit4.AndroidComposeTestRule$apply$testWithDisposal$1.evaluate(AndroidComposeTestRule.android.kt:418)\n\tat org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:54)\n\tat androidx.compose.ui.test.junit4.AndroidComposeTestRule$apply$1$evaluate$1.invokeSuspend(AndroidComposeTestRule.android.kt:438)\n\tat androidx.compose.ui.test.junit4.AndroidComposeTestRule$apply$1$evaluate$1.invoke(AndroidComposeTestRule.android.kt)\n\tat androidx.compose.ui.test.junit4.AndroidComposeTestRule$apply$1$evaluate$1.invoke(AndroidComposeTestRule.android.kt)\n\tat androidx.compose.ui.test.AndroidComposeUiTestEnvironment$runTest$1$1$1$1$1.invokeSuspend(ComposeUiTest.android.kt:682)\n\tat androidx.compose.ui.test.AndroidComposeUiTestEnvironment$runTest$1$1$1$1$1.invoke(ComposeUiTest.android.kt)\n\tat androidx.compose.ui.test.AndroidComposeUiTestEnvironment$runTest$1$1$1$1$1.invoke(ComposeUiTest.android.kt)\n\tat androidx.compose.ui.test.IdlingStrategy.withStrategy$suspendImpl(IdlingStrategy.android.kt:55)\n\tat androidx.compose.ui.test.IdlingStrategy.withStrategy(IdlingStrategy.android.kt)\n\tat androidx.compose.ui.test.AndroidComposeUiTestEnvironment$runTest$1$1.invokeSuspend(ComposeUiTest.android.kt:679)\n\tat androidx.compose.ui.test.AndroidComposeUiTestEnvironment$runTest$1$1.invoke(ComposeUiTest.android.kt)\n\tat androidx.compose.ui.test.AndroidComposeUiTestEnvironment$runTest$1$1.invoke(ComposeUiTest.android.kt)\n\tat kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt$runTest$2$1$1.invokeSuspend(TestBuilders.kt:317)\n\tat kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)\n\tat kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)\n\tat kotlinx.coroutines.test.TestDispatcher.processEvent$kotlinx_coroutines_test(TestDispatcher.kt:24)\n\tat kotlinx.coroutines.test.TestCoroutineScheduler.tryRunNextTaskUnless$kotlinx_coroutines_test(TestCoroutineScheduler.kt:98)\n\tat kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt$runTest$2$1$workRunner$1.invokeSuspend(TestBuilders.kt:326)\n\tat kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)\n\tat kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)\n\tat kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:256)\n\tat kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:54)\n\tat kotlinx.coroutines.BuildersKt__BuildersKt.runBlockingImpl(Builders.kt:30)\n\tat kotlinx.coroutines.BuildersKt.runBlockingImpl(Unknown Source)\n\tat kotlinx.coroutines.BuildersKt__Builders_concurrentKt.runBlockingK(Builders.concurrent.kt:172)\n\tat kotlinx.coroutines.BuildersKt.runBlockingK(Unknown Source)\n\tat kotlinx.coroutines.BuildersKt__Builders_concurrentKt.runBlockingK$default(Builders.concurrent.kt:157)\n\tat kotlinx.coroutines.BuildersKt.runBlockingK$default(Unknown Source)\n\tat kotlinx.coroutines.test.TestBuildersJvmKt.createTestResult(TestBuildersJvm.kt:10)\n\tat kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt.runTest-8Mi8wO0(TestBuilders.kt:309)\n\tat kotlinx.coroutines.test.TestBuildersKt.runTest-8Mi8wO0(TestBuilders.kt:1)\n\tat kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt.runTest-8Mi8wO0(TestBuilders.kt:167)\n\tat kotlinx.coroutines.test.TestBuildersKt.runTest-8Mi8wO0(TestBuilders.kt:1)\n\tat androidx.compose.ui.test.AndroidComposeUiTestEnvironment.runTest(ComposeUiTest.android.kt:658)\n\tat androidx.compose.ui.test.junit4.AndroidComposeTestRule$apply$1.evaluate(AndroidComposeTestRule.android.kt:438)\n\tat ee.schimke.composeai.renderer.RobolectricRenderTestBase.renderDefault(RobolectricRenderTest.kt:1729)\n\tat ee.schimke.composeai.renderer.RobolectricRenderTestBase.renderPreview(RobolectricRenderTest.kt:652)\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:580)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.robolectric.RobolectricTestRunner$HelperTestRunner$1.evaluate(RobolectricTestRunner.java:542)\n\tat org.robolectric.internal.SandboxTestRunner.lambda$executeInSandbox$4(SandboxTestRunner.java:429)\n\tat org.robolectric.internal.SandboxTestRunner.runInSandbox(SandboxTestRunner.java:455)\n\tat org.robolectric.internal.SandboxTestRunner.executeInSandbox(SandboxTestRunner.java:420)\n\tat org.robolectric.internal.SandboxTestRunner$5.evaluate(SandboxTestRunner.java:405)\n\tat org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)\n\tat org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)\n\tat org.robolectric.internal.SandboxTestRunner.access$000(SandboxTestRunner.java:64)\n\tat org.robolectric.internal.SandboxTestRunner$4.evaluate(SandboxTestRunner.java:294)\n\tat org.robolectric.internal.SandboxTestRunner$2.evaluate(SandboxTestRunner.java:260)\n\tat org.robolectric.internal.SandboxTestRunner$3.lambda$evaluate$0(SandboxTestRunner.java:280)\n\tat org.robolectric.internal.bytecode.Sandbox.lambda$runOnMainThreadWithClassLoader$1(Sandbox.java:112)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\n",
       "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/settings/developer/DeveloperPage.kt"
     }
   ],
