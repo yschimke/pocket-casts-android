@@ -9,7 +9,7 @@
 <g transform="translate(0, 0)">
   <g id="Root">
     <g id="ReusableComposeNode">
-        <rect x="21" y="11" width="131" height="50" rx="25" ry="25" fill="url(#gf-0)"/>
+        <rect x="0" y="0" width="173" height="72" rx="36" ry="36" fill="url(#gf-0)"/>
       <g id="ReusableComposeNode">
         <g id="ReusableComposeNode">
           <image href="ideal__gradient.figma-raster/2855.png" x="21" y="18" width="37" height="37"/>

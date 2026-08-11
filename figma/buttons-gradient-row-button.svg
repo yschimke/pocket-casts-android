@@ -11,7 +11,7 @@
     <g id="ReusableComposeNode">
       <rect x="0" y="0" width="1050" height="140" fill="#FFFFFF"/>
       <g id="ReusableComposeNode">
-        <rect x="42" y="42" width="966" height="56" rx="31.5" ry="31.5" fill="url(#gf-0)"/>
+        <rect x="0" y="0" width="1050" height="140" rx="31.5" ry="31.5" fill="url(#gf-0)"/>
         <g id="Empty">
           <text x="525" y="85.94" font-size="47.25" font-family="Roboto, sans-serif" font-weight="600" letter-spacing="1.31" text-anchor="middle" fill="#000000">Upgrade Now</text>
         </g>
