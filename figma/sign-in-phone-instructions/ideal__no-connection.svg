@@ -23,21 +23,27 @@
           </g>
           <g id="Spacer">
           </g>
-          <g id="Empty">
-            <text font-size="23.43" font-family="Roboto, sans-serif" font-weight="700" fill="#FFFFFF" fill-opacity="0.8"><tspan x="39" y="342" textLength="386" lengthAdjust="spacing">Check Bluetooth connection to your</tspan><tspan x="194" y="374" textLength="68" lengthAdjust="spacing">phone</tspan></text>
-          </g>
-          <g id="Spacer">
-          </g>
-          <g id="Row">
-            <rect x="79" y="422" width="296" height="76" rx="37.87" ry="37.87" fill="#202124"/>
+          <g id="Box" opacity="0.96">
             <g id="Empty">
-              <text x="227" y="468.14" font-size="20.39" font-family="Roboto, sans-serif" font-weight="700" text-anchor="middle" fill="#FFFFFF">Try Again</text>
+              <text font-size="23.43" font-family="Roboto, sans-serif" font-weight="700" fill="#FFFFFF" fill-opacity="0.8"><tspan x="39" y="342" textLength="386" lengthAdjust="spacing">Check Bluetooth connection to your</tspan><tspan x="194" y="374" textLength="68" lengthAdjust="spacing">phone</tspan></text>
+            </g>
+          </g>
+          <g id="Box" opacity="0.68">
+            <g id="Spacer">
+            </g>
+          </g>
+          <g id="Box" opacity="0.54">
+            <g id="Row">
+              <rect x="79" y="422" width="296" height="76" rx="37.87" ry="37.87" fill="#202124"/>
+              <g id="Empty">
+                <text x="227" y="468.14" font-size="20.39" font-family="Roboto, sans-serif" font-weight="700" text-anchor="middle" fill="#FFFFFF">Try Again</text>
+              </g>
             </g>
           </g>
         </g>
       </g>
       <g id="ReusableComposeNode">
-        <image href="ideal__no-connection.figma-raster/148.png" x="0" y="0" width="454" height="454"/>
+        <image href="ideal__no-connection.figma-raster/104.png" x="0" y="0" width="454" height="454"/>
       </g>
     </g>
   </g>

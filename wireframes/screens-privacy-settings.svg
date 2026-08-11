@@ -30,6 +30,7 @@
   </g>
   <g>
     <path d="M96,295 H288 A37,37 0 0 1 325,332 V332 A37,37 0 0 1 288,369 H96 A37,37 0 0 1 59,332 V332 A37,37 0 0 1 96,295 Z" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="62" y="307" font-family="system-ui, sans-serif" font-size="9" fill="#A85B6B">pad ·</text>
   </g>
   <g>
     <rect x="59" y="317" width="214" height="31" fill="none" fill-opacity="0" stroke="#4F8A4A" stroke-width="1" stroke-opacity="0.5"/>

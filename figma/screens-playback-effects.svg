@@ -11,8 +11,10 @@
     <clipPath id="clip-0"><rect x="0" y="0" width="454" height="454"/></clipPath>
     <g id="LayoutNodeSubcompositionsState">
       <g clip-path="url(#clip-0)">
-        <g id="Empty">
-          <text x="227" y="117.27" font-size="29.92" font-family="Roboto, sans-serif" font-weight="700" letter-spacing="0.75" text-anchor="middle" fill="#303133">Effects</text>
+        <g id="Box" opacity="0.99">
+          <g id="Empty">
+            <text x="227" y="117.27" font-size="29.92" font-family="Roboto, sans-serif" font-weight="700" letter-spacing="0.75" text-anchor="middle" fill="#303133">Effects</text>
+          </g>
         </g>
         <g id="Row">
           <rect x="24" y="159" width="406" height="192" rx="52" ry="52" fill="#303133"/>
@@ -45,8 +47,10 @@
             </g>
           </g>
         </g>
-        <g id="Row">
-          <image href="screens-playback-effects.figma-raster/367.png" x="51" y="359" width="352" height="90"/>
+        <g id="Box">
+          <g id="Row">
+            <image href="screens-playback-effects.figma-raster/392.png" x="51" y="359" width="352" height="90"/>
+          </g>
         </g>
         <g id="Column">
           <g id="Row">

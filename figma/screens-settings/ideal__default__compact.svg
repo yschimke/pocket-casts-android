@@ -11,13 +11,17 @@
           <text x="262" y="139.3" font-size="36.75" font-family="Roboto, sans-serif" font-weight="700" text-anchor="middle" fill="#BDC1C6">Settings</text>
         </g>
         <g id="Row">
-          <image href="ideal__default__compact.figma-raster/517.png" x="26" y="194" width="473" height="137"/>
+          <image href="ideal__default__compact.figma-raster/426.png" x="26" y="194" width="473" height="137"/>
         </g>
-        <g id="Row">
-          <image href="ideal__default__compact.figma-raster/526.png" x="28" y="343" width="469" height="136"/>
+        <g id="Box">
+          <g id="Row">
+            <image href="ideal__default__compact.figma-raster/435.png" x="28" y="343" width="469" height="136"/>
+          </g>
         </g>
-        <g id="Empty">
-          <text font-size="19.22" font-family="Roboto, sans-serif" font-weight="500" letter-spacing="0.19" fill="#BDC1C6"><tspan x="123" y="523" textLength="381" lengthAdjust="spacing">Pocket Casts will only sync your</tspan><tspan x="123" y="550" textLength="381" lengthAdjust="spacing">account when you open the app.</tspan></text>
+        <g id="Box" opacity="0.55">
+          <g id="Empty">
+            <text font-size="19.22" font-family="Roboto, sans-serif" font-weight="500" letter-spacing="0.19" fill="#BDC1C6"><tspan x="123" y="523" textLength="381" lengthAdjust="spacing">Pocket Casts will only sync your</tspan><tspan x="123" y="550" textLength="381" lengthAdjust="spacing">account when you open the app.</tspan></text>
+          </g>
         </g>
       </g>
     </g>

@@ -23,21 +23,27 @@
           </g>
           <g id="Spacer">
           </g>
-          <g id="Empty">
-            <text x="227" y="344.7" font-size="23.43" font-family="Roboto, sans-serif" font-weight="700" text-anchor="middle" fill="#FFFFFF" fill-opacity="0.8">Try logging in manually</text>
-          </g>
-          <g id="Spacer">
-          </g>
-          <g id="Row">
-            <rect x="68" y="393" width="318" height="82" rx="40.81" ry="40.81" fill="#202124"/>
+          <g id="Box" opacity="0.96">
             <g id="Empty">
-              <text x="227" y="442.71" font-size="21.97" font-family="Roboto, sans-serif" font-weight="700" text-anchor="middle" fill="#FFFFFF">Try Again</text>
+              <text x="227" y="344.7" font-size="23.43" font-family="Roboto, sans-serif" font-weight="700" text-anchor="middle" fill="#FFFFFF" fill-opacity="0.8">Try logging in manually</text>
+            </g>
+          </g>
+          <g id="Box" opacity="0.83">
+            <g id="Spacer">
+            </g>
+          </g>
+          <g id="Box" opacity="0.64">
+            <g id="Row">
+              <rect x="68" y="393" width="318" height="82" rx="40.81" ry="40.81" fill="#202124"/>
+              <g id="Empty">
+                <text x="227" y="442.71" font-size="21.97" font-family="Roboto, sans-serif" font-weight="700" text-anchor="middle" fill="#FFFFFF">Try Again</text>
+              </g>
             </g>
           </g>
         </g>
       </g>
       <g id="ReusableComposeNode">
-        <image href="ideal__login-failed.figma-raster/13.png" x="0" y="0" width="454" height="454"/>
+        <image href="ideal__login-failed.figma-raster/164.png" x="0" y="0" width="454" height="454"/>
       </g>
     </g>
   </g>

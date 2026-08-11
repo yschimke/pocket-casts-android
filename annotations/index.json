@@ -28,8 +28,12 @@
           "width": 473,
           "height": 137
         },
-        "label": "r 26dp",
+        "label": "pad 6dp/14dp · r 26dp",
         "detail": {
+          "padding.start": "14",
+          "padding.top": "6",
+          "padding.end": "14",
+          "padding.bottom": "6",
           "cornerRadius": "26",
           "unit": "dp"
         }
@@ -42,8 +46,12 @@
           "width": 470,
           "height": 136
         },
-        "label": "r 26dp",
+        "label": "pad 6dp/14dp · r 26dp",
         "detail": {
+          "padding.start": "14",
+          "padding.top": "6",
+          "padding.end": "14",
+          "padding.bottom": "6",
           "cornerRadius": "26",
           "unit": "dp"
         }
@@ -166,8 +174,12 @@
           "width": 473,
           "height": 137
         },
-        "label": "r 26dp",
+        "label": "pad 6dp/14dp · r 26dp",
         "detail": {
+          "padding.start": "14",
+          "padding.top": "6",
+          "padding.end": "14",
+          "padding.bottom": "6",
           "cornerRadius": "26",
           "unit": "dp"
         }
@@ -180,8 +192,12 @@
           "width": 470,
           "height": 136
         },
-        "label": "r 26dp",
+        "label": "pad 6dp/14dp · r 26dp",
         "detail": {
+          "padding.start": "14",
+          "padding.top": "6",
+          "padding.end": "14",
+          "padding.bottom": "6",
           "cornerRadius": "26",
           "unit": "dp"
         }
@@ -322,8 +338,12 @@
           "width": 317,
           "height": 95
         },
-        "label": "r 26dp",
+        "label": "pad 6dp/14dp · r 26dp",
         "detail": {
+          "padding.start": "14",
+          "padding.top": "6",
+          "padding.end": "14",
+          "padding.bottom": "6",
           "cornerRadius": "26",
           "unit": "dp"
         }
@@ -446,9 +466,13 @@
           "width": 350,
           "height": 104
         },
-        "label": "r 26dp",
+        "label": "pad 6dp/14dp · r 26dp",
         "role": "Button",
         "detail": {
+          "padding.start": "14",
+          "padding.top": "6",
+          "padding.end": "14",
+          "padding.bottom": "6",
           "cornerRadius": "26",
           "unit": "dp"
         }
@@ -461,9 +485,13 @@
           "width": 350,
           "height": 104
         },
-        "label": "r 26dp",
+        "label": "pad 6dp/14dp · r 26dp",
         "role": "Button",
         "detail": {
+          "padding.start": "14",
+          "padding.top": "6",
+          "padding.end": "14",
+          "padding.bottom": "6",
           "cornerRadius": "26",
           "unit": "dp"
         }
@@ -550,9 +578,13 @@
           "width": 406,
           "height": 192
         },
-        "label": "r 26dp",
+        "label": "pad 6dp/14dp · r 26dp",
         "role": "Button",
         "detail": {
+          "padding.start": "14",
+          "padding.top": "6",
+          "padding.end": "14",
+          "padding.bottom": "6",
           "cornerRadius": "26",
           "unit": "dp"
         }
@@ -583,8 +615,12 @@
           "width": 351,
           "height": 90
         },
-        "label": "r 26dp",
+        "label": "pad 6dp/14dp · r 26dp",
         "detail": {
+          "padding.start": "14",
+          "padding.top": "6",
+          "padding.end": "14",
+          "padding.bottom": "6",
           "cornerRadius": "26",
           "unit": "dp"
         }
@@ -976,7 +1012,7 @@
           "height": 28
         },
         "label": "text 12sp/16",
-        "role": "09 Aug • 30m",
+        "role": "10 Aug • 30m",
         "detail": {
           "token": "text",
           "unit": "sp",
@@ -1012,7 +1048,7 @@
           "height": 28
         },
         "label": "text 12sp/16",
-        "role": "09 Aug • 30m",
+        "role": "10 Aug • 30m",
         "detail": {
           "token": "text",
           "unit": "sp",
@@ -1048,7 +1084,7 @@
           "height": 28
         },
         "label": "text 12sp/16",
-        "role": "09 Aug • 30m",
+        "role": "10 Aug • 30m",
         "detail": {
           "token": "text",
           "unit": "sp",
@@ -1084,7 +1120,7 @@
           "height": 0
         },
         "label": "text 12sp/16",
-        "role": "09 Aug • 30m",
+        "role": "10 Aug • 30m",
         "detail": {
           "token": "text",
           "unit": "sp",
@@ -1120,7 +1156,7 @@
           "height": 0
         },
         "label": "text 12sp/16",
-        "role": "09 Aug • 30m",
+        "role": "10 Aug • 30m",
         "detail": {
           "token": "text",
           "unit": "sp",
@@ -1177,9 +1213,13 @@
           "width": 472,
           "height": 157
         },
-        "label": "r 26dp",
+        "label": "pad 6dp/14dp · r 26dp",
         "role": "Button",
         "detail": {
+          "padding.start": "14",
+          "padding.top": "6",
+          "padding.end": "14",
+          "padding.bottom": "6",
           "cornerRadius": "26",
           "unit": "dp"
         }

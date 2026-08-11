@@ -9,6 +9,7 @@
   </g>
   <g>
     <path d="M99.5,16 H372.5 A62.5,62.5 0 0 1 435,78.5 V78.5 A62.5,62.5 0 0 1 372.5,141 H99.5 A62.5,62.5 0 0 1 37,78.5 V78.5 A62.5,62.5 0 0 1 99.5,16 Z" fill="none" fill-opacity="0" stroke="#8E6BA8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="40" y="28" font-family="system-ui, sans-serif" font-size="9" fill="#8E6BA8">pad ·</text>
   </g>
   <g>
     <rect x="37" y="16" width="326" height="125" fill="none" fill-opacity="0" stroke="#B0813B" stroke-width="1" stroke-opacity="0.5"/>
