@@ -23,7 +23,7 @@
             <text x="42" y="227.92" font-size="36.75" font-family="Roboto, sans-serif" font-weight="400" fill="#8F97A4">Customize the actions done by the most common headphone controls.</text>
           </g>
           <g id="Row">
-            <rect x="0" y="332" width="1774" height="122" fill="#8AE9FF" fill-opacity="0"/>
+            <rect x="0" y="300" width="1837" height="186" fill="#8AE9FF" fill-opacity="0"/>
             <g id="BoxKt">
               <g transform="translate(63 362) scale(2.62 2.62)">
                 <path d="M19.5 11 C 20.052 11 20.5 11.448 20.5 12 C 20.5 12.552 20.052 13 19.5 13 L8.914 13 L12.207 16.293 C 12.598 16.683 12.598 17.317 12.207 17.707 C 11.817 18.098 11.183 18.098 10.793 17.707 L5.5 12.414 L5.5 18 C 5.5 18.552 5.052 19 4.5 19 C 3.948 19 3.5 18.552 3.5 18 L3.5 6 C 3.5 5.448 3.948 5 4.5 5 C 5.052 5 5.5 5.448 5.5 6 L5.5 11.586 L10.793 6.293 C 11.183 5.902 11.817 5.902 12.207 6.293 C 12.598 6.683 12.598 7.317 12.207 7.707 L8.914 11 L19.5 11 Z" fill="#03A9F4" fill-rule="evenodd"/>
