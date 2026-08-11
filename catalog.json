@@ -14,7 +14,8 @@
           "height": 525,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/pocketcasts-wear/p/screens-settings__ideal__default__compact",
-          "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.settings.SettingsScreenKt.SettingsScreenPreview_unchecked_ui6"
+          "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.settings.SettingsScreenKt.SettingsScreenPreview_unchecked_ui6",
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -24,7 +25,8 @@
           "height": 525,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/pocketcasts-wear/p/screens-settings__ideal__checked__compact",
-          "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.settings.SettingsScreenKt.SettingsScreenPreview_checked_ui6"
+          "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.settings.SettingsScreenKt.SettingsScreenPreview_checked_ui6",
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -108,7 +110,8 @@
           "height": 384,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/pocketcasts-wear/p/screens-privacy-settings__ideal__default__compact",
-          "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.settings.PrivacySettingsScreenKt.PrivacySettingsScreenPreview_wearos_small_round"
+          "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.settings.PrivacySettingsScreenKt.PrivacySettingsScreenPreview_wearos_small_round",
+          "density": 2
         }
       ],
       "greenlines": [],
@@ -191,7 +194,8 @@
           "width": 454,
           "height": 454,
           "livePreview": "https://preview.coo.ee/pocketcasts-wear/p/screens-up-next-options__ideal__default",
-          "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.episode.UpNextOptionsScreenKt.UpNextOptionsScreenPreview"
+          "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.episode.UpNextOptionsScreenKt.UpNextOptionsScreenPreview",
+          "density": 2
         }
       ],
       "greenlines": [
@@ -303,7 +307,8 @@
           "height": 454,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/pocketcasts-wear/p/screens-playback-effects__ideal__default__compact",
-          "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.player.EffectsScreenKt.EffectsScreenDarkPreview_wearos_large_round"
+          "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.player.EffectsScreenKt.EffectsScreenDarkPreview_wearos_large_round",
+          "density": 2
         }
       ],
       "greenlines": [
@@ -573,7 +578,8 @@
           "width": 454,
           "height": 454,
           "livePreview": "https://preview.coo.ee/pocketcasts-wear/p/episodes-episode-chip__ideal__default",
-          "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.component.EpisodeChipKt.EpisodeChipPreview"
+          "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.component.EpisodeChipKt.EpisodeChipPreview",
+          "density": 2
         }
       ],
       "greenlines": [],
@@ -722,7 +728,8 @@
           "width": 188,
           "height": 56,
           "livePreview": "https://preview.coo.ee/pocketcasts-wear/p/episodes-date-and-time-text__ideal__default",
-          "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.episode.EpisodeDateTimeTextKt.EpisodeDateTimeTextPreview"
+          "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.episode.EpisodeDateTimeTextKt.EpisodeDateTimeTextPreview",
+          "density": 2
         }
       ],
       "greenlines": [],
@@ -745,7 +752,8 @@
           "height": 158,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/pocketcasts-wear/p/playback-now-playing-chip__ideal__default__compact",
-          "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.NowPlayingChipKt.NowPlayingChipPreview_ui6"
+          "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.NowPlayingChipKt.NowPlayingChipPreview_ui6",
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -805,7 +813,8 @@
           "width": 104,
           "height": 208,
           "livePreview": "https://preview.coo.ee/pocketcasts-wear/p/playback-play-button__ideal__default",
-          "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.episode.PlayButtonKt.PlayButtonPreview"
+          "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.episode.PlayButtonKt.PlayButtonPreview",
+          "density": 2
         }
       ],
       "greenlines": [],
@@ -846,7 +855,8 @@
           "width": 48,
           "height": 96,
           "livePreview": "https://preview.coo.ee/pocketcasts-wear/p/playback-queue-button__ideal__default",
-          "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.episode.QueueButtonKt.QueueButtonPreview"
+          "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.episode.QueueButtonKt.QueueButtonPreview",
+          "density": 2
         }
       ],
       "greenlines": [],
@@ -868,7 +878,8 @@
           "width": 48,
           "height": 240,
           "livePreview": "https://preview.coo.ee/pocketcasts-wear/p/playback-download-button__ideal__default",
-          "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.episode.DownloadButtonKt.DownloadButtonStatesPreview"
+          "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.episode.DownloadButtonKt.DownloadButtonStatesPreview",
+          "density": 2
         },
         {
           "variant": "ideal",
@@ -880,7 +891,8 @@
             "progressPercent": "0, 25, 50, 75, 100"
           },
           "livePreview": "https://preview.coo.ee/pocketcasts-wear/p/playback-download-button__ideal__default__progresspercent-0-25-50-75-100",
-          "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.episode.DownloadButtonKt.DownloadButtonProgressPreview"
+          "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.episode.DownloadButtonKt.DownloadButtonProgressPreview",
+          "density": 2
         }
       ],
       "greenlines": [],
@@ -902,7 +914,8 @@
           "width": 363,
           "height": 59,
           "livePreview": "https://preview.coo.ee/pocketcasts-wear/p/playback-marquee-media-display__ideal__default",
-          "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.component.MarqueeTextMediaDisplayKt.MarqueeTextMediaDisplayPreview"
+          "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.component.MarqueeTextMediaDisplayKt.MarqueeTextMediaDisplayPreview",
+          "density": 2
         }
       ],
       "greenlines": [],
@@ -924,7 +937,8 @@
           "width": 454,
           "height": 454,
           "livePreview": "https://preview.coo.ee/pocketcasts-wear/p/sign-in-phone-instructions__ideal__default",
-          "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.authentication.LoginWithPhoneScreenKt.LoginWithPhoneInstructionsPreview"
+          "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.authentication.LoginWithPhoneScreenKt.LoginWithPhoneInstructionsPreview",
+          "density": 2
         },
         {
           "variant": "ideal",
@@ -933,7 +947,8 @@
           "width": 454,
           "height": 454,
           "livePreview": "https://preview.coo.ee/pocketcasts-wear/p/sign-in-phone-instructions__ideal__syncing",
-          "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.authentication.LoginWithPhoneScreenKt.SyncingContentPreview"
+          "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.authentication.LoginWithPhoneScreenKt.SyncingContentPreview",
+          "density": 2
         },
         {
           "variant": "ideal",
@@ -942,7 +957,8 @@
           "width": 454,
           "height": 454,
           "livePreview": "https://preview.coo.ee/pocketcasts-wear/p/sign-in-phone-instructions__ideal__success",
-          "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.authentication.LoginWithPhoneScreenKt.SuccessContentPreview"
+          "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.authentication.LoginWithPhoneScreenKt.SuccessContentPreview",
+          "density": 2
         },
         {
           "variant": "ideal",
@@ -951,7 +967,8 @@
           "width": 454,
           "height": 454,
           "livePreview": "https://preview.coo.ee/pocketcasts-wear/p/sign-in-phone-instructions__ideal__no-connection",
-          "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.authentication.LoginWithPhoneScreenKt.ErrorContentNoConnectionPreview"
+          "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.authentication.LoginWithPhoneScreenKt.ErrorContentNoConnectionPreview",
+          "density": 2
         },
         {
           "variant": "ideal",
@@ -960,7 +977,8 @@
           "width": 454,
           "height": 454,
           "livePreview": "https://preview.coo.ee/pocketcasts-wear/p/sign-in-phone-instructions__ideal__login-failed",
-          "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.authentication.LoginWithPhoneScreenKt.ErrorContentLoginFailedPreview"
+          "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.authentication.LoginWithPhoneScreenKt.ErrorContentLoginFailedPreview",
+          "density": 2
         }
       ],
       "greenlines": [],
@@ -1013,7 +1031,8 @@
           "width": 454,
           "height": 454,
           "livePreview": "https://preview.coo.ee/pocketcasts-wear/p/sign-in-confirmation__ideal__default",
-          "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.component.ObtainConfirmationScreenKt.ObtainConfirmationScreenPreview"
+          "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.component.ObtainConfirmationScreenKt.ObtainConfirmationScreenPreview",
+          "density": 2
         }
       ],
       "greenlines": [
@@ -1131,7 +1150,8 @@
           "height": 384,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/pocketcasts-wear/p/chrome-time-text__ideal__default__compact",
-          "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.component.TimeTextWithConnectivityKt.TimeTextWithConnectivityConnectedPreview_wearos_small_round"
+          "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.component.TimeTextWithConnectivityKt.TimeTextWithConnectivityConnectedPreview_wearos_small_round",
+          "density": 2
         },
         {
           "variant": "ideal",
@@ -1141,7 +1161,8 @@
           "height": 384,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/pocketcasts-wear/p/chrome-time-text__ideal__disconnected__compact",
-          "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.component.TimeTextWithConnectivityKt.TimeTextWithConnectivityDisconnectedPreview_wearos_small_round"
+          "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.component.TimeTextWithConnectivityKt.TimeTextWithConnectivityDisconnectedPreview_wearos_small_round",
+          "density": 2
         }
       ],
       "greenlines": [],
@@ -1164,7 +1185,8 @@
           "height": 384,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/pocketcasts-wear/p/states-loading__ideal__default__compact",
-          "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.component.LoadingScreenKt.LoadingScreenPreview_wearos_small_round"
+          "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.component.LoadingScreenKt.LoadingScreenPreview_wearos_small_round",
+          "density": 2
         }
       ],
       "greenlines": [],
@@ -1187,7 +1209,8 @@
           "height": 384,
           "size": "compact",
           "livePreview": "https://preview.coo.ee/pocketcasts-wear/p/states-no-content__ideal__default__compact",
-          "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.component.NoContentScreenKt.NoContentScreenPreview_wearos_small_round"
+          "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.component.NoContentScreenKt.NoContentScreenPreview_wearos_small_round",
+          "density": 2
         }
       ],
       "greenlines": [],
@@ -1225,7 +1248,8 @@
           "width": 454,
           "height": 454,
           "livePreview": "https://preview.coo.ee/pocketcasts-wear/p/states-error__ideal__default",
-          "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.component.ErrorScreenKt.ErrorScreenPreview"
+          "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.component.ErrorScreenKt.ErrorScreenPreview",
+          "density": 2
         }
       ],
       "greenlines": [],
@@ -1277,7 +1301,8 @@
           "width": 454,
           "height": 454,
           "livePreview": "https://preview.coo.ee/pocketcasts-wear/p/states-notification__ideal__default",
-          "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.component.NotificationScreenKt.NotificationScreenPreview"
+          "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.component.NotificationScreenKt.NotificationScreenPreview",
+          "density": 2
         }
       ],
       "greenlines": [],
@@ -1308,8 +1333,8 @@
   "library": [
     "Wear Compose Material"
   ],
-  "renderer": "compose-preview 0.19.57",
-  "generatedAt": "2026-08-11T09:34:33.877Z",
+  "renderer": "compose-preview 0.19.60",
+  "generatedAt": "2026-08-11T23:16:38.776Z",
   "display": {
     "surface": "dark",
     "hero": "Screens/App entry"
