@@ -104,10 +104,10 @@
 <body>
 <header class="top">
   <h1>Pocket Casts Screens</h1>
-  <div class="subtitle">system <code>pocketcasts-screens</code> · Compose Material 2 + Pocket Casts theme roles · rendered by compose-preview 1.8.0 · 2026-08-16T11:31:12.254Z · 9 components · 2 failed renders</div>
+  <div class="subtitle">system <code>pocketcasts-screens</code> · Compose Material 2 + Pocket Casts theme roles · rendered by compose-preview 1.12.0 · 2026-08-17T19:20:22.971Z · 9 components · 2 failed renders</div>
   <div class="subtitle"><a class="pagelink" href="compare.html">PNG vs SVG compare ↗</a></div>
 </header>
-<aside class="failure-summary"><strong>2 failed renders</strong><ul><li><span>Resources$NotFoundException: Resource ID #0x0</span><strong>×1</strong></li><li><span>AppNotIdleException: Compose did not get idle after 166960 attempts in 60 SECONDS.
+<aside class="failure-summary"><strong>2 failed renders</strong><ul><li><span>Resources$NotFoundException: Resource ID #0x0</span><strong>×1</strong></li><li><span>AppNotIdleException: Compose did not get idle after 142412 attempts in 60 SECONDS.
 
 1. Check your measure/layout lambdas for infinite composition loops.
 2. Verify that the &#39;busy&#39; resources listed above are not deadlocked.
@@ -197,7 +197,7 @@
   </div>
 </article>
 <article class="card card--failed" id="c-crashmessagedialogpreview">
-  <a class="shot shot--failed" href="#d-crashmessagedialogpreview" aria-label="Show render failure for CrashMessageDialogPreview"><span class="failure-mark">!</span><strong>1 failed render</strong><span>AppNotIdleException: Compose did not get idle after 166960 attempts in 60 SECONDS.
+  <a class="shot shot--failed" href="#d-crashmessagedialogpreview" aria-label="Show render failure for CrashMessageDialogPreview"><span class="failure-mark">!</span><strong>1 failed render</strong><span>AppNotIdleException: Compose did not get idle after 142412 attempts in 60 SECONDS.
 
 1. Check your measure/layout lambdas for infinite composition loops.
 2. Verify that the &#39;busy&#39; resources listed above are not deadlocked.
@@ -349,7 +349,7 @@
 	at androidx.compose.ui.node.MeasurePassDelegate.measure-BRTryo0(MeasurePassDelegate.kt:470)
 	at androidx.compose.foundation.layout.BoxMeasurePolicy.measure-3p2s80s(Box.kt:145)
 	at androidx.compose.ui.node.InnerNodeCoordinator.measure-BRTryo0(InnerNodeCoordinator.kt:130)
-	at ee.schimke.composeai.renderer.RobolectricRenderTestBase.MeasuredWrapBox$lambda$0$0(RobolectricRenderTest.kt:2119)
+	at ee.schimke.composeai.renderer.RobolectricRenderTestBase.MeasuredWrapBox$lambda$0$0(RobolectricRenderTest.kt:2151)
 	at androidx.compose.ui.layout.LayoutModifierImpl.measure-3p2s80s(LayoutModifier.kt:278)
 	at androidx.compose.ui.node.LayoutModifierNodeCoordinator.measure-BRTryo0(LayoutModifierNodeCoordinator.kt:190)
 	at androidx.compose.ui.node.MeasurePassDelegate$performMeasureBlock$1.invoke(MeasurePassDelegate.kt:173)
@@ -429,7 +429,7 @@
 	at androidx.compose.ui.test.AndroidComposeUiTestEnvironment$AndroidComposeUiTestImpl.waitForIdle(ComposeUiTest.android.kt:845)
 	at androidx.compose.ui.test.AndroidComposeUiTestEnvironment$AndroidComposeUiTestImpl.setContent(ComposeUiTest.android.kt:933)
 	at androidx.compose.ui.test.junit4.AndroidComposeTestRule.setContent(AndroidComposeTestRule.android.kt:524)
-	at ee.schimke.composeai.renderer.RobolectricRenderTestBase$renderDefault$statement$1.evaluate(RobolectricRenderTest.kt:1399)
+	at ee.schimke.composeai.renderer.RobolectricRenderTestBase$renderDefault$statement$1.evaluate(RobolectricRenderTest.kt:1401)
 	at androidx.compose.ui.test.junit4.AndroidComposeTestRule$apply$testWithDisposal$1.evaluate(AndroidComposeTestRule.android.kt:418)
 	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:54)
 	at androidx.compose.ui.test.junit4.AndroidComposeTestRule$apply$1$evaluate$1.invokeSuspend(AndroidComposeTestRule.android.kt:438)
@@ -463,8 +463,8 @@
 	at kotlinx.coroutines.test.TestBuildersKt.runTest-8Mi8wO0(TestBuilders.kt:1)
 	at androidx.compose.ui.test.AndroidComposeUiTestEnvironment.runTest(ComposeUiTest.android.kt:658)
 	at androidx.compose.ui.test.junit4.AndroidComposeTestRule$apply$1.evaluate(AndroidComposeTestRule.android.kt:438)
-	at ee.schimke.composeai.renderer.RobolectricRenderTestBase.renderDefault(RobolectricRenderTest.kt:2013)
-	at ee.schimke.composeai.renderer.RobolectricRenderTestBase.renderPreview(RobolectricRenderTest.kt:840)
+	at ee.schimke.composeai.renderer.RobolectricRenderTestBase.renderDefault(RobolectricRenderTest.kt:2045)
+	at ee.schimke.composeai.renderer.RobolectricRenderTestBase.renderPreview(RobolectricRenderTest.kt:842)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
@@ -497,12 +497,12 @@
     <a class="detail-x" href="#c-crashmessagedialogpreview" aria-label="Close">×</a>
     <h3>CrashMessageDialogPreview</h3>
     
-    <div class="detail-states"><div class="failure-detail"><strong>AppNotIdleException: Compose did not get idle after 166960 attempts in 60 SECONDS.
+    <div class="detail-states"><div class="failure-detail"><strong>AppNotIdleException: Compose did not get idle after 142412 attempts in 60 SECONDS.
 
 1. Check your measure/layout lambdas for infinite composition loops.
 2. Verify that the &#39;busy&#39; resources listed above are not deadlocked.
 3. Increase Espresso&#39;s master idling policy if a longer timeout is required.
- The following Idle Conditions failed .</strong><div class="failure-meta">render · au.com.shiftyjelly.pocketcasts.settings.developer.DeveloperPageKt.CrashMessageDialogPreview</div><details><summary>Stack trace</summary><pre>androidx.test.espresso.AppNotIdleException: Compose did not get idle after 166960 attempts in 60 SECONDS.
+ The following Idle Conditions failed .</strong><div class="failure-meta">render · au.com.shiftyjelly.pocketcasts.settings.developer.DeveloperPageKt.CrashMessageDialogPreview</div><details><summary>Stack trace</summary><pre>androidx.test.espresso.AppNotIdleException: Compose did not get idle after 142412 attempts in 60 SECONDS.
 
 1. Check your measure/layout lambdas for infinite composition loops.
 2. Verify that the &#39;busy&#39; resources listed above are not deadlocked.
@@ -517,7 +517,7 @@
 	at androidx.compose.ui.test.AndroidComposeUiTestEnvironment$AndroidComposeUiTestImpl.waitForIdle(ComposeUiTest.android.kt:845)
 	at androidx.compose.ui.test.AndroidComposeUiTestEnvironment$AndroidComposeUiTestImpl.setContent(ComposeUiTest.android.kt:933)
 	at androidx.compose.ui.test.junit4.AndroidComposeTestRule.setContent(AndroidComposeTestRule.android.kt:524)
-	at ee.schimke.composeai.renderer.RobolectricRenderTestBase$renderDefault$statement$1.evaluate(RobolectricRenderTest.kt:1399)
+	at ee.schimke.composeai.renderer.RobolectricRenderTestBase$renderDefault$statement$1.evaluate(RobolectricRenderTest.kt:1401)
 	at androidx.compose.ui.test.junit4.AndroidComposeTestRule$apply$testWithDisposal$1.evaluate(AndroidComposeTestRule.android.kt:418)
 	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:54)
 	at androidx.compose.ui.test.junit4.AndroidComposeTestRule$apply$1$evaluate$1.invokeSuspend(AndroidComposeTestRule.android.kt:438)
@@ -554,8 +554,8 @@
 	at kotlinx.coroutines.test.TestBuildersKt.runTest-8Mi8wO0(TestBuilders.kt:1)
 	at androidx.compose.ui.test.AndroidComposeUiTestEnvironment.runTest(ComposeUiTest.android.kt:658)
 	at androidx.compose.ui.test.junit4.AndroidComposeTestRule$apply$1.evaluate(AndroidComposeTestRule.android.kt:438)
-	at ee.schimke.composeai.renderer.RobolectricRenderTestBase.renderDefault(RobolectricRenderTest.kt:2013)
-	at ee.schimke.composeai.renderer.RobolectricRenderTestBase.renderPreview(RobolectricRenderTest.kt:840)
+	at ee.schimke.composeai.renderer.RobolectricRenderTestBase.renderDefault(RobolectricRenderTest.kt:2045)
+	at ee.schimke.composeai.renderer.RobolectricRenderTestBase.renderPreview(RobolectricRenderTest.kt:842)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)

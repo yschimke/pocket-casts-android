@@ -25,5 +25,34 @@
     "states-up-next-history-error__ideal__default__dark__compact",
     "states-up-next-history-error__ideal__default__light__compact"
   ],
-  "revisions": []
+  "revisions": [
+    {
+      "commit": "74274c445478f454fd692820d84540005e9dc2c9",
+      "previews": [
+        "screens-headphone-controls__ideal__default__dark__compact",
+        "screens-headphone-controls__ideal__default__dark__compact__nextaction-skip_forward",
+        "screens-headphone-controls__ideal__default__light__compact",
+        "screens-headphone-controls__ideal__default__light__compact__nextaction-skip_forward",
+        "screens-headphone-controls__ideal__default__medium__widthdp-700",
+        "screens-logs__ideal__default__dark__compact",
+        "screens-logs__ideal__default__dark__compact__loglines-empty",
+        "screens-logs__ideal__default__light__compact",
+        "screens-logs__ideal__default__light__compact__loglines-empty",
+        "screens-status__ideal__default__dark__compact",
+        "screens-status__ideal__default__dark__compact__state-welcome",
+        "screens-status__ideal__default__light__compact",
+        "screens-status__ideal__default__light__compact__state-welcome",
+        "screens-up-next-history-details__ideal__default__dark__compact",
+        "screens-up-next-history-details__ideal__default__light__compact",
+        "screens-up-next-history__ideal__default__dark__compact",
+        "screens-up-next-history__ideal__default__light__compact",
+        "screens-what-s-new__ideal__default__dark__compact",
+        "screens-what-s-new__ideal__default__dark__compact__isuserentitled-false",
+        "screens-what-s-new__ideal__default__light__compact",
+        "screens-what-s-new__ideal__default__light__compact__isuserentitled-false",
+        "states-up-next-history-error__ideal__default__dark__compact",
+        "states-up-next-history-error__ideal__default__light__compact"
+      ]
+    }
+  ]
 }
