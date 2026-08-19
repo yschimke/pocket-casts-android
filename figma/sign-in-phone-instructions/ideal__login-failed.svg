@@ -12,38 +12,36 @@
       <g id="LayoutNodeSubcompositionsState">
         <g clip-path="url(#clip-0)">
           <g id="BoxKt" data-material-icon="error" data-material-icon-style="Filled" data-material-icon-url="https://fonts.gstatic.com/s/i/materialicons/error/v1/24px.svg">
-            <g transform="translate(175 120) scale(4.33 4.33)">
+            <g transform="translate(175 96) scale(4.33 4.33)">
               <use href="#material-icon-materialicons-error" xlink:href="#material-icon-materialicons-error"/>
             </g>
           </g>
           <g id="Spacer">
           </g>
           <g id="Empty">
-            <text x="227" y="283.66" font-size="28" font-family="Roboto, sans-serif" font-weight="700" text-anchor="middle" fill="#FFFFFF">Login failed</text>
+            <text x="227" y="259.66" font-size="28" font-family="Roboto, sans-serif" font-weight="700" text-anchor="middle" fill="#FFFFFF">Login failed</text>
           </g>
           <g id="Spacer">
           </g>
-          <g id="Box" opacity="0.96">
-            <g id="Empty">
-              <text x="227" y="344.7" font-size="23.43" font-family="Roboto, sans-serif" font-weight="700" text-anchor="middle" fill="#FFFFFF" fill-opacity="0.8">Try logging in manually</text>
-            </g>
+          <g id="Empty">
+            <text x="227" y="321.27" font-size="24" font-family="Roboto, sans-serif" font-weight="700" text-anchor="middle" fill="#FFFFFF" fill-opacity="0.8">Try logging in manually</text>
           </g>
-          <g id="Box" opacity="0.83">
+          <g id="Box" opacity="0.92">
             <g id="Spacer">
             </g>
           </g>
-          <g id="Box" opacity="0.64">
+          <g id="Box" opacity="0.72">
             <g id="Row">
-              <rect x="68" y="393" width="318" height="82" rx="40.81" ry="40.81" fill="#202124"/>
+              <rect x="58" y="372" width="338" height="87" rx="43.37" ry="43.37" fill="#202124"/>
               <g id="Empty">
-                <text x="227" y="442.71" font-size="21.97" font-family="Roboto, sans-serif" font-weight="700" text-anchor="middle" fill="#FFFFFF">Try Again</text>
+                <text x="227" y="425.07" font-size="23.35" font-family="Roboto, sans-serif" font-weight="700" text-anchor="middle" fill="#FFFFFF">Try Again</text>
               </g>
             </g>
           </g>
         </g>
       </g>
       <g id="ReusableComposeNode">
-        <image href="ideal__login-failed.figma-raster/412.png" x="0" y="0" width="454" height="454"/>
+        <image href="ideal__login-failed.figma-raster/9.png" x="0" y="0" width="454" height="454"/>
       </g>
     </g>
   </g>

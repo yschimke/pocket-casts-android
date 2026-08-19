@@ -1,15 +1,15 @@
 {
   "schema": "compose-preview-activity/v1",
-  "generatedAt": "2026-08-17T19:19:46.917Z",
+  "generatedAt": "2026-08-19T22:15:18.068Z",
   "windowDays": 30,
   "code": {
     "repo": "yschimke/pocket-casts-android",
     "ref": "previews",
     "events": [
       {
-        "sha": "05db7c05bf1dab57f9928cb20cc0143ec4a36e86",
-        "subject": "Merge pull request #26 from yschimke/agent/bump-compose-ai-tools-design-parity",
-        "at": "2026-08-17T19:58:41+01:00",
+        "sha": "69e7bfc36fe9798b6c17330594ac351114b9b141",
+        "subject": "Merge pull request #27 from yschimke/claude/upgrade-compose-ai-tools-design-parity-79boj4",
+        "at": "2026-08-19T22:56:52+01:00",
         "author": "Yuri Schimke",
         "previewIds": [],
         "components": []
