@@ -46,6 +46,7 @@ class SimplePlayer(
 ) : LocalPlayer(onPlayerEvent) {
     private val reducedBufferManufacturers = listOf("mercedes-benz")
     private val useReducedBuffer = reducedBufferManufacturers.contains(Build.MANUFACTURER.lowercase()) || Util.isWearOs(context)
+    private val isTv = Util.isTv(context)
     private val bufferTimeMinMillis = TimeUnit.MINUTES.toMillis(2).toInt()
     private val bufferTimeMaxMillis = if (useReducedBuffer) TimeUnit.MINUTES.toMillis(2).toInt() else TimeUnit.MINUTES.toMillis(4).toInt()
 
@@ -57,6 +58,7 @@ class SimplePlayer(
     @UnstableApi
     private var trackSelector: DefaultTrackSelector? = null
 
+    @Volatile
     private var renderersFactory: ShiftyRenderersFactory? = null
     private var playbackEffects: PlaybackEffects? = null
 
@@ -65,7 +67,12 @@ class SimplePlayer(
 
     override var isPip: Boolean = false
 
+    override val currentAudioLevel: Float get() = renderersFactory?.currentAudioLevel ?: 0f
+
     private var videoChangedListener: VideoChangedListener? = null
+    private val mainHandler = Handler(Looper.getMainLooper())
+
+    private var hasVideoSurface = false
 
     @Volatile
     private var prepared = false
@@ -201,7 +208,8 @@ class SimplePlayer(
     private fun prepare() {
         val trackSelector = DefaultTrackSelector(context)
         this.trackSelector = trackSelector
-        applyAudioOnly()
+        hasVideoSurface = false
+        applyVideoTrackSelection()
 
         val minBufferMillis = if (isStreaming) bufferTimeMinMillis else DefaultLoadControl.DEFAULT_MIN_BUFFER_MS
         val maxBufferMillis = if (isStreaming) bufferTimeMaxMillis else DefaultLoadControl.DEFAULT_MAX_BUFFER_MS
@@ -305,35 +313,50 @@ class SimplePlayer(
     private fun updateVideoState() {
         val player = player ?: return
         if (player.playbackState == Player.STATE_READY) {
-            onVideoTrackChanged(player.currentTracks.isTypeSelected(C.TRACK_TYPE_VIDEO))
+            onVideoTrackChanged(player.currentTracks.containsType(C.TRACK_TYPE_VIDEO) && !settings.audioOnly.value)
         }
     }
 
     override fun updateAudioOnly() {
-        applyAudioOnly()
+        Handler(Looper.getMainLooper()).post {
+            applyVideoTrackSelection()
+            updateVideoState()
+        }
     }
 
     @OptIn(UnstableApi::class)
-    private fun applyAudioOnly() {
+    private fun applyVideoTrackSelection() {
         val trackSelector = trackSelector ?: return
         trackSelector.parameters = trackSelector.buildUponParameters()
-            .setTrackTypeDisabled(C.TRACK_TYPE_VIDEO, settings.audioOnly.value)
+            .setTrackTypeDisabled(C.TRACK_TYPE_VIDEO, shouldDisableVideoTrack(settings.audioOnly.value, hasVideoSurface, episodeLocation.isHlsStream))
             .build()
     }
 
     private fun addVideoListener(player: ExoPlayer) {
         player.addListener(object : Player.Listener {
-            override fun onVideoSizeChanged(videoSize: VideoSize) {
-                videoWidth = videoSize.width
-                videoHeight = videoSize.height
+            override fun onSurfaceSizeChanged(width: Int, height: Int) {
+                val attached = width != 0 || height != 0
+                if (attached != hasVideoSurface) {
+                    hasVideoSurface = attached
+                    applyVideoTrackSelection()
+                }
+            }
 
+            override fun onVideoSizeChanged(videoSize: VideoSize) {
                 // Real video dimensions are definitive proof the stream carries video.
                 if (videoSize.width > 0 && videoSize.height > 0) {
+                    videoWidth = videoSize.width
+                    videoHeight = videoSize.height
                     onVideoTrackChanged(true)
+                    videoChangedListener?.let {
+                        mainHandler.post { it.videoSizeChanged(videoSize.width, videoSize.height, videoSize.pixelWidthHeightRatio) }
+                    }
                 }
+            }
 
+            override fun onRenderedFirstFrame() {
                 videoChangedListener?.let {
-                    Handler(Looper.getMainLooper()).post { it.videoSizeChanged(videoSize.width, videoSize.height, videoSize.pixelWidthHeightRatio) }
+                    mainHandler.post { it.videoFirstFrameRendered() }
                 }
             }
         })
@@ -349,6 +372,7 @@ class SimplePlayer(
             fingerprintTapEnabled = {
                 FeatureFlag.isEnabled(Feature.SYNCED_TRANSCRIPTS) && Util.getAppPlatform(context) == AppPlatform.Phone
             },
+            audioLevelMeterEnabled = { isTv },
         )
     }
 
@@ -367,6 +391,7 @@ class SimplePlayer(
     interface VideoChangedListener {
         fun videoSizeChanged(width: Int, height: Int, pixelWidthHeightRatio: Float)
         fun videoNeedsReset()
+        fun videoFirstFrameRendered()
     }
 
     fun setVideoSizeChangedListener(videoChangedListener: VideoChangedListener) {
@@ -388,6 +413,10 @@ class SimplePlayer(
         }
         player.playbackParameters = PlaybackParameters(playbackEffects.playbackSpeed.toFloat(), 1f)
     }
+}
+
+internal fun shouldDisableVideoTrack(audioOnly: Boolean, hasVideoSurface: Boolean, isHlsStream: Boolean): Boolean {
+    return audioOnly || (!hasVideoSurface && !isHlsStream)
 }
 
 private class PlayPauseListener(

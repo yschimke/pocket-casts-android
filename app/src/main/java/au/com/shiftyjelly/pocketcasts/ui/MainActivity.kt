@@ -53,6 +53,7 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.flowWithLifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
+import androidx.lifecycle.withResumed
 import androidx.mediarouter.media.MediaControlIntent
 import androidx.mediarouter.media.MediaRouteSelector
 import androidx.mediarouter.media.MediaRouter
@@ -163,6 +164,7 @@ import au.com.shiftyjelly.pocketcasts.repositories.opml.OpmlImportTask
 import au.com.shiftyjelly.pocketcasts.repositories.playback.PlaybackManager
 import au.com.shiftyjelly.pocketcasts.repositories.playback.PlaybackNoticeType
 import au.com.shiftyjelly.pocketcasts.repositories.playback.PlaybackState
+import au.com.shiftyjelly.pocketcasts.repositories.playback.StreamVideoState
 import au.com.shiftyjelly.pocketcasts.repositories.playback.UpNextSource
 import au.com.shiftyjelly.pocketcasts.repositories.playlist.Playlist
 import au.com.shiftyjelly.pocketcasts.repositories.podcast.EpisodeManager
@@ -352,7 +354,7 @@ class MainActivity :
         get() = binding.bottomContainer.height - binding.bottomContainer.paddingBottom
 
     private var bottomSheetTag: String? = null
-    private val bottomSheetQueue: MutableList<(() -> Unit)?> = mutableListOf()
+    private var pendingBottomSheetFragment: Fragment? = null
 
     override val coroutineContext: CoroutineContext
         get() = Dispatchers.Default
@@ -716,7 +718,12 @@ class MainActivity :
     override fun onStart() {
         super.onStart()
         if (resources.configuration.orientation == Configuration.ORIENTATION_LANDSCAPE) {
-            if (!videoPlayerShown && playbackManager.getCurrentEpisode()?.isVideo == true && playbackManager.isPlaybackLocal() && playbackManager.isPlaying() && viewModel.isPlayerOpen) {
+            val isPlayingVideo = playbackManager.videoRenderingEnabled.value &&
+                (
+                    (playbackManager.getCurrentEpisode()?.isVideo == true && !settings.audioOnly.value) ||
+                        playbackManager.streamVideoState.value == StreamVideoState.HasVideo
+                    )
+            if (!videoPlayerShown && isPlayingVideo && playbackManager.isPlaybackLocal() && playbackManager.isPlaying() && viewModel.isPlayerOpen) {
                 openFullscreenViewPlayer()
             } else {
                 videoPlayerShown = false
@@ -733,6 +740,14 @@ class MainActivity :
         // addCallback() again in order to tell the media router that it no longer
         // needs to invest effort trying to discover routes of these kinds for now.
         mediaRouter?.addCallback(mediaRouteSelector, mediaRouterCallback, 0)
+    }
+
+    private fun openVideoPlayer() {
+        if (resources.configuration.orientation == Configuration.ORIENTATION_PORTRAIT) {
+            binding.playerBottomSheet.openPlayer()
+        } else {
+            openFullscreenViewPlayer()
+        }
     }
 
     private fun openFullscreenViewPlayer() {
@@ -1070,12 +1085,8 @@ class MainActivity :
                         val episode = withContext(Dispatchers.Default) {
                             episodeManager.findEpisodeByUuid(state.episodeUuid)
                         }
-                        if (episode?.isVideo == true && state.isPlaying) {
-                            if (resources.configuration.orientation == Configuration.ORIENTATION_PORTRAIT) {
-                                binding.playerBottomSheet.openPlayer()
-                            } else {
-                                openFullscreenViewPlayer()
-                            }
+                        if (episode?.isVideo == true && state.isPlaying && !settings.audioOnly.value && playbackManager.videoRenderingEnabled.value) {
+                            openVideoPlayer()
                         }
                     }
 
@@ -1090,6 +1101,26 @@ class MainActivity :
                     updatePlaybackState(state)
 
                     viewModel.lastPlaybackState = state
+                }
+            }
+        }
+
+        lifecycleScope.launch {
+            repeatOnLifecycle(Lifecycle.State.STARTED) {
+                var previousStreamVideoState: StreamVideoState? = null
+                playbackManager.streamVideoState.collect { streamVideoState ->
+                    val didResolveVideoStream = previousStreamVideoState == StreamVideoState.Unknown &&
+                        streamVideoState == StreamVideoState.HasVideo
+                    previousStreamVideoState = streamVideoState
+
+                    if (didResolveVideoStream &&
+                        playbackManager.isPlaying() &&
+                        playbackManager.isPlaybackLocal() &&
+                        playbackManager.videoRenderingEnabled.value &&
+                        playbackManager.getCurrentEpisode()?.isVideo != true
+                    ) {
+                        openVideoPlayer()
+                    }
                 }
             }
         }
@@ -1140,9 +1171,9 @@ class MainActivity :
 
             if (viewModel.shouldShowTrialFinished(signinState)) {
                 val trialFinished = TrialFinishedFragment()
-                showBottomSheet(trialFinished)
-
-                settings.setTrialFinishedSeen(true)
+                showBottomSheet(trialFinished) {
+                    settings.setTrialFinishedSeen(true)
+                }
             }
 
             // Result is intentionally ignored; failures are logged internally by sendAuthToDataLayer
@@ -1153,10 +1184,9 @@ class MainActivity :
             lifecycle.repeatOnLifecycle(Lifecycle.State.CREATED) {
                 viewModel.state.collect { state ->
                     if (state.shouldShowWhatsNew) {
-                        showBottomSheet(
-                            fragment = WhatsNewFragment(),
-                        )
-                        viewModel.onWhatsNewShown()
+                        showBottomSheet(WhatsNewFragment()) {
+                            viewModel.onWhatsNewShown()
+                        }
                     }
                 }
             }
@@ -1374,6 +1404,28 @@ class MainActivity :
     }
 
     override fun showBottomSheet(fragment: Fragment) {
+        showBottomSheet(fragment, onShown = {})
+    }
+
+    private fun showBottomSheet(fragment: Fragment, onShown: () -> Unit) {
+        if (supportFragmentManager.isStateSaved) {
+            pendingBottomSheetFragment = fragment
+            lifecycleScope.launch {
+                withResumed {
+                    if (pendingBottomSheetFragment === fragment) {
+                        commitBottomSheet(fragment)
+                        onShown()
+                    }
+                }
+            }
+        } else {
+            commitBottomSheet(fragment)
+            onShown()
+        }
+    }
+
+    private fun commitBottomSheet(fragment: Fragment) {
+        pendingBottomSheetFragment = null
         supportFragmentManager.commitNow {
             bottomSheetTag = fragment::class.java.name
             replace(R.id.frameBottomSheet, fragment, bottomSheetTag)
@@ -1402,9 +1454,11 @@ class MainActivity :
         }
     }
 
-    override fun isUpNextShowing() = bottomSheetTag == UpNextFragment::class.java.name
+    override fun isUpNextShowing() = isBottomSheetShowing(UpNextFragment::class.java)
 
-    private fun isWhatsNewShowing() = bottomSheetTag == WhatsNewFragment::class.java.name
+    private fun isWhatsNewShowing() = isBottomSheetShowing(WhatsNewFragment::class.java)
+
+    private fun isBottomSheetShowing(fragmentClass: Class<out Fragment>) = bottomSheetTag == fragmentClass.name || pendingBottomSheetFragment?.javaClass == fragmentClass
 
     private fun removeBottomSheetFragment(fragment: Fragment) {
         val tag = fragment::class.java.name
@@ -1414,11 +1468,6 @@ class MainActivity :
 
                 updateStatusBar()
                 bottomSheetTag = null
-
-                if (bottomSheetQueue.isNotEmpty()) {
-                    val next = bottomSheetQueue.removeAt(0)
-                    next?.invoke()
-                }
             }
         }
     }
