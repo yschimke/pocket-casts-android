@@ -44,7 +44,7 @@ customising the live render are two ends of one workflow.
 | Library | `Wear Compose Material` |
 | Renderer | compose-preview 1.21.0 |
 | Schema | `design-parity-catalog/v1` |
-| Generated | 2026-08-19 |
+| Generated | 2026-08-20 |
 
 ## Components by group
 

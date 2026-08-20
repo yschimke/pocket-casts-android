@@ -1,16 +1,16 @@
 {
   "schema": "compose-preview-activity/v1",
-  "generatedAt": "2026-08-19T22:15:18.068Z",
+  "generatedAt": "2026-08-20T07:04:20.048Z",
   "windowDays": 30,
   "code": {
     "repo": "yschimke/pocket-casts-android",
     "ref": "previews",
     "events": [
       {
-        "sha": "69e7bfc36fe9798b6c17330594ac351114b9b141",
-        "subject": "Merge pull request #27 from yschimke/claude/upgrade-compose-ai-tools-design-parity-79boj4",
-        "at": "2026-08-19T22:56:52+01:00",
-        "author": "Yuri Schimke",
+        "sha": "ab8e77ac7a61ce064fa4cf887a4d85d311d2ae7e",
+        "subject": "Merge upstream sync (main) into previews",
+        "at": "2026-08-20T06:47:56Z",
+        "author": "Claude",
         "previewIds": [],
         "components": []
       }

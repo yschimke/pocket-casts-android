@@ -997,9 +997,9 @@
         {
           "bounds": {
             "x": 24,
-            "y": 218,
-            "width": 406,
-            "height": 124
+            "y": 242,
+            "width": 405,
+            "height": 123
           },
           "label": "2. The next time you open Pocket Casts on your watch and have a network connection, you will be logged in.",
           "padding": {
@@ -1011,12 +1011,12 @@
         },
         {
           "bounds": {
-            "x": 74,
-            "y": 398,
-            "width": 305,
-            "height": 56
+            "x": 80,
+            "y": 422,
+            "width": 293,
+            "height": 32
           },
-          "label": "If you are having trouble, make sure your phone is running the same version of Pocket Casts as your watch (8.17-rc-2)",
+          "label": "If you are having trouble, make sure your phone is running the same version of Pocket Casts as your watch (8.19-rc-2)",
           "padding": {
             "start": 0,
             "top": 0,
@@ -1352,7 +1352,7 @@
     "Wear Compose Material"
   ],
   "renderer": "compose-preview 1.21.0",
-  "generatedAt": "2026-08-19T22:14:12.622Z",
+  "generatedAt": "2026-08-20T07:03:34.158Z",
   "display": {
     "surface": "dark",
     "hero": "Screens/App entry"
