@@ -15,6 +15,9 @@
           "size": "compact",
           "livePreview": "https://preview.coo.ee/pocketcasts-wear/p/screens-settings__ideal__default__compact",
           "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.settings.SettingsScreenKt.SettingsScreenPreview_unchecked_ui6",
+          "previewParams": {
+            "uiMode": 6
+          },
           "density": 2.625
         },
         {
@@ -26,6 +29,9 @@
           "size": "compact",
           "livePreview": "https://preview.coo.ee/pocketcasts-wear/p/screens-settings__ideal__checked__compact",
           "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.settings.SettingsScreenKt.SettingsScreenPreview_checked_ui6",
+          "previewParams": {
+            "uiMode": 6
+          },
           "density": 2.625
         }
       ],
@@ -112,6 +118,11 @@
           "size": "compact",
           "livePreview": "https://preview.coo.ee/pocketcasts-wear/p/screens-privacy-settings__ideal__default__compact",
           "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.settings.PrivacySettingsScreenKt.PrivacySettingsScreenPreview_wearos_small_round",
+          "previewParams": {
+            "device": "id:wearos_small_round",
+            "widthDp": 192,
+            "heightDp": 192
+          },
           "density": 2
         }
       ],
@@ -311,6 +322,13 @@
           "size": "compact",
           "livePreview": "https://preview.coo.ee/pocketcasts-wear/p/screens-playback-effects__ideal__default__compact",
           "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.player.EffectsScreenKt.EffectsScreenDarkPreview_wearos_large_round",
+          "previewParams": {
+            "showBackground": true,
+            "backgroundColor": 4278190080,
+            "device": "id:wearos_large_round",
+            "widthDp": 227,
+            "heightDp": 227
+          },
           "density": 2
         }
       ],
@@ -759,6 +777,9 @@
           "size": "compact",
           "livePreview": "https://preview.coo.ee/pocketcasts-wear/p/playback-now-playing-chip__ideal__default__compact",
           "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.NowPlayingChipKt.NowPlayingChipPreview_ui6",
+          "previewParams": {
+            "uiMode": 6
+          },
           "density": 2.625
         }
       ],
@@ -1164,6 +1185,11 @@
           "size": "compact",
           "livePreview": "https://preview.coo.ee/pocketcasts-wear/p/chrome-time-text__ideal__default__compact",
           "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.component.TimeTextWithConnectivityKt.TimeTextWithConnectivityConnectedPreview_wearos_small_round",
+          "previewParams": {
+            "device": "id:wearos_small_round",
+            "widthDp": 192,
+            "heightDp": 192
+          },
           "density": 2
         },
         {
@@ -1175,6 +1201,11 @@
           "size": "compact",
           "livePreview": "https://preview.coo.ee/pocketcasts-wear/p/chrome-time-text__ideal__disconnected__compact",
           "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.component.TimeTextWithConnectivityKt.TimeTextWithConnectivityDisconnectedPreview_wearos_small_round",
+          "previewParams": {
+            "device": "id:wearos_small_round",
+            "widthDp": 192,
+            "heightDp": 192
+          },
           "density": 2
         }
       ],
@@ -1200,6 +1231,11 @@
           "size": "compact",
           "livePreview": "https://preview.coo.ee/pocketcasts-wear/p/states-loading__ideal__default__compact",
           "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.component.LoadingScreenKt.LoadingScreenPreview_wearos_small_round",
+          "previewParams": {
+            "device": "id:wearos_small_round",
+            "widthDp": 192,
+            "heightDp": 192
+          },
           "density": 2
         }
       ],
@@ -1225,6 +1261,11 @@
           "size": "compact",
           "livePreview": "https://preview.coo.ee/pocketcasts-wear/p/states-no-content__ideal__default__compact",
           "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.component.NoContentScreenKt.NoContentScreenPreview_wearos_small_round",
+          "previewParams": {
+            "device": "id:wearos_small_round",
+            "widthDp": 192,
+            "heightDp": 192
+          },
           "density": 2
         }
       ],
@@ -1352,7 +1393,7 @@
     "Wear Compose Material"
   ],
   "renderer": "compose-preview 1.21.0",
-  "generatedAt": "2026-08-20T07:03:34.158Z",
+  "generatedAt": "2026-08-24T06:56:20.185Z",
   "display": {
     "surface": "dark",
     "hero": "Screens/App entry"
