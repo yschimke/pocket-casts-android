@@ -1,16 +1,16 @@
 {
   "schema": "compose-preview-activity/v1",
-  "generatedAt": "2026-08-24T06:57:26.201Z",
+  "generatedAt": "2026-08-28T10:51:16.363Z",
   "windowDays": 30,
   "code": {
     "repo": "yschimke/pocket-casts-android",
-    "ref": "main",
+    "ref": "previews",
     "events": [
       {
-        "sha": "ab8e77ac7a61ce064fa4cf887a4d85d311d2ae7e",
-        "subject": "Merge upstream sync (main) into previews",
-        "at": "2026-08-20T06:47:56Z",
-        "author": "Claude",
+        "sha": "9867d3b21c3a2d227a8e7cb6e19bc3a7f22d81a1",
+        "subject": "Merge pull request #28 from yschimke/agent/failed-renders-triage-3d0q6l",
+        "at": "2026-08-28T11:23:37+01:00",
+        "author": "Yuri Schimke",
         "previewIds": [],
         "components": []
       }
