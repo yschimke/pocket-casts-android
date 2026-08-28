@@ -17,11 +17,24 @@ plugins {
 // thing to revisit if the toolchain moves. minSdk here is 24 — well under 35 — so
 // Robolectric's PackageParser floor is not in play.
 //
+// hostTheme is what lets `HtmlText` render at all. It hands a `TextView` to
+// `setTextAppearance(UR.style.H50)`, and `H50` sets `android:textColor` to
+// `?attr/primary_text_01` — an attribute only our own themes define. This is a library
+// module, so the merged manifest has no `<application android:theme>` for the render
+// host to inherit and the activity falls back to the platform default, where that
+// attribute does not exist; inflation then dies with `UnsupportedOperationException:
+// Failed to resolve attribute at index 3` and the preview produces no PNG. `ThemeLight`
+// inherits `primary_text_01` from `ThemeBaseLight` in :modules:services:ui, which this
+// module already `api` depends on. One theme covers the Light and Dark previews alike:
+// the attribute only has to resolve, because `HtmlText` overwrites the colour straight
+// after with `setTextColor(color.toArgb())` from the Compose theme.
+//
 // Note this module builds on JDK 21 regardless: :modules:services:crashlogging pulls in
 // Java 21 bytecode that javac 17 cannot read, so the whole project already requires 21.
 composePreview {
     variant.set("debug")
     sdkVersion.set(35)
+    hostTheme.set("@style/ThemeLight")
 }
 
 android {
