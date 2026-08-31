@@ -1,10 +1,10 @@
 {
   "schema": "compose-preview-activity/v1",
-  "generatedAt": "2026-08-28T10:51:16.363Z",
+  "generatedAt": "2026-08-31T12:39:08.479Z",
   "windowDays": 30,
   "code": {
     "repo": "yschimke/pocket-casts-android",
-    "ref": "previews",
+    "ref": "main",
     "events": [
       {
         "sha": "9867d3b21c3a2d227a8e7cb6e19bc3a7f22d81a1",

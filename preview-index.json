@@ -29,6 +29,36 @@
   ],
   "revisions": [
     {
+      "commit": "e283d9dbe46af59520bb32e3255eb622bb2ac3ef",
+      "previews": [
+        "chrome-time-text__ideal__default__compact",
+        "chrome-time-text__ideal__disconnected__compact",
+        "episodes-date-and-time-text__ideal__default",
+        "episodes-episode-chip__ideal__default",
+        "playback-download-button__ideal__default",
+        "playback-download-button__ideal__default__progresspercent-0-25-50-75-100",
+        "playback-marquee-media-display__ideal__default",
+        "playback-now-playing-chip__ideal__default__compact",
+        "playback-play-button__ideal__default",
+        "playback-queue-button__ideal__default",
+        "screens-playback-effects__ideal__default__compact",
+        "screens-privacy-settings__ideal__default__compact",
+        "screens-settings__ideal__checked__compact",
+        "screens-settings__ideal__default__compact",
+        "screens-up-next-options__ideal__default",
+        "sign-in-confirmation__ideal__default",
+        "sign-in-phone-instructions__ideal__default",
+        "sign-in-phone-instructions__ideal__login-failed",
+        "sign-in-phone-instructions__ideal__no-connection",
+        "sign-in-phone-instructions__ideal__success",
+        "sign-in-phone-instructions__ideal__syncing",
+        "states-error__ideal__default",
+        "states-loading__ideal__default__compact",
+        "states-no-content__ideal__default__compact",
+        "states-notification__ideal__default"
+      ]
+    },
+    {
       "commit": "777827d10404ac055b7c8ddccf8395efc5aeabc0",
       "previews": [
         "chrome-time-text__ideal__default__compact",

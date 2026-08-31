@@ -104,7 +104,8 @@
       "wireframe": "wireframes/screens-settings.svg",
       "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/settings/SettingsScreen.kt",
       "sourceModule": ":wear",
-      "bodyLine": 288
+      "bodyLine": 288,
+      "sourceFunction": "SettingsScreenPreview_unchecked"
     },
     {
       "componentId": "Screens/Privacy settings",
@@ -195,7 +196,8 @@
       "wireframe": "wireframes/screens-privacy-settings.svg",
       "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/settings/PrivacySettingsScreen.kt",
       "sourceModule": ":wear",
-      "bodyLine": 122
+      "bodyLine": 122,
+      "sourceFunction": "PrivacySettingsScreenPreview"
     },
     {
       "componentId": "Screens/Up Next options",
@@ -308,7 +310,8 @@
       "wireframe": "wireframes/screens-up-next-options.svg",
       "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/episode/UpNextOptionsScreen.kt",
       "sourceModule": ":wear",
-      "bodyLine": 77
+      "bodyLine": 77,
+      "sourceFunction": "UpNextOptionsScreenPreview"
     },
     {
       "componentId": "Screens/Playback effects",
@@ -588,7 +591,8 @@
       "wireframe": "wireframes/screens-playback-effects.svg",
       "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/player/EffectsScreen.kt",
       "sourceModule": ":wear",
-      "bodyLine": 252
+      "bodyLine": 252,
+      "sourceFunction": "EffectsScreenDarkPreview"
     },
     {
       "componentId": "Episodes/Episode chip",
@@ -739,7 +743,8 @@
       "wireframe": "wireframes/episodes-episode-chip.svg",
       "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/EpisodeChip.kt",
       "sourceModule": ":wear",
-      "bodyLine": 237
+      "bodyLine": 237,
+      "sourceFunction": "EpisodeChipPreview"
     },
     {
       "componentId": "Episodes/Date and time text",
@@ -763,7 +768,8 @@
       "wireframe": "wireframes/episodes-date-and-time-text.svg",
       "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/episode/EpisodeDateTimeText.kt",
       "sourceModule": ":wear",
-      "bodyLine": 65
+      "bodyLine": 65,
+      "sourceFunction": "EpisodeDateTimeTextPreview"
     },
     {
       "componentId": "Playback/Now playing chip",
@@ -829,7 +835,8 @@
       "wireframe": "wireframes/playback-now-playing-chip.svg",
       "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/NowPlayingChip.kt",
       "sourceModule": ":wear",
-      "bodyLine": 170
+      "bodyLine": 170,
+      "sourceFunction": "NowPlayingChipPreview"
     },
     {
       "componentId": "Playback/Play button",
@@ -872,7 +879,8 @@
       "wireframe": "wireframes/playback-play-button.svg",
       "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/episode/PlayButton.kt",
       "sourceModule": ":wear",
-      "bodyLine": 53
+      "bodyLine": 53,
+      "sourceFunction": "PlayButtonPreview"
     },
     {
       "componentId": "Playback/Queue button",
@@ -896,7 +904,8 @@
       "wireframe": "wireframes/playback-queue-button.svg",
       "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/episode/QueueButton.kt",
       "sourceModule": ":wear",
-      "bodyLine": 42
+      "bodyLine": 42,
+      "sourceFunction": "QueueButtonPreview"
     },
     {
       "componentId": "Playback/Download button",
@@ -933,7 +942,8 @@
       "wireframe": "wireframes/playback-download-button.svg",
       "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/episode/DownloadButton.kt",
       "sourceModule": ":wear",
-      "bodyLine": 78
+      "bodyLine": 78,
+      "sourceFunction": "DownloadButtonStatesPreview"
     },
     {
       "componentId": "Playback/Marquee media display",
@@ -957,7 +967,8 @@
       "wireframe": "wireframes/playback-marquee-media-display.svg",
       "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/MarqueeTextMediaDisplay.kt",
       "sourceModule": ":wear",
-      "bodyLine": 72
+      "bodyLine": 72,
+      "sourceFunction": "MarqueeTextMediaDisplayPreview"
     },
     {
       "componentId": "Sign-in/Phone instructions",
@@ -1052,7 +1063,8 @@
       "wireframe": "wireframes/sign-in-phone-instructions.svg",
       "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/authentication/LoginWithPhoneScreen.kt",
       "sourceModule": ":wear",
-      "bodyLine": 259
+      "bodyLine": 259,
+      "sourceFunction": "LoginWithPhoneInstructionsPreview"
     },
     {
       "componentId": "Sign-in/Confirmation",
@@ -1171,7 +1183,8 @@
       "wireframe": "wireframes/sign-in-confirmation.svg",
       "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/ObtainConfirmationScreen.kt",
       "sourceModule": ":wear",
-      "bodyLine": 103
+      "bodyLine": 103,
+      "sourceFunction": "ObtainConfirmationScreenPreview"
     },
     {
       "componentId": "Chrome/Time text",
@@ -1217,7 +1230,8 @@
       "wireframe": "wireframes/chrome-time-text.svg",
       "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/TimeTextWithConnectivity.kt",
       "sourceModule": ":wear",
-      "bodyLine": 66
+      "bodyLine": 66,
+      "sourceFunction": "TimeTextWithConnectivityConnectedPreview"
     },
     {
       "componentId": "States/Loading",
@@ -1247,7 +1261,8 @@
       "wireframe": "wireframes/states-loading.svg",
       "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/LoadingScreen.kt",
       "sourceModule": ":wear",
-      "bodyLine": 28
+      "bodyLine": 28,
+      "sourceFunction": "LoadingScreenPreview"
     },
     {
       "componentId": "States/No content",
@@ -1293,7 +1308,8 @@
       "wireframe": "wireframes/states-no-content.svg",
       "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/NoContentScreen.kt",
       "sourceModule": ":wear",
-      "bodyLine": 35
+      "bodyLine": 35,
+      "sourceFunction": "NoContentScreenPreview"
     },
     {
       "componentId": "States/Error",
@@ -1347,7 +1363,8 @@
       "wireframe": "wireframes/states-error.svg",
       "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/ErrorScreen.kt",
       "sourceModule": ":wear",
-      "bodyLine": 63
+      "bodyLine": 63,
+      "sourceFunction": "ErrorScreenPreview"
     },
     {
       "componentId": "States/Notification",
@@ -1386,14 +1403,15 @@
       "wireframe": "wireframes/states-notification.svg",
       "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/NotificationScreen.kt",
       "sourceModule": ":wear",
-      "bodyLine": 77
+      "bodyLine": 77,
+      "sourceFunction": "NotificationScreenPreview"
     }
   ],
   "library": [
     "Wear Compose Material"
   ],
   "renderer": "compose-preview 1.21.0",
-  "generatedAt": "2026-08-28T10:50:11.080Z",
+  "generatedAt": "2026-08-31T12:38:02.056Z",
   "display": {
     "surface": "dark",
     "hero": "Screens/App entry"
