@@ -1008,11 +1008,11 @@
         "bounds": {
           "x": 108,
           "y": 85,
-          "width": 150,
+          "width": 149,
           "height": 28
         },
         "label": "text 12sp/16",
-        "role": "30 Aug • 30m",
+        "role": "06 Sep • 30m",
         "detail": {
           "token": "text",
           "unit": "sp",
@@ -1044,11 +1044,11 @@
         "bounds": {
           "x": 108,
           "y": 249,
-          "width": 150,
+          "width": 149,
           "height": 28
         },
         "label": "text 12sp/16",
-        "role": "30 Aug • 30m",
+        "role": "06 Sep • 30m",
         "detail": {
           "token": "text",
           "unit": "sp",
@@ -1080,11 +1080,11 @@
         "bounds": {
           "x": 80,
           "y": 366,
-          "width": 150,
+          "width": 149,
           "height": 28
         },
         "label": "text 12sp/16",
-        "role": "30 Aug • 30m",
+        "role": "06 Sep • 30m",
         "detail": {
           "token": "text",
           "unit": "sp",
@@ -1120,7 +1120,7 @@
           "height": 0
         },
         "label": "text 12sp/16",
-        "role": "30 Aug • 30m",
+        "role": "06 Sep • 30m",
         "detail": {
           "token": "text",
           "unit": "sp",
@@ -1156,7 +1156,7 @@
           "height": 0
         },
         "label": "text 12sp/16",
-        "role": "30 Aug • 30m",
+        "role": "06 Sep • 30m",
         "detail": {
           "token": "text",
           "unit": "sp",

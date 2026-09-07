@@ -7,7 +7,7 @@
     "ref": "previews",
     "module": ":wear"
   },
-  "generatedAt": "2026-08-31T12:38:05.459Z",
+  "generatedAt": "2026-09-07T11:31:59.012Z",
   "mappings": [
     {
       "componentId": "Screens/Settings",
@@ -37,7 +37,7 @@
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "UpNextOptionsScreenPreview",
-      "figmaSvg": "figma/screens-up-next-options.svg"
+      "figmaSvg": "https://preview.coo.ee/pocketcasts-wear/render/screens-up-next-options__ideal__default.svg"
     },
     {
       "componentId": "Screens/Playback effects",
@@ -115,7 +115,7 @@
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "EpisodeDateTimeTextPreview",
-      "figmaSvg": "figma/episodes-date-and-time-text.svg"
+      "figmaSvg": "https://preview.coo.ee/pocketcasts-wear/render/episodes-date-and-time-text__ideal__default.svg"
     },
     {
       "componentId": "Playback/Now playing chip",
@@ -135,7 +135,7 @@
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "PlayButtonPreview",
-      "figmaSvg": "figma/playback-play-button.svg"
+      "figmaSvg": "https://preview.coo.ee/pocketcasts-wear/render/playback-play-button__ideal__default.svg"
     },
     {
       "componentId": "Playback/Queue button",
@@ -145,7 +145,7 @@
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "QueueButtonPreview",
-      "figmaSvg": "figma/playback-queue-button.svg"
+      "figmaSvg": "https://preview.coo.ee/pocketcasts-wear/render/playback-queue-button__ideal__default.svg"
     },
     {
       "componentId": "Playback/Download button",
@@ -245,7 +245,7 @@
           "composableSlot": false
         }
       ],
-      "figmaSvg": "figma/sign-in-confirmation.svg"
+      "figmaSvg": "https://preview.coo.ee/pocketcasts-wear/render/sign-in-confirmation__ideal__default.svg"
     },
     {
       "componentId": "Chrome/Time text",
@@ -255,7 +255,7 @@
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "TimeTextWithConnectivityConnectedPreview",
-      "figmaSvg": "figma/chrome-time-text.svg"
+      "figmaSvg": "https://preview.coo.ee/pocketcasts-wear/render/chrome-time-text__ideal__default__compact.svg"
     },
     {
       "componentId": "States/Loading",
@@ -275,7 +275,7 @@
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "NoContentScreenPreview",
-      "figmaSvg": "figma/states-no-content.svg"
+      "figmaSvg": "https://preview.coo.ee/pocketcasts-wear/render/states-no-content__ideal__default__compact.svg"
     },
     {
       "componentId": "States/Error",
@@ -285,7 +285,7 @@
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "ErrorScreenPreview",
-      "figmaSvg": "figma/states-error.svg"
+      "figmaSvg": "https://preview.coo.ee/pocketcasts-wear/render/states-error__ideal__default.svg"
     },
     {
       "componentId": "States/Notification",
@@ -295,7 +295,7 @@
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "NotificationScreenPreview",
-      "figmaSvg": "figma/states-notification.svg"
+      "figmaSvg": "https://preview.coo.ee/pocketcasts-wear/render/states-notification__ideal__default.svg"
     }
   ]
 }

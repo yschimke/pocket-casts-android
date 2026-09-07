@@ -210,7 +210,8 @@
           "height": 454,
           "livePreview": "https://preview.coo.ee/pocketcasts-wear/p/screens-up-next-options__ideal__default",
           "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.episode.UpNextOptionsScreenKt.UpNextOptionsScreenPreview",
-          "density": 2
+          "density": 2,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts-wear/render/screens-up-next-options__ideal__default.svg"
         }
       ],
       "greenlines": [
@@ -744,7 +745,41 @@
       "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/EpisodeChip.kt",
       "sourceModule": ":wear",
       "bodyLine": 237,
-      "sourceFunction": "EpisodeChipPreview"
+      "sourceFunction": "EpisodeChipPreview",
+      "parameters": [
+        {
+          "name": "episode",
+          "type": "BaseEpisode"
+        },
+        {
+          "name": "queueState",
+          "type": "State"
+        },
+        {
+          "name": "useEpisodeArtwork",
+          "type": "Boolean"
+        },
+        {
+          "name": "onClick",
+          "type": "() -> Unit",
+          "composableSlot": true
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "useUpNextIcon",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "showImage",
+          "type": "Boolean",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "Episodes/Date and time text",
@@ -757,7 +792,8 @@
           "height": 56,
           "livePreview": "https://preview.coo.ee/pocketcasts-wear/p/episodes-date-and-time-text__ideal__default",
           "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.episode.EpisodeDateTimeTextKt.EpisodeDateTimeTextPreview",
-          "density": 2
+          "density": 2,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts-wear/render/episodes-date-and-time-text__ideal__default.svg"
         }
       ],
       "greenlines": [],
@@ -849,7 +885,8 @@
           "height": 208,
           "livePreview": "https://preview.coo.ee/pocketcasts-wear/p/playback-play-button__ideal__default",
           "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.episode.PlayButtonKt.PlayButtonPreview",
-          "density": 2
+          "density": 2,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts-wear/render/playback-play-button__ideal__default.svg"
         }
       ],
       "greenlines": [],
@@ -893,7 +930,8 @@
           "height": 96,
           "livePreview": "https://preview.coo.ee/pocketcasts-wear/p/playback-queue-button__ideal__default",
           "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.episode.QueueButtonKt.QueueButtonPreview",
-          "density": 2
+          "density": 2,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts-wear/render/playback-queue-button__ideal__default.svg"
         }
       ],
       "greenlines": [],
@@ -968,7 +1006,29 @@
       "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/MarqueeTextMediaDisplay.kt",
       "sourceModule": ":wear",
       "bodyLine": 72,
-      "sourceFunction": "MarqueeTextMediaDisplayPreview"
+      "sourceFunction": "MarqueeTextMediaDisplayPreview",
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "title",
+          "type": "String?",
+          "hasDefault": true
+        },
+        {
+          "name": "artist",
+          "type": "String?",
+          "hasDefault": true
+        },
+        {
+          "name": "isPlaybackError",
+          "type": "Boolean",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "Sign-in/Phone instructions",
@@ -1001,7 +1061,8 @@
           "height": 454,
           "livePreview": "https://preview.coo.ee/pocketcasts-wear/p/sign-in-phone-instructions__ideal__success",
           "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.authentication.LoginWithPhoneScreenKt.SuccessContentPreview",
-          "density": 2
+          "density": 2,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts-wear/render/sign-in-phone-instructions__ideal__success.svg"
         },
         {
           "variant": "ideal",
@@ -1077,7 +1138,8 @@
           "height": 454,
           "livePreview": "https://preview.coo.ee/pocketcasts-wear/p/sign-in-confirmation__ideal__default",
           "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.component.ObtainConfirmationScreenKt.ObtainConfirmationScreenPreview",
-          "density": 2
+          "density": 2,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts-wear/render/sign-in-confirmation__ideal__default.svg"
         }
       ],
       "greenlines": [
@@ -1184,7 +1246,28 @@
       "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/ObtainConfirmationScreen.kt",
       "sourceModule": ":wear",
       "bodyLine": 103,
-      "sourceFunction": "ObtainConfirmationScreenPreview"
+      "sourceFunction": "ObtainConfirmationScreenPreview",
+      "parameters": [
+        {
+          "name": "text",
+          "type": "String"
+        },
+        {
+          "name": "onConfirm",
+          "type": "() -> Unit",
+          "composableSlot": true
+        },
+        {
+          "name": "onCancel",
+          "type": "() -> Unit",
+          "composableSlot": true
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "Chrome/Time text",
@@ -1203,7 +1286,8 @@
             "widthDp": 192,
             "heightDp": 192
           },
-          "density": 2
+          "density": 2,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts-wear/render/chrome-time-text__ideal__default__compact.svg"
         },
         {
           "variant": "ideal",
@@ -1219,7 +1303,8 @@
             "widthDp": 192,
             "heightDp": 192
           },
-          "density": 2
+          "density": 2,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts-wear/render/chrome-time-text__ideal__disconnected__compact.svg"
         }
       ],
       "greenlines": [],
@@ -1281,7 +1366,8 @@
             "widthDp": 192,
             "heightDp": 192
           },
-          "density": 2
+          "density": 2,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts-wear/render/states-no-content__ideal__default__compact.svg"
         }
       ],
       "greenlines": [],
@@ -1322,7 +1408,8 @@
           "height": 454,
           "livePreview": "https://preview.coo.ee/pocketcasts-wear/p/states-error__ideal__default",
           "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.component.ErrorScreenKt.ErrorScreenPreview",
-          "density": 2
+          "density": 2,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts-wear/render/states-error__ideal__default.svg"
         }
       ],
       "greenlines": [],
@@ -1377,7 +1464,8 @@
           "height": 454,
           "livePreview": "https://preview.coo.ee/pocketcasts-wear/p/states-notification__ideal__default",
           "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.component.NotificationScreenKt.NotificationScreenPreview",
-          "density": 2
+          "density": 2,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts-wear/render/states-notification__ideal__default.svg"
         }
       ],
       "greenlines": [],
@@ -1411,7 +1499,7 @@
     "Wear Compose Material"
   ],
   "renderer": "compose-preview 1.21.0",
-  "generatedAt": "2026-08-31T12:38:02.056Z",
+  "generatedAt": "2026-09-07T11:31:55.351Z",
   "display": {
     "surface": "dark",
     "hero": "Screens/App entry"
